@@ -34,4 +34,14 @@ div{
     right: -30px;
   }
 }
+@media screen and (max-width: 1400px){
+  a{
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 900px){
+  a{
+    font-size: 14px !important;
+  }
+}
 </style>

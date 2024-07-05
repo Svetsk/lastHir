@@ -116,5 +116,23 @@ h3{
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: start;
+}
+
+@media screen and (max-width: 720px){
+  h3{
+    font-size: 22px !important;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 540px){
+  h3{
+    font-size: 20px !important;
+  }
+  p{
+    font-size: 16px;
+  }
 }
 </style>

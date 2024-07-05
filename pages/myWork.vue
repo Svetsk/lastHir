@@ -26,14 +26,14 @@ export default {
 <template>
   <div>
     <div class="container">
-      <div class="flex items-center gap-[24px] pt-[160px] pb-[112px]">
+      <div class="flex items-center gap-[24px] pt-[160px] pb-[112px] asd">
         <div class="line"></div>
         <ui-elements-title title="мои работы" />
       </div>
 
-      <div class="flex flex-col gap-[40px]">
+      <div class="flex flex-col gap-[40px] rrr">
         <div class="relative">
-          <nuxt-img src="/image/work/one.png" class="w-full" />
+          <nuxt-img src="/image/work/one.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 1. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -42,9 +42,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/two.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/two.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 2. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -54,7 +54,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/three.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/three.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 3. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -65,7 +65,7 @@ export default {
           </div>
         </div>
         <div class="relative">
-          <nuxt-img src="/image/work/fore.png" class="w-full" />
+          <nuxt-img src="/image/work/fore.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 4. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -74,9 +74,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/five.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/five.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 5. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -86,7 +86,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/six.png" class="w-[816px] rounded-[30px]" />
+            <nuxt-img src="/image/work/six.png" class="w-[816px] asa rounded-[30px]" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 6. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -97,7 +97,7 @@ export default {
           </div>
         </div>
         <div class="relative">
-          <nuxt-img src="/image/work/one.png" class="w-full" />
+          <nuxt-img src="/image/work/one.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 7. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -106,9 +106,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/two.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/two.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 8. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -118,7 +118,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/three.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/three.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 9. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -129,7 +129,7 @@ export default {
           </div>
         </div>
         <div class="relative">
-          <nuxt-img src="/image/work/fore.png" class="w-full" />
+          <nuxt-img src="/image/work/fore.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 10. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -138,9 +138,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/five.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/five.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 11. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -150,7 +150,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/six.png" class="w-[816px] rounded-[30px]" />
+            <nuxt-img src="/image/work/six.png" class="w-[816px] asa rounded-[30px]" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 12. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -161,7 +161,7 @@ export default {
           </div>
         </div>
         <div class="relative">
-          <nuxt-img src="/image/work/one.png" class="w-full" />
+          <nuxt-img src="/image/work/one.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 13. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -170,9 +170,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/two.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/two.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 14. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -182,7 +182,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/three.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/three.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 15. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -193,7 +193,7 @@ export default {
           </div>
         </div>
         <div class="relative">
-          <nuxt-img src="/image/work/fore.png" class="w-full" />
+          <nuxt-img src="/image/work/fore.png" class="w-full long" />
           <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 16. Операция: маммопластика
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -202,9 +202,9 @@ export default {
             </svg>
           </button>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex gap-[20px] zxz">
           <div class="relative">
-            <nuxt-img src="/image/work/five.png" class="w-[816px]" />
+            <nuxt-img src="/image/work/five.png" class="w-[816px] asa" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 17. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -214,7 +214,7 @@ export default {
             </button>
           </div>
           <div class="relative">
-            <nuxt-img src="/image/work/six.png" class="w-[816px] rounded-[30px]" />
+            <nuxt-img src="/image/work/six.png" class="w-[816px] asa rounded-[30px]" />
             <button @click="openModal" class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 18. Операция: маммопластика
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -233,7 +233,7 @@ export default {
       </Modal>
     </div>
     <ui-elements-services />
-    <ui-footer-form class="pt-[176px]" />
+    <ui-footer-form class="pt-[276px]" />
     <ui-footer-contact-footer class="pt-[241px]" />
   </div>
 </template>
@@ -243,5 +243,41 @@ button{
   border-radius: 20px;
   background: rgba(72, 72, 72, 0.20);
   backdrop-filter: blur(35px);
+}
+@media screen and (max-width: 1200px) {
+  .asd{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .zxz{
+    justify-content: space-between;
+  }
+  .rrr{
+    justify-content: space-between !important;
+  }
+  .asd{
+    padding-top: 10px !important;
+  }
+  .long{
+    width: 528px;
+    height: 222px;
+  }
+  .asa{
+    width: 212px;
+    height: 244px;
+  }
+  button{
+    transform: translateY(50px);
+    font-size: 14px !important;
+    padding-left: 6px;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 391px) {
+  .asd{
+    padding-top: 5px !important;
+  }
 }
 </style>

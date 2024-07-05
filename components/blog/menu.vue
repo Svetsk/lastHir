@@ -8,17 +8,30 @@
     <ui-elements-title title="блог" />
   </div>
   <div class="tabs">
-    <nuxt-link to="/blog">Пациентам</nuxt-link>
-    <div class="ellipse"></div>
-    <nuxt-link to="/blog/texts">Статьи</nuxt-link>
-    <div class="ellipse"></div>
-    <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>
-    <div class="ellipse"></div>
-    <nuxt-link to="">Экспертные видео</nuxt-link>
+    <div class="flex items-center gap-[12px]">
+      <nuxt-link to="/blog">Пациентам</nuxt-link>
+    </div>
+    <div class="flex items-center gap-[12px]">
+      <div class="ellipse"></div>
+      <nuxt-link to="/blog/texts">Статьи</nuxt-link>
+    </div>
+    <div class="flex items-center gap-[12px]">
+      <div class="ellipse"></div>
+      <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>
+    </div>
+    <div class="flex items-center gap-[12px]">
+      <div class="ellipse"></div>
+      <nuxt-link to="">Экспертные видео</nuxt-link>
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+@media screen and (max-width: 700px){
+  .tabs{
+    flex-wrap: wrap;
+  }
+}
 .tabs{
   display: flex;
   align-items: center;

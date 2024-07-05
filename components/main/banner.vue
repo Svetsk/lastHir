@@ -177,10 +177,11 @@ h3{
   .banner{
     flex-wrap: wrap;
   }
-  .slli{
+  .swiper-slide{
     max-width: 620px;
-    height: max-content;
-    margin: 0 auto;
+    & .slli{
+      margin: 0 auto;
+    }
   }
 }
 </style>

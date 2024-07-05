@@ -119,10 +119,18 @@ input{
 }
 @media screen and (max-width: 620px) {
   .inpt{
-    width: 400px;
+    width: 340px;
   }
   form{
-    padding-left: 40px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .inpt{
+    width: 320px;
+  }
+  form{
+    padding-left: 20px;
   }
 }
 

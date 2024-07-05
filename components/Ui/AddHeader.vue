@@ -47,8 +47,17 @@
 @media screen and (max-width: 1042px) {
   .info, .blog, .hiddenss{
     display: none;
-
   }
+  nav{
+    padding-left: 20px;
+    & ul:nth-child(2){
+      justify-content: flex-end !important;
+    }
+  }
+}
+
+@media screen and (max-width: 100px) {
+  
 }
 .blog{
   padding-right: 24px;
