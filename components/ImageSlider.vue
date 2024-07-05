@@ -1,8 +1,10 @@
 <template>
   <div class="slider-container">
     <swiper ref="swiperRef" :slides-per-view="1" @slideChange="onSlideChange">
-      <swiper-slide v-for="(slide, index) in slides" :key="index">
-        <img :src="slide.src" :alt="slide.alt" class="slide-image" />
+      <swiper-slide>
+        <div class="w-[804px] h-[616px] bg-white">
+
+        </div>
       </swiper-slide>
     </swiper>
 
@@ -20,7 +22,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css'; // Импорт CSS стилей
+import 'swiper/swiper-bundle.css'; // Импорт CSS стилей Swiper
 
 const slides = [
   { src: 'https://via.placeholder.com/600x400', alt: 'Image 1' },
@@ -28,7 +30,7 @@ const slides = [
   { src: 'https://via.placeholder.com/600x400', alt: 'Image 3' }
 ];
 
-const currentSlide = ref(0);
+const currentSlide = ref(1);
 const swiperRef = ref(null);
 
 const onRangeInput = () => {

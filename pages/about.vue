@@ -3,7 +3,12 @@
 </script>
 
 <template>
-  $END$
+  <div>
+    <about-banner />
+    <about-educ />
+    <ui-footer-form class="pt-[300px]"/>
+    <ui-footer-contact-footer class="pt-[350px]" />
+  </div>
 </template>
 
 <style scoped lang="scss">

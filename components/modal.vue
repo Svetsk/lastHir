@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 export default {
   props: {
     isVisible: {
@@ -37,11 +37,11 @@ export default {
 }
 
 .modal-content {
-  background: white;
+  background: #000000;
   padding: 20px;
   border-radius: 5px;
   position: relative;
-  max-width: 500px;
+  max-width: 1500px;
   width: 100%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
