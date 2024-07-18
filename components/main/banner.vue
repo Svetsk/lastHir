@@ -101,50 +101,96 @@ export default {
       </div>
     </div>
     <div class="mob">
-      <nuxt-img class="" src="/image/main/banner/curcle.svg" />
-      <h3>Пластический<br>хирург / онколог</h3>
-      <div class="max-w-[420px]">
-        <swiper
-            :navigation="true"
-            :modules="modules"
-            class="mySwiper"
-        >
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[412px] h-[269px]" />
-          </swiper-slide>
-        </swiper>
+      <div class="py-[50px] px-[15px]">
+        <nuxt-img class="" src="/image/main/banner/curcle.svg" />
+        <h3>Пластический<br>хирург / онколог</h3>
+        <div class="max-w-[420px]">
+          <swiper
+              :navigation="true"
+              :modules="modules"
+              class="mySwiper myss"
+          >
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/slideOne.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/slideOne.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/slideOne.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/slideOne.png" />
+              </div>
+            </swiper-slide>
+          </swiper>
+          <ui-elements-button title="Узнать подробнее" class="pt-[40px]" />
+          <div class="pt-[45px] relative">
+            <nuxt-img src="/image/main/banner/mob/mobban.png" class="w-[100%] h-[100%]" />
+            <nuxt-img src="/image/main/banner/mob/inst.svg" class="absolute top-[55px] left-[11px] w-[20px] h-[20px]" />
+            <nuxt-img src="/image/main/banner/mob/what.svg" class="absolute top-[82px] left-[12px] w-[20px] h-[20px]" />
+            <nuxt-link to="" class="flex gap-[25px] items-center absolute top-[45px] left-[135px]">
+              <p class="text-[14px]">Обо мне<br>About me</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+                <circle cx="39.2656" cy="39.2323" r="27.5676" transform="rotate(-135 39.2656 39.2323)" fill="white"/>
+                <path d="M48.6956 31.1798C48.6956 30.4186 48.0785 29.8014 47.3173 29.8014L34.9118 29.8014C34.1506 29.8014 33.5334 30.4186 33.5334 31.1798C33.5334 31.9411 34.1506 32.5582 34.9118 32.5582L45.9389 32.5582L45.9389 43.5852C45.9389 44.3465 46.556 44.9636 47.3172 44.9636C48.0785 44.9636 48.6956 44.3465 48.6956 43.5852L48.6956 31.1798ZM32.6973 47.7491L48.2919 32.1545L46.3426 30.2052L30.748 45.7998L32.6973 47.7491Z" fill="black"/>
+              </svg>
+            </nuxt-link>
+            <nuxt-link to="/" class="flex items-center gap-[55px] absolute bottom-[12px] left-[11px]">
+              <p class="font-[600]">Список услуг</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 30 17" fill="none">
+                <path d="M28.9157 9.51062C29.3357 9.09054 29.3357 8.40946 28.9157 7.98938L22.0701 1.14378C21.65 0.723704 20.9689 0.723704 20.5488 1.14378C20.1287 1.56386 20.1287 2.24495 20.5488 2.66503L26.6338 8.75L20.5488 14.835C20.1287 15.255 20.1287 15.9361 20.5488 16.3562C20.9689 16.7763 21.65 16.7763 22.0701 16.3562L28.9157 9.51062ZM0.15625 9.82568L28.155 9.82568L28.155 7.67432L0.15625 7.67432L0.15625 9.82568Z" fill="white"/>
+              </svg>
+            </nuxt-link>
+          </div>
+          <nuxt-link to="">
+            <nuxt-img src="/image/main/banner/mob/mobb.png" class="w-[394px] h-[100%] pt-[28px]" />
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.dec{
+.mob{
   display: none;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  & h3{
+    font-size: 28px !important;
+    padding-bottom: 30px;
+  }
+  & .img{
+    width: 100%;
+    height: 100%;
+  }
+  & .myss{
+    border-radius: 40px !important;
+  }
+  & swiper{
+    max-width: 390px !important;
+    border-radius: 40px !important;
+    & img{
+      max-width: 390px !important;
+      border-radius: 40px !important;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .dec{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
 }
 .swiper-button-next, .swiper-button-prev {
   color: red; /* Измените на нужный вам цвет */

@@ -102,6 +102,12 @@ svg {
   align-items: center;
   padding: 25px 0;
   width: 100%;
+  & h3{
+    flex: 90%;
+  }
+  & svg{
+    flex: 10%;
+  }
 }
 .v-enter-active,
 .v-leave-active {
@@ -129,10 +135,11 @@ h3{
 }
 @media screen and (max-width: 540px){
   h3{
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   p{
     font-size: 16px;
   }
 }
+
 </style>

@@ -13,8 +13,19 @@
         <a href="/" >Адрес: г. Геленджик ул. Мира 23,<br>Клиника: Ланцетъ</a>
         <div class="flex items-center gap-[38px]">
           <a href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="52" viewBox="0 0 61 52" fill="none">
-              <path d="M57.3424 1.50586C59.1605 1.50586 60.5321 3.08464 59.7984 6.02118L50.8992 47.5432C50.2772 50.4955 48.475 51.206 45.987 49.8324L24.7595 34.313C24.6772 34.2545 24.6102 34.1775 24.5639 34.0883C24.5176 33.999 24.4935 33.9002 24.4935 33.7999C24.4935 33.6996 24.5176 33.6007 24.5639 33.5115C24.6102 33.4223 24.6772 33.3453 24.7595 33.2868L49.2724 11.3733C50.3888 10.3944 49.0332 9.92078 47.5659 10.8049L16.8012 30.0187C16.7079 30.0789 16.602 30.1174 16.4915 30.131C16.3809 30.1447 16.2687 30.1333 16.1633 30.0976L3.10145 26.0086C0.198823 25.1718 0.198823 23.1984 3.75534 21.7932L56.0186 1.8374C56.4337 1.64214 56.8834 1.5295 57.3424 1.50586Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg width="62" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16.0706C1 8.96679 1 5.4133 3.20665 3.20665C5.4133 1 8.9652 1 16.0706 1C23.1744 1 26.7279 1 28.9345 3.20665C31.1412 5.4133 31.1412 8.9652 31.1412 16.0706C31.1412 23.1744 31.1412 26.7279 28.9345 28.9345C26.7279 31.1412 23.176 31.1412 16.0706 31.1412C8.96679 31.1412 5.4133 31.1412 3.20665 28.9345C1 26.7279 1 23.176 1 16.0706Z" stroke="url(#paint0_linear_3_328)" stroke-width="0.741176" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24.8062 7.34766H24.7903M23.2071 16.0727C23.2071 17.966 22.455 19.7818 21.1162 21.1206C19.7774 22.4593 17.9617 23.2114 16.0684 23.2114C14.1751 23.2114 12.3593 22.4593 11.0206 21.1206C9.6818 19.7818 8.92969 17.966 8.92969 16.0727C8.92969 14.1794 9.6818 12.3637 11.0206 11.0249C12.3593 9.68615 14.1751 8.93403 16.0684 8.93403C17.9617 8.93403 19.7774 9.68615 21.1162 11.0249C22.455 12.3637 23.2071 14.1794 23.2071 16.0727Z" stroke="url(#paint1_linear_3_328)" stroke-width="0.741176" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint0_linear_3_328" x1="16.0706" y1="1" x2="16.0706" y2="31.1412" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white"/>
+                  <stop offset="1" stop-color="#F1F1F1"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_3_328" x1="16.8679" y1="7.34766" x2="16.8679" y2="23.2114" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white"/>
+                  <stop offset="1" stop-color="#F1F1F1"/>
+                </linearGradient>
+              </defs>
             </svg>
           </a>
           <a href="/">
@@ -43,10 +54,16 @@ a{
   .cart{
     flex-direction: column;
   }
+  svg{
+    padding-bottom: 24px;
+  }
   iframe{
     max-width: 800px;
     height: auto;
     margin: 0 auto;
+  }
+  a{
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -63,15 +80,22 @@ a{
   iframe{
     max-width: 500px;
   }
+  svg{
+    width: 42px;
+    padding-bottom: 24px;
+  }
 }
 @media screen and (max-width: 500px) {
   iframe{
     max-width: 400px;
   }
+  a{
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 390px) {
   iframe{
-    max-width: 300px;
+    max-width: 340px;
   }
 }
 </style>

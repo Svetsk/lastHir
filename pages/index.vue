@@ -1,6 +1,7 @@
 <template>
   <div>
     <main-banner />
+    <main-info />
 <!--    <image-slider />-->
     <ui-elements-services />
     <ui-footer-slider-swip class="pt-[240px]"/>

@@ -5,7 +5,7 @@ import Button from "~/components/Ui-elements/button.vue";
 
 <template>
   <div class="container-fluide">
-    <div class="pb-[240px]">
+    <div class="pb-[240px] ffaa">
       <ui-elements-title title="заполните форму" class="pb-[65px] pt-[85px]" />
       <div class="form bg-white rounded-[100px] flex justify-between">
         <form action="" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px]">
@@ -108,13 +108,19 @@ input{
     padding-left: 40px;
   }
   .foof{
-    font-size: 16px;
+    font-size: 14px;
     padding-right: 20px;
   }
   input{
     &::placeholder{
       font-size: 16px;
     }
+  }
+  .ffaa{
+    padding-bottom: 0px;
+  }
+  button{
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 620px) {
@@ -124,6 +130,9 @@ input{
   form{
     padding-left: 20px;
   }
+  label{
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 420px) {
   .inpt{
@@ -132,8 +141,29 @@ input{
   form{
     padding-left: 20px;
   }
+  label{
+    font-size: 20px;
+  }
 }
-
+@media screen and (max-width: 390px) {
+  .form{
+    margin: 0 auto;
+    max-width: 390px;
+    position: relative;
+    left: 0%;
+  }
+  form{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    & .inpt{
+      width: 300px;
+      margin: 0 auto;
+    }
+    & label{
+      padding-left: 4px;
+    }
+  }
+}
 button{
   color: black;
   border: 2px solid #000000;
