@@ -28,7 +28,7 @@ const toggleMenu = () => {
           </ul>
           <ul>
             <li class="hiddenss">
-              <nuxt-link to="/">Услуги</nuxt-link>
+              <nuxt-link to="/services">Услуги</nuxt-link>
             </li>
             <li class="hiddenss">
               <nuxt-link to="/reviews">Отзывы</nuxt-link>
@@ -60,10 +60,10 @@ const toggleMenu = () => {
               <nuxt-link to="/blog">Блог</nuxt-link>
             </li>
             <li class="mobile-services">
-              <nuxt-link to="/">Услуги</nuxt-link>
+              <nuxt-link to="/services">Услуги</nuxt-link>
             </li>
             <li class="mobile-reviews">
-              <nuxt-link to="/">Отзывы</nuxt-link>
+              <nuxt-link to="/reviews">Отзывы</nuxt-link>
             </li>
             <li class="mobile-works">
               <nuxt-link to="/myWork">Мои работы</nuxt-link>
