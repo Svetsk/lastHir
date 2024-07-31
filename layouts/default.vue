@@ -5,6 +5,7 @@
         <slot />
       </main>
       <UiAddFooter />
+      <UiDevelop />
     </div>
 </template>
 

@@ -16,22 +16,27 @@ h2{
   font-weight: 400;
   text-transform: uppercase;
 }
-@media (min-width: 1024px){
+@media screen and (max-width: 1440px) {
   h2{
     font-size: 60px;
   }
 }
-@media (min-width: 768px){
+@media (max-width: 1024px){
   h2{
     font-size: 50px;
   }
 }
-@media (min-width: 640px){
+@media (max-width: 768px){
   h2{
-    font-size: 42px;
+    font-size: 40px;
   }
 }
-@media (min-width: 390px){
+@media (max-width: 640px){
+  h2{
+    font-size: 32px;
+  }
+}
+@media (max-width: 390px){
   h2{
     font-size: 32px;
   }

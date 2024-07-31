@@ -2,9 +2,15 @@ export default {
   server: {
     host: '0.0.0.0'
   },
+  plugins: [
+    '~/plugins/js/index.js'
+  ],
   devtools: { enabled: false },
   css: ["~/assets/styles/global.scss"],
-  modules: ["@pinia/nuxt", "@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-swiper", "@vite-pwa/nuxt"],
+  modules: ["@pinia/nuxt", "@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-swiper", "@vite-pwa/nuxt", "vue-yandex-maps/nuxt"],
+  yandexMaps: {
+    apikey: 'd5798c8c-7d2a-46b0-ad86-5b6dd15545c3',
+  },
   pwa: {
     /* your pwa options */
   },
@@ -13,7 +19,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     script: [
-      { src: '/js/index.js' }
+      { src: 'https://api-maps.yandex.ru/2.1/?apikey=d5798c8c-7d2a-46b0-ad86-5b6dd15545c3&lang=ru_RU', type: 'text/javascript' },
+      { src: '/js/index.js' },
     ],
     components: true,
     router: {
@@ -23,7 +30,7 @@ export default {
       admin: '@/layouts/admin-layout.vue'
     },
     serverMiddleware: [
-      { path: '/api/pages', handler: '~/api/pages' },
+      { path: '/api/sendMessage', handler: '~/server/api/sendMessage.js' }
     ],
   }
 }

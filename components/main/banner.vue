@@ -30,7 +30,7 @@ export default {
         <nuxt-img class="curcle" src="/image/main/banner/curcle.svg" />
         <h1>Пластический хирург / онколог</h1>
         <ui-elements-button title="Узнать подробнее" link="/" />
-        <div class="flex items-end gap-[30px]">
+        <div class="flex items-end gap-[30px] llee">
           <div class="relative mt-[132px]">
             <nuxt-img src="/image/main/banner/bg.svg" class="w-[555px] h-[206px]" />
             <div class="bg-[#3E3E3E] rounded-[20px] flex flex-col items-center justify-center w-[53px] absolute top-9 left-4">
@@ -227,6 +227,27 @@ h3{
     max-width: 620px;
     & .slli{
       margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 1583px) {
+  //.dec{
+  //  flex-wrap: nowrap;
+  //}
+  .slli{
+    max-width: 520px !important;
+    border-radius: 100px !important;
+    max-height: 710px;
+    & img{
+      border-radius: 100px !important;
+    }
+  }
+  .banner__left{
+    padding-bottom: 0 !important;
+  }
+  .llee{
+    & > div{
+      margin-top: 40px;
     }
   }
 }

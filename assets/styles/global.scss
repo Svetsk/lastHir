@@ -55,3 +55,14 @@ p{
     width: 76px;
     height: 2px;
 }
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    color: black !important;
+}
+
+@media screen and (max-width: 425px) {
+    .line{
+        display: none;
+        padding-bottom: 12px;
+    }
+}

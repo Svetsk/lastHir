@@ -67,5 +67,10 @@ p, a{
     gap: 8px;
   }
 }
+@media screen and (max-width: 420px) {
+  li a{
+    font-size: 20px;
+  }
+}
 
 </style>

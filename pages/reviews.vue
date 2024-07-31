@@ -8,7 +8,7 @@
       <div class="line"></div>
       <ui-elements-title title="отзывы" />
     </div>
-    <div class="flex flex-wrap gap-x-[80px] gap-y-[130px] aaa">
+    <div class="flex flex-wrap justify-between gap-x-[80px] gap-y-[130px] aaa">
       <div class="card">
         <nuxt-img src="/image/reviews/p1.png" />
         <svg xmlns="http://www.w3.org/2000/svg" width="121" height="118" viewBox="0 0 121 118" fill="none">

@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <div class="block relative">
-    <div class="pl-[42px] pt-[70px] flex flex-col gap-[24px]">
+    <div class="pl-[42px] pt-[70px] flex flex-col gap-[24px] cvc">
       <h3>{{ title }}</h3>
       <p>{{ text }}</p>
       <div>
@@ -43,5 +43,27 @@ p{
   border-radius: 10px;
   background: #FFF;
   padding: 6px 32px;
+}
+@media screen and (max-width: 1440px) {
+  .cvc{
+    padding-left: 24px;
+    padding-top: 48px;
+  }
+  .block{
+    width: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block{
+    width: 440px;
+    height: 782px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .block{
+    width: 370px;
+    height: 582px;
+  }
 }
 </style>

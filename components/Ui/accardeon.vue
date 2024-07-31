@@ -54,7 +54,7 @@ const show = ref(false);
           {{ textTwo }}
           <span>{{ spanFore }}</span>
         </p>
-
+        <ui-elements-button title="Написать ассистенту" class="my-[40px]" />
       </div>
     </Transition>
   </div>

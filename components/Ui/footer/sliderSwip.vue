@@ -45,31 +45,33 @@ export default {
         class="mySwiper"
     >
       <swiper-slide>
-        <img src="/image/slider/slideOne.png" class="rounded-[40px]" />
+        <nuxt-link to="">
+          <nuxt-img src="/image/slider/slideOne.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideThree.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideThree.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideFore.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideFore.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideOne.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideFive.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideFore.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideSix.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide>
-        <img src="/image/slider/slideThree.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideSeven.png" class="rounded-[40px]" />
       </swiper-slide>
       <swiper-slide >
-        <img src="/image/slider/slideOne.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideEight.png" class="rounded-[40px]" />
       </swiper-slide >
       <swiper-slide>
-        <img src="/image/slider/slideOne.png" class="rounded-[40px]" />
+        <nuxt-img src="/image/slider/slideNine.png" class="rounded-[40px]" />
       </swiper-slide>
     </swiper>
     <nuxt-link to="/" class="rounded-[40px] pt-[72px] flex justify-center aaaaa">

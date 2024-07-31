@@ -5,7 +5,7 @@
 <template>
   <div class="container">
     <ui-elements-title title="услуги" class="pt-[200px] pb-[65px]" />
-    <div class="flex flex-wrap justify-between gap-[96px] pb-[200px] aaaa">
+    <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
 
       <div class="relative bbb">
         <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px]" />
@@ -13,8 +13,8 @@
           <h3 class="max-w-[616px]">
             пластическая хирургия
           </h3>
-          <p class="max-w-[616px]">Моя специализация: увеличение груди, уменьшение груди, подтяжка груди, реконструкция груди и др.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px]" />
+          <p class="max-w-[616px] font-medium">Моя специализация: увеличение груди, уменьшение груди, подтяжка груди, реконструкция груди и др.</p>
+          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
         </div>
       </div>
 
@@ -24,8 +24,8 @@
           <h3 class="max-w-[616px]">
             онкология
           </h3>
-          <p class="max-w-[616px]">Я работаю с доброкачественными и злокачественными опухолями молочной железы.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px]" />
+          <p class="max-w-[616px] font-medium">Я работаю с доброкачественными и злокачественными опухолями молочной железы.</p>
+          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
         </div>
       </div>
 
@@ -36,8 +36,8 @@
           <h3 class="max-w-[705px]">
             Обследования и консультации
           </h3>
-          <p class="max-w-[855px]">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px]" />
+          <p class="max-w-[855px] font-medium">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
+          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
         </div>
       </div>
 
@@ -47,13 +47,18 @@
 </template>
 
 <style scoped lang="scss">
+@media screen and (min-width: 1600px) {
+  .aaa{
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 1600px) {
   img{
     width: 550px;
     height: auto;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   img{
     width: 450px;
     height: auto;
@@ -65,7 +70,30 @@
     font-size: 18px !important;
   }
   .aaaa{
+    //gap: 296px !important;
     padding-bottom: 450px;
+  }
+}
+@media screen and (max-width: 1441px) {
+  .blocks{
+    //width: 510px;
+  }
+  .aaaa{
+    gap: 296px !important;
+    padding-bottom: 450px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .aaaa{
+    gap: 200px !important;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  .bbb:nth-child(3){
+    & img{
+      width: 500px;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
@@ -83,7 +111,9 @@
     margin: 0 auto;
   }
   .aaaa{
-    gap: 450px;
+    gap: 450px !important;
+    flex-direction: column;
+    padding-bottom: 700px;
   }
   .blocks{
     top: 300px !important;
@@ -95,6 +125,11 @@
     padding: 0 0 40px 0;
     top: 200px !important;
     left: 0px !important;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .aaaa{
+    row-gap: 400px !important;
   }
 }
 .blocks{
@@ -136,8 +171,8 @@ p{
 }
 @media screen and (max-width: 421px) {
   .blocks{
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    //padding-left: 24px !important;
+    //padding-right: 24px !important;
   }
   .blockss{
     padding-left: 24px !important;
@@ -145,6 +180,12 @@ p{
     padding-bottom: 50px !important;
     top: 200px;
     max-width: 348px;
+  }
+  .blocks{
+    padding: 38px;
+  }
+  .aaaa{
+    padding-bottom: 500px;
   }
 }
 </style>

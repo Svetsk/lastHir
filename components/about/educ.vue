@@ -1,56 +1,66 @@
-<script setup lang="ts">
+<script setup>
 
 </script>
 
 <template>
-  <div class="container pt-[200px]">
-    <div>
-      <div>
-        <div class="flex items-center gap-[24px] pb-[44px]">
+  <div class="container">
+    <div class="flex justify-between items-start mt-[134px] nm">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-[24px]">
           <div class="line"></div>
           <ui-elements-title title="Образование" />
         </div>
-        <div class="flex justify-between flex-wrap lg:flex-nowrap gap-[76px]">
-          <div class="flex  flex-wrap gap-[70px]">
-            <div class="flex flex-col gap-[16px]">
-              <div class="flex flex-col gap-[4px]">
-                <h3>Диплом</h3>
-                <p class="year">2006-2010</p>
-              </div>
-              <p class="max-w-[456px] year__text">Кропоткинский медицинский колледж. Лечебный факультет, специальность «Лечебное дело».</p>
-            </div>
-            <div class="flex flex-col gap-[16px]">
-              <div class="flex flex-col gap-[4px]">
-                <h3>Диплом</h3>
-                <p class="year">2016-2018</p>
-              </div>
-              <p class="max-w-[456px] year__text">Кубанский государственный медицинский университет,  г. Краснодар, ординатура по онкологии  с курсом торакальной хирургии.</p>
-            </div>
-            <div class="flex flex-col gap-[16px]">
-              <div class="flex flex-col gap-[4px]">
-                <h3>Диплом</h3>
-                <p class="year">2006-2010</p>
-              </div>
-              <p class="max-w-[456px] year__text">Кропоткинский медицинский колледж. Лечебный факультет, специальность «Лечебное дело».</p>
-            </div>
-            <div class="flex flex-col gap-[16px]">
-              <div class="flex flex-col gap-[4px]">
-                <h3>Диплом</h3>
-                <p class="year">2006-2010</p>
-              </div>
-              <p class="max-w-[456px] year__text">Кропоткинский медицинский колледж. Лечебный факультет, специальность «Лечебное дело».</p>
-            </div>
-          </div>
-          <div class="bg-[#3A3A3A] immf">
-            <div class="px-[40px] py-[20px] flex flex-col items-center">
-              <div class="flex gap-[14px] items-center pr-[40px]">
-                <p class="text-[70px] font-[600]">30+</p>
-                <p>стажировок, конгрессов,<br>конференций, симпозиумов</p>
+          <div class="flex flex-wrap justify-between gap-y-[52px] ttex">
+            <div class="flex gap-[40px] tex">
+              <div>
+                <div>
+                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <p class="text-[15px] font-[500] text-[#BBBBBB]">2006-2010</p>
+                </div>
+                <p class="max-w-[456px] text-[20px] font-[500]">
+                  Кропоткинский медицинский колледж. Лечебный факультет, специальность «Лечебное дело».
+                </p>
               </div>
               <div>
-                <nuxt-img class="w-[1002px]" src="/image/about/educ.png" />
+                <div>
+                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <p class="text-[15px] font-[500] text-[#BBBBBB]">2016-2018</p>
+                </div>
+                <p class="max-w-[456px] text-[20px] font-[500]">
+                  Кубанский государственный медицинский университет,<br>г. Краснодар, ординатура по онкологии<br>с курсом торакальной хирургии.
+                </p>
               </div>
             </div>
+            <div class="flex gap-[40px] tex">
+              <div>
+                <div>
+                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <p class="text-[15px] font-[500] text-[#BBBBBB]">2010-2016</p>
+                </div>
+                <p class="max-w-[456px] text-[20px] font-[500]">
+                  Кубанский государственный медицинский университет, г. Краснодар,<br>Лечебный факультет, специальность «Лечебное дело».
+                </p>
+              </div>
+              <div>
+                <div>
+                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <p class="text-[15px] font-[500] text-[#BBBBBB]">2019-2021</p>
+                </div>
+                <p class="max-w-[456px] text-[20px] font-[500]">
+                  Военно-медицинская академия имени<br>С. М. Кирова в городе Санкт-Петербург, ординатура по пластической хирургии.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="wrp">
+        <div class="wrrp">
+          <div class="flex items-center">
+            <p class="text-[70px] font-[600] textx">30+</p>
+            <p class="text-[20px] font-[500] textxx w-[305px]">стажировок, конгрессов, конференций, симпозиумов</p>
+          </div>
+          <div class="educ">
+            <nuxt-img src="/image/about/educ.png" />
           </div>
         </div>
       </div>
@@ -58,22 +68,84 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-.immf{
+<style lang="scss" scoped>
+.wrp{
   border-radius: 40px;
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(30px);
+  margin-left: 50px;
 }
-h3{
-  font-size: 25px;
-  font-weight: 500;
+.wrrp{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 42px 80px;
 }
-.year{
-  font-size: 15px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.70);
+.educ{
+  width: 500px;
+  height: 360px;
 }
-.year__text{
-  font-size: 20px;
-  font-weight: 500;
+@media screen and (max-width: 1440px) {
+  .tex{
+    & > div > p{
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nm{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nm{
+    flex-wrap: wrap;
+  }
+  .ttex{
+    padding-bottom: 76px;
+  }
+  .tex{
+    flex-wrap: wrap;
+  }
+  .wrp{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrrp{
+    gap: 28px;
+    padding: 25px 20px;
+    align-items: center;
+  }
+  .textx{
+    font-size: 60px;
+  }
+  .textxx{
+    font-size: 14px;
+    max-width: 220px;
+  }
+  .educ{
+    width: 320px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .wrrp{
+    gap: 16px;
+    padding: 25px 20px;
+    align-items: center;
+  }
+  .textx{
+    font-size: 60px;
+  }
+  .textxx{
+    font-size: 12px;
+    max-width: 200px;
+  }
+  .educ{
+    width: 300px;
+    height: 220px;
+  }
 }
 </style>

@@ -6,7 +6,7 @@
   <div>
     <div class="container">
       <blog-menu />
-      <div class="pt-[170px] flex justify-between gap-[80px] flex-wrap">
+      <div class="pt-[170px] flex justify-between gap-y-[48px] flex-wrap asda">
         <blog-textss title="Увеличение груди" text="Что такое маммопластика? Кому нужна данная операция? Процесс реабилитации." />
         <blog-textss title="Увеличение груди" text="Что такое маммопластика? Кому нужна данная операция? Процесс реабилитации." />
         <blog-textss title="пластика живота" text="Что такое абдоминопластика?Кому нужна данная операция? Процесс реабилитации." />
@@ -25,5 +25,10 @@
 .router-link-active{
   font-weight: 700;
   text-decoration-line: underline;
+}
+@media screen and (max-width: 768px) {
+  .asda{
+    justify-content: center;
+  }
 }
 </style>

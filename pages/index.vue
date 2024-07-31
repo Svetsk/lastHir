@@ -1,8 +1,11 @@
 <template>
   <div>
+    <div class="mobile__menu">
+
+    </div>
     <main-banner />
     <main-info />
-<!--    <image-slider />-->
+    <slider-card-slider />
     <ui-elements-services />
     <ui-footer-slider-swip class="pt-[240px]"/>
     <main-accardeons />
@@ -12,6 +15,7 @@
 </template>
 
 <script lang="ts">
+
 </script>
 
 <style scoped>

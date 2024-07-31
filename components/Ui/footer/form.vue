@@ -1,6 +1,54 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue';
 
-import Button from "~/components/Ui-elements/button.vue";
+const fio = ref('');
+const phone = ref('');
+const comment = ref('');
+const privacyPolicyAccepted = ref(false);
+const notificationVisible = ref(false);
+const notificationMessage = ref('');
+
+const submitForm = async () => {
+  try {
+    if (!/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(phone.value)) {
+      notificationMessage.value = 'Некорректный формат номера телефона';
+      notificationVisible.value = true;
+      setTimeout(() => {
+        notificationVisible.value = false;
+      }, 3000);
+      return;
+    }
+
+    const response = await fetch('/api/sendMessage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        fio: fio.value,
+        phone: phone.value,
+        comment: comment.value,
+      }),
+    });
+
+    const data = await response.json();
+    if (data.ok) {
+      notificationMessage.value = 'Сообщение отправлено успешно';
+      fio.value = '';
+      phone.value = '';
+      comment.value = '';
+    } else {
+      notificationMessage.value = data.description || 'Ошибка отправки сообщения';
+    }
+  } catch (error) {
+    console.error('Ошибка:', error);
+    notificationMessage.value = 'Ошибка отправки сообщения';
+  }
+  notificationVisible.value = true;
+  setTimeout(() => {
+    notificationVisible.value = false;
+  }, 5000);
+};
 </script>
 
 <template>
@@ -8,22 +56,22 @@ import Button from "~/components/Ui-elements/button.vue";
     <div class="pb-[240px] ffaa">
       <ui-elements-title title="заполните форму" class="pb-[65px] pt-[85px]" />
       <div class="form bg-white rounded-[100px] flex justify-between">
-        <form action="" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px]">
+        <form action="" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px] asd" @submit.prevent="submitForm">
           <label class="flex flex-col text-black text-[30px] font-[500]">
             Имя
-            <input type="text" name="name" placeholder="Анастасия Калашникова" size="30" required class="w-[760px] border-none inpt">
+            <input type="text" placeholder="Анастасия Калашникова" size="30" class="w-[760px] border-none inpt" v-model="fio" required>
           </label>
 
           <label class="flex flex-col text-black text-[30px] font-[500]">
             Номер телефона
-            <input type="text" name="number" placeholder="+7 (900) 458-33-33" size="30" required class="w-[760px] border-none inpt">
+            <input type="text" placeholder="+7 (900) 458-33-33" size="30" class="w-[760px] border-none inpt" v-model="phone" required>
           </label>
 
           <label class="flex flex-col text-black text-[30px] font-[500]">
             Комментарий
-            <input type="text" name="comments" placeholder="Здравствуйте, меня беспокоит...." size="30" required class="w-[760px] border-none inpt">
+            <input type="text" name="comments" placeholder="Здравствуйте, меня беспокоит...." size="30" class="w-[760px] border-none inpt" v-model="comment" required>
           </label>
-          <button>
+          <button type="submit">
             Отправить
             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
               <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="black"/>
@@ -32,7 +80,7 @@ import Button from "~/components/Ui-elements/button.vue";
           </button>
 
           <div class="flex gap-[30px] items-center">
-            <input type="checkbox" class="w-[48px] h-[48px]">
+            <input type="checkbox" class="w-[48px] h-[48px]" v-model="privacyPolicyAccepted">
             <label class="max-w-[646px]">
               <a href="" class="text-black text-[25px] foof">
                 Я соглашаюсь с политикой конфиденциальности и правилами обработки персональных данных
@@ -40,11 +88,13 @@ import Button from "~/components/Ui-elements/button.vue";
             </label>
           </div>
         </form>
+        <ui-Notification :show="notificationVisible" :message="notificationMessage" />
         <nuxt-img src="/image/ui/formImg.png" class="w-[921px] h-auto mig"/>
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped lang="scss">
 input{
@@ -76,9 +126,22 @@ input{
     width: 600px;
   }
 }
+.asd{
+  & button{
+    max-width: 264px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .inpt{
     width: 500px;
+  }
+  .asd{
+    gap: 14px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    & button{
+      max-width: 264px;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
@@ -97,7 +160,7 @@ input{
     width: 600px;
   }
   .mig{
-    transform: translateY(-150px);
+    transform: translateY(-30px);
   }
 }
 @media screen and (max-width: 720px) {

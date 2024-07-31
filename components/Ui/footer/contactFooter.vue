@@ -1,9 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="container">
+
     <div class="cart flex justify-between items-center">
       <div class="flex flex-col gap-[45px]">
         <ui-elements-title title="контакты" class="pb-[20px]" />
@@ -99,3 +96,6 @@ a{
   }
 }
 </style>
+<script setup lang="ts">
+
+</script>

@@ -14,6 +14,7 @@
     <services-sympt />
     <services-exam />
     <ui-footer-form />
+    <services-price />
     <ui-footer-contact-footer />
   </div>
 </template>
