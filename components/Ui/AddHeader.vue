@@ -48,31 +48,6 @@ const toggleMenu = () => {
             </li>
           </ul>
         </nav>
-        <div v-if="isMenuOpen" class="mobile-menu">
-          <ul>
-            <li class="cursor-pointer text-end font-[900] pr-[60px]" @click="toggleMenu">
-              X
-            </li>
-            <li class="mobile-info">
-              <nuxt-link to="/about">Обо мне</nuxt-link>
-            </li>
-            <li class="mobile-blog">
-              <nuxt-link to="/blog">Блог</nuxt-link>
-            </li>
-            <li class="mobile-services">
-              <nuxt-link to="/services">Услуги</nuxt-link>
-            </li>
-            <li class="mobile-reviews">
-              <nuxt-link to="/reviews">Отзывы</nuxt-link>
-            </li>
-            <li class="mobile-works">
-              <nuxt-link to="/myWork">Мои работы</nuxt-link>
-            </li>
-            <li class="mobile-contact">
-              <nuxt-link to="/contact">Контакты</nuxt-link>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   </header>
@@ -143,12 +118,15 @@ const toggleMenu = () => {
   right: 0;
   top: 0 !important;
   z-index: 1000;
-  background: black;
-  height: 100vh;
-  width: 20%;
+  border-radius: 47px;
+  border: 1px solid #FFF;
+  background: rgba(24, 24, 24, 0.64);
+  backdrop-filter: blur(11.649999618530273px);
+  width: 100%;
+  height: 70%;
   & ul{
     padding-left: 40px;
-    padding-top: 40px;
+    padding-top: 140px;
     & li{
       padding-top: 8px;
       & a{
@@ -157,13 +135,27 @@ const toggleMenu = () => {
     }
   }
 }
+.ld{
+  border-top: 1px solid rgba(136, 136, 136, 0.29);
+  & > div{
+    display: flex;
+    justify-content: space-between;
+    & li{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 .wrapper{
   padding: 56px 0;
+
   & .wrapper__menu{
     & nav{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      z-index: 1001;
       & ul{
         display: flex;
         align-items: center;
@@ -191,5 +183,7 @@ const toggleMenu = () => {
       }
     }
   }
+}
+header{
 }
 </style>
