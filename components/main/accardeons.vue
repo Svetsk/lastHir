@@ -46,7 +46,7 @@
           text-two="Везде, где мы не работаем с мышцами — ограничение 1 месяц, там где мы затрагиваем мышечную ткань — ограничение 3 месяца."
       />
     </div>
-    <ui-elements-button title="Другие вопросы" class="buttons pb-[300px]" />
+    <ui-elements-button title="Другие вопросы" class="buttons pb-[300px]" link="/blog/qa" />
   </div>
 </template>
 

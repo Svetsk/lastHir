@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import CardPac from "~/components/blog/cardPac.vue";
+import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
   <div>
+    <AddHeader>
+      <MenuAbout />
+    </AddHeader>
     <div class="container">
       <blog-menu />
       <div class="flex justify-between flex-wrap gap-y-[100px] pt-[170px]">

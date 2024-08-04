@@ -1,9 +1,13 @@
 <script setup lang="ts">
 
+import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
   <div>
+    <AddHeader>
+      <MenuAbout />
+    </AddHeader>
     <services-menu />
     <services-banner title="Современные технологии =&nbsp;&nbsp;&nbsp; альтернатива лечения заграницей" styles="background: url('/image/services/neban.png') no-repeat center;" />
     <services-regalii />

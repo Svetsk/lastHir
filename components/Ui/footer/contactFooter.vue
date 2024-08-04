@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="cart flex justify-between items-center">
+    <div class="cart flex justify-between items-center gap-y-[62px]">
       <div class="flex flex-col gap-[45px]">
         <ui-elements-title title="контакты" class="pb-[20px]" />
         <a href="/">INSTAGRAM: @dr.korniyasova</a>
@@ -37,7 +37,7 @@
           </a>
         </div>
       </div>
-      <iframe class="rounded-[40px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11472.273399033053!2d37.54707594006881!3d55.748532471781644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdd017303b9%3A0xd1f63f945a2450c2!2z0JzQvtGB0LrQstCwINCh0LjRgtC4!5e0!3m2!1sru!2sru!4v1718755332677!5m2!1sru!2sru" width="712" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <YandexMap />
     </div>
   </div>
 </template>
@@ -46,6 +46,17 @@
 a{
   font-size: 30px;
   font-weight: 500;
+}
+@media screen and (max-width: 14400px) {
+  a{
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cart{
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 900px) {
   .cart{
@@ -96,6 +107,6 @@ a{
   }
 }
 </style>
-<script setup lang="ts">
+<script>
 
 </script>

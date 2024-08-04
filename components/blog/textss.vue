@@ -11,7 +11,7 @@ defineProps({
       <h3>{{ title }}</h3>
       <p>{{ text }}</p>
       <div>
-        <nuxt-link class="learn" to="">читать</nuxt-link>
+        <nuxt-link class="learn" to="/blog/article/breastReduction">читать</nuxt-link>
       </div>
     </div>
     <nuxt-img src="/image/blog/fireTwo.png" class="absolute bottom-[-70px] right-0 z-[-1]" />

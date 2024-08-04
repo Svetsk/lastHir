@@ -3,14 +3,11 @@ export default {
     host: '0.0.0.0'
   },
   plugins: [
-    '~/plugins/js/index.js'
+    '~/plugins/js/index.js',
   ],
   devtools: { enabled: false },
   css: ["~/assets/styles/global.scss"],
-  modules: ["@pinia/nuxt", "@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-swiper", "@vite-pwa/nuxt", "vue-yandex-maps/nuxt"],
-  yandexMaps: {
-    apikey: 'd5798c8c-7d2a-46b0-ad86-5b6dd15545c3',
-  },
+  modules: ["@pinia/nuxt", "@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-swiper", "@vite-pwa/nuxt"],
   pwa: {
     /* your pwa options */
   },
@@ -31,6 +28,10 @@ export default {
     },
     serverMiddleware: [
       { path: '/api/sendMessage', handler: '~/server/api/sendMessage.js' }
+    ],
+    buildModules: [
+      '@nuxt/typescript-build',
+      '@pinia/nuxt',
     ],
   }
 }

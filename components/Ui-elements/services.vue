@@ -3,50 +3,57 @@
 </script>
 
 <template>
-  <div class="container">
-    <ui-elements-title title="услуги" class="pt-[200px] pb-[65px]" />
-    <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
+  <div class="sdfsc">
+    <div class="container">
+      <ui-elements-title title="услуги" class="pt-[200px] pb-[65px]" />
+      <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
 
-      <div class="relative bbb">
-        <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px]" />
-        <div class="flex flex-col gap-[40px] blocks">
-          <h3 class="max-w-[616px]">
-            пластическая хирургия
-          </h3>
-          <p class="max-w-[616px] font-medium">Моя специализация: увеличение груди, уменьшение груди, подтяжка груди, реконструкция груди и др.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
+        <div class="relative bbb">
+          <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px]" />
+          <div class="flex flex-col gap-[40px] blocks">
+            <h3 class="max-w-[616px]">
+              пластическая хирургия
+            </h3>
+            <p class="max-w-[616px] font-medium">Моя специализация: увеличение груди, уменьшение груди, подтяжка груди, реконструкция груди и др.</p>
+            <ui-elements-button title="Узнать подробнее" link="/services/hirurgiya" class="pt-[20px] buts" />
+          </div>
         </div>
-      </div>
 
-      <div class="relative bbb">
-        <nuxt-img src="/image/serv/threes.png" class="w-[664px] h-[712px]" />
-        <div class="flex flex-col gap-[40px] blocks">
-          <h3 class="max-w-[616px]">
-            онкология
-          </h3>
-          <p class="max-w-[616px] font-medium">Я работаю с доброкачественными и злокачественными опухолями молочной железы.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
+        <div class="relative bbb">
+          <nuxt-img src="/image/serv/threes.png" class="w-[664px] h-[712px]" />
+          <div class="flex flex-col gap-[40px] blocks">
+            <h3 class="max-w-[616px]">
+              онкология
+            </h3>
+            <p class="max-w-[616px] font-medium">Я работаю с доброкачественными и злокачественными опухолями молочной железы.</p>
+            <ui-elements-button title="Узнать подробнее" link="/services" class="pt-[20px] buts" />
+          </div>
         </div>
-      </div>
 
 
-      <div class="relative bbb">
-        <nuxt-img src="/image/serv/twoes.png" class="w-[830px] h-[571px] last" />
-        <div class="flex flex-col gap-[40px] blockss w-[120%]">
-          <h3 class="max-w-[705px]">
-            Обследования и консультации
-          </h3>
-          <p class="max-w-[855px] font-medium">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
-          <ui-elements-button title="Узнать подробнее" class="pt-[20px] buts" />
+        <div class="relative bbb">
+          <nuxt-img src="/image/serv/twoes.png" class="w-[830px] h-[571px] last" />
+          <div class="flex flex-col gap-[40px] blockss w-[120%]">
+            <h3 class="max-w-[705px]">
+              Обследования и консультации
+            </h3>
+            <p class="max-w-[855px] font-medium">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
+            <ui-elements-button title="Узнать подробнее" link="/services/exam" class="pt-[20px] buts" />
+          </div>
         </div>
+
+
       </div>
-
-
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+@media screen and (max-width: 1920px) {
+  .blockss{
+    //width: 160%;
+  }
+}
 @media screen and (min-width: 1600px) {
   .aaa{
     justify-content: space-between;
@@ -73,11 +80,11 @@
     //gap: 296px !important;
     padding-bottom: 450px;
   }
+  .blockss{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1441px) {
-  .blocks{
-    //width: 510px;
-  }
   .aaaa{
     gap: 296px !important;
     padding-bottom: 450px;
@@ -92,7 +99,7 @@
 @media screen and (min-width: 1200px) {
   .bbb:nth-child(3){
     & img{
-      width: 500px;
+      width: 800px;
     }
   }
 }
@@ -168,8 +175,23 @@ p{
       font-size: 22px !important;
     }
   }
+  .blocks{
+    position: static;
+    transform: translateY(-80px);
+    padding-bottom: 82px !important;
+  }
+  .aaaa{
+    gap: 40px !important;
+  }
+  .bbb{
+    .blocks{
+      position: static;
+      //transform: translateY(-80px);
+      padding-bottom: 82px !important ;
+    }
+  }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 425px) {
   .blocks{
     //padding-left: 24px !important;
     //padding-right: 24px !important;
@@ -179,13 +201,26 @@ p{
     padding-right: 24px !important;
     padding-bottom: 50px !important;
     top: 200px;
-    max-width: 348px;
+    max-width: 360px;
   }
   .blocks{
-    padding: 38px;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-bottom: 50px !important;
+    top: 200px;
+    max-width: 300px;
   }
   .aaaa{
     padding-bottom: 500px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .blocks{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-bottom: 50px !important;
+    top: 200px;
+    max-width: 350px;
   }
 }
 </style>

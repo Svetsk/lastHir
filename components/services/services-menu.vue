@@ -10,11 +10,12 @@
     </div>
     <div class="tabs pb-[100px]">
       <div class="flex items-center gap-[12px]">
+        <div class="ellipse"></div>
         <nuxt-link to="/services">Онкология</nuxt-link>
       </div>
       <div class="flex items-center gap-[12px]">
         <div class="ellipse"></div>
-        <nuxt-link to="/">Пластическая хирургия</nuxt-link>
+        <nuxt-link to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
       </div>
       <div class="flex items-center gap-[12px]">
         <div class="ellipse"></div>

@@ -1,9 +1,11 @@
 <script>
 import Modal from '~/components/modal.vue';
 import Button from "~/components/Ui-elements/button.vue";
+import AddHeader from "~/components/Ui/AddHeader.vue";
 
 export default {
   components: {
+    AddHeader,
     Button,
     Modal
   },
@@ -24,6 +26,9 @@ export default {
 </script>
 
 <template>
+  <AddHeader>
+    <MenuAbout />
+  </AddHeader>
   <div>
     <div class="container">
       <div class="flex items-center gap-[24px] pt-[160px] pb-[112px] asd">

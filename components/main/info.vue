@@ -23,7 +23,7 @@
           <p class="text-[25px] font-[500] max-w-[860px] pb-[80px]">
             Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
           </p>
-          <ui-elements-button title="Подробнее обо мне" />
+          <ui-elements-button title="Подробнее обо мне" link="/about" />
         </div>
       </div>
       <div>
@@ -46,11 +46,14 @@
         </div>
         <div>
           <h2>Корниясова <u>Евгения</u> Альбертовна</h2>
-          <div>
-            <nuxt-img src="/image/main/photoEvg.png" class="w-[800px] h-auto sssss" />
+          <div class="asdfx">
+            <nuxt-img src="/image/main/photoEvg.png" class="w-[800px] sssss" />
           </div>
-          <p class="text-[25px] font-[500] max-w-[860px] pb-[80px]">
+          <p class="text-[25px] font-[500] max-w-[860px] pb-[80px] zxc">
             Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
+          </p>
+          <p class="text-[25px] font-[500] max-w-[860px] pb-[80px] zxct">
+            Онколог, пластический<br>и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
           </p>
           <ui-elements-button title="Подробнее обо мне" />
         </div>
@@ -96,7 +99,7 @@ svg{
     .sssss{
       padding-top: 0;
       padding-bottom: 48px;
-      width: 303px !important;
+      width: 803px !important;
       height: auto;
     }
   }
@@ -108,6 +111,9 @@ svg{
     padding-top: 100px;
     margin: 0 auto;
   }
+}
+.zxct{
+  display: none;
 }
 @media screen and (max-width: 550px) {
   h2{
@@ -126,14 +132,25 @@ svg{
     flex-direction: column;
     align-items: flex-start;
   }
-}
-@media screen and (max-width: 420px) {
   .mob{
-    display: flex;
-    .sssss{
-      width: 303px !important;
-      height: auto;
+    & .sssss{
+      width: 400px !important;
     }
   }
+  .zxc{
+    display: none;
+  }
+  .zxct{
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  //.mob{
+  //  display: flex;
+  //  .sssss{
+  //    width: 503px !important;
+  //    height: 400px;
+  //  }
+  //}
 }
 </style>

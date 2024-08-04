@@ -1,10 +1,26 @@
 <script setup>
 import { ref } from 'vue'
+import MenuButton from '@/components/MenuButton.vue'
+import MenuHome from '@/components/MenuHome.vue'
 
 const isMenuOpen = ref(false)
 
-const toggleMenu = () => {
+function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
+
+  if (isMenuOpen.value) {
+    document.body.style.position = 'fixed'
+    document.body.style.top = '0'
+    document.body.style.left = '0'
+    document.body.style.width = '100%'
+    document.body.style.overflowY = 'hidden'
+  } else {
+    document.body.style.position = ''
+    document.body.style.top = ''
+    document.body.style.left = ''
+    document.body.style.width = ''
+    document.body.style.overflowY = ''
+  }
 }
 </script>
 
@@ -40,11 +56,23 @@ const toggleMenu = () => {
               <nuxt-link to="/contact">Контакты</nuxt-link>
             </li>
             <li>
-              <nuxt-img
-                  class="burger__menu"
-                  src="/image/ui/burger.svg"
-                  @click="toggleMenu"
-              />
+              <button @click="toggleMenu">
+                <nuxt-img
+                    v-if="!isMenuOpen"
+                    class="burger__menu hiddensss"
+                    src="/image/ui/burger.svg"
+                    alt="Menu"
+                />
+                <nuxt-img
+                    v-else
+                    class="burger__menu hiddensss w-[28px]"
+                    src="/image/ui/closeBurger.svg"
+                    alt="Close Menu"
+                />
+              </button>
+              <div v-if="isMenuOpen" class="menu">
+                <slot></slot>
+              </div>
             </li>
           </ul>
         </nav>
@@ -54,24 +82,31 @@ const toggleMenu = () => {
 </template>
 
 <style lang="scss" scoped>
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
 @media screen and (max-width: 1042px) {
-  .mobile-menu{
+  .mobile-menu {
     top: 25% !important;
     right: 2% !important;
-    & ul{
+    & ul {
       text-align: start;
       align-items: flex-start;
-      & li{
+      & li {
         text-align: start;
       }
     }
   }
-  .info, .blog, .hiddenss{
+  .info, .blog, .hiddenss {
     display: none;
   }
-  nav{
+  nav {
     padding-left: 20px;
-    & ul:nth-child(2){
+    & ul:nth-child(2) {
       justify-content: flex-end !important;
     }
   }
@@ -93,89 +128,91 @@ const toggleMenu = () => {
     }
   }
 }
-
 @media screen and (max-width: 870px) {
-  .mobile-menu{
+  .mobile-menu {
     width: 40% !important;
   }
 }
 @media screen and (max-width: 500px) {
-  .mobile-menu{
+  .mobile-menu {
     width: 50% !important;
   }
 }
 
-.blog{
+.blog {
   padding-right: 24px;
 }
-.logo{
+.logo {
   width: 246px;
   height: 21px;
 }
-.mobile-menu{
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0 !important;
-  z-index: 1000;
-  border-radius: 47px;
-  border: 1px solid #FFF;
-  background: rgba(24, 24, 24, 0.64);
-  backdrop-filter: blur(11.649999618530273px);
-  width: 100%;
-  height: 70%;
-  & ul{
-    padding-left: 40px;
-    padding-top: 140px;
-    & li{
-      padding-top: 8px;
-      & a{
-        font-size: 24px;
-      }
-    }
-  }
-}
-.ld{
+.ld {
   border-top: 1px solid rgba(136, 136, 136, 0.29);
-  & > div{
+  & > div {
     display: flex;
     justify-content: space-between;
-    & li{
+    & li {
       display: flex;
       flex-direction: column;
     }
   }
 }
-.wrapper{
-  padding: 56px 0;
 
-  & .wrapper__menu{
-    & nav{
+nav {
+  & li:nth-child(1) {
+    position: relative !important;
+    z-index: 100000 !important;
+  }
+  & li:nth-child(2) {
+    position: relative !important;
+    z-index: 100000 !important;
+  }
+  & li:nth-child(3) {
+    position: relative !important;
+    z-index: 100000 !important;
+  }
+  & li:nth-child(4) {
+    position: relative !important;
+    z-index: 100000 !important;
+  }
+  & li:nth-child(4) {
+    position: relative !important;
+    z-index: 100000 !important;
+  }
+}
+.hiddensss {
+  position: relative !important;
+  z-index: 100000 !important;
+}
+.wrapper {
+  padding: 56px 0;
+  position: relative;
+  z-index: 1001;
+  & .wrapper__menu {
+    & nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: relative;
-      z-index: 1001;
-      & ul{
+      & ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &:nth-child(1){
+        &:nth-child(1) {
           max-width: 515px;
           width: 100%;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           max-width: 725px;
           width: 100%;
         }
-        & li{
+        & li {
           font-size: 20px;
-          & a{
+          & a {
             font-size: 20px;
           }
         }
 
-        & .burger__menu{
+        & .burger__menu {
           width: 87px;
           height: 45px;
           cursor: pointer;
@@ -183,7 +220,5 @@ const toggleMenu = () => {
       }
     }
   }
-}
-header{
 }
 </style>

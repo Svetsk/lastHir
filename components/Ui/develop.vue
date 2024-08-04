@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="py-[40px]">
+  <div class="pt-[40px] sdfsdf">
   <div class="container">
     <div class="wrap">
       <div class="flex flex-wrap cs">
@@ -22,6 +22,9 @@
 </template>
 
 <style scoped lang="scss">
+.sdfsdf{
+  transform: translateY(40px);
+}
 .wrap{
   border-radius: 20px;
   border: 1px solid #FFF;

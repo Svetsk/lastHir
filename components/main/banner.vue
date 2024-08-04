@@ -29,7 +29,7 @@ export default {
       <div class="banner__left">
         <nuxt-img class="curcle" src="/image/main/banner/curcle.svg" />
         <h1>Пластический хирург / онколог</h1>
-        <ui-elements-button title="Узнать подробнее" link="/" />
+        <ui-elements-button title="Узнать подробнее" link="/about" />
         <div class="flex items-end gap-[30px] llee">
           <div class="relative mt-[132px]">
             <nuxt-img src="/image/main/banner/bg.svg" class="w-[555px] h-[206px]" />
@@ -48,7 +48,7 @@ export default {
             <nuxt-link to="/" class="text-[20px] font-[500] absolute top-12 left-[260px]">
               Обо мне<br>About me
             </nuxt-link>
-            <nuxt-link to="/" class="text-[30px] font-[600] absolute bottom-3 left-4 flex items-center gap-[90px]">
+            <nuxt-link to="/services" class="text-[30px] font-[600] absolute bottom-3 left-4 flex items-center gap-[90px]">
               Список услуг
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="23" viewBox="0 0 41 23" fill="none">
                 <path d="M40.2876 12.0978C40.8734 11.512 40.8734 10.5622 40.2876 9.97645L30.7416 0.430505C30.1559 -0.155282 29.2061 -0.155282 28.6203 0.430505C28.0345 1.01629 28.0345 1.96604 28.6203 2.55183L37.1056 11.0371L28.6203 19.5224C28.0345 20.1082 28.0345 21.0579 28.6203 21.6437C29.2061 22.2295 30.1559 22.2295 30.7416 21.6437L40.2876 12.0978ZM0.183594 12.5371L39.2269 12.5371L39.2269 9.53711L0.183594 9.53711L0.183594 12.5371Z" fill="white"/>
@@ -70,32 +70,32 @@ export default {
             :modules="modules"
             class="mySwiper"
         >
-          <swiper-slide>
+          <swiper-slide class="slidess">
             <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideTwo.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideThree.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideFore.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideFive.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideSix.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideSeven.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideEig.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
-          <swiper-slide>
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/slideNine.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
         </swiper>
       </div>
@@ -218,7 +218,6 @@ h3{
   text-transform: uppercase;
   font-weight: 400;
 }
-
 @media screen and (max-width: 1505px) {
   .banner{
     flex-wrap: wrap;
@@ -231,15 +230,13 @@ h3{
   }
 }
 @media screen and (max-width: 1583px) {
-  //.dec{
-  //  flex-wrap: nowrap;
-  //}
   .slli{
     max-width: 520px !important;
     border-radius: 100px !important;
     max-height: 710px;
     & img{
       border-radius: 100px !important;
+      height: 670px;
     }
   }
   .banner__left{

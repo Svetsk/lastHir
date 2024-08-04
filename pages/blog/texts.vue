@@ -1,9 +1,13 @@
 <script setup lang="ts">
 
+import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
   <div>
+    <AddHeader>
+      <MenuAbout />
+    </AddHeader>
     <div class="container">
       <blog-menu />
       <div class="pt-[170px] flex justify-between gap-y-[48px] flex-wrap asda">

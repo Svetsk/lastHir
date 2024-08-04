@@ -21,7 +21,7 @@
     </div>
     <div class="flex items-center gap-[12px]">
       <div class="ellipse"></div>
-      <nuxt-link to="">Экспертные видео</nuxt-link>
+      <nuxt-link to="/blog/video">Экспертные видео</nuxt-link>
     </div>
   </div>
 </template>

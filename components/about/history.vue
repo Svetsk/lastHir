@@ -74,7 +74,7 @@
         </div>
         <div class=" flex items-end">
           <div class="vids">
-            <a href="" class="relative">
+            <nuxt-link to="blog/video" class="relative">
               <nuxt-img src="/image/about/history/video.png" />
               <svg class="absolute top-[40%] left-[42%]" xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none">
                 <g filter="url(#filter0_b_4017_542)">
@@ -90,7 +90,7 @@
                   </filter>
                 </defs>
               </svg>
-            </a>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -135,13 +135,13 @@ p{
 .tools{
   width: 726px;
 }
-@media screen and (min-width: 1440px) {
-  .toolss{
-    & svg{
-      right: -32px;
+  @media screen and (min-width: 1440px) {
+    .toolss{
+      & svg{
+        right: -32px;
+      }
     }
   }
-}
 
 @media screen and (max-width: 1024px) {
   .vfvf{
