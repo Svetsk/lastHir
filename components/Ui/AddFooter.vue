@@ -6,26 +6,25 @@
         <p>Евгения Корниясова</p>
       </div>
       <ul>
-        <li><nuxt-link to="/about">Обо мне</nuxt-link></li>
-        <li><nuxt-link to="/">Мои работы</nuxt-link></li>
-        <li><nuxt-link to="/">Вопросы и ответы</nuxt-link></li>
+        <li><nuxt-link to="/about" prefetch>Обо мне</nuxt-link></li>
+        <li><nuxt-link to="/myWork" prefetch>Мои работы</nuxt-link></li>
+        <li><nuxt-link to="/blog/qa" prefetch>Вопросы и ответы</nuxt-link></li>
       </ul>
       <ul>
-        <li><nuxt-link to="/">Направления работы</nuxt-link></li>
-        <li><nuxt-link to="/">Отзывы</nuxt-link></li>
-        <li><nuxt-link to="/">До/После</nuxt-link></li>
+        <li><nuxt-link to="/services/hirurgiya" prefetch>Направления работы</nuxt-link></li>
+        <li><nuxt-link to="/reviews" prefetch>Отзывы</nuxt-link></li>
       </ul>
       <ul>
         <li>
-          <nuxt-link to="contact">Контакты</nuxt-link>
+          <nuxt-link to="/contact" prefetch>Контакты</nuxt-link>
         </li>
         <li>
-          <a href="/">
+          <a href="https://www.instagram.com/dr.korniyasova?igsh=eGNjZmZvM2xiMTR2">
             Instagram @dr.korniyasova
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="tel:+79186474593">
             +7 (918) 647-45-93
           </a>
         </li>

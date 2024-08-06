@@ -60,7 +60,7 @@
             <p class="text-[20px] font-[500] textxx w-[305px]">стажировок, конгрессов, конференций, симпозиумов</p>
           </div>
           <div class="educ">
-            <nuxt-img src="/image/about/educ.png" />
+            <nuxt-img loading="lazy" src="/image/about/educ.png" />
           </div>
         </div>
       </div>

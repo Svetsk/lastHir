@@ -6,8 +6,8 @@
   <div class="container-fluide">
     <div class="flex justify-between gap-[60px] pt-[60px] pb-[180px] as">
       <div class="left">
-        <nuxt-img src="/image/services/evg.png" class="kor" />
-        <nuxt-link to="/about">
+        <nuxt-img loading="lazy" src="/image/services/evg.png" class="kor" />
+        <nuxt-link to="/about" prefetch>
           <div class="flex justify-between items-center aaa">
             <p>Онколог, пластический<br>и реконструктивный хирург</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="108" height="109" viewBox="0 0 108 109" fill="none">
@@ -18,12 +18,12 @@
           <h3>Корниясова Евгения<br>Альбертовна</h3>
         </nuxt-link>
       </div>
-      <nuxt-link to="/reviews" class="right">
+      <nuxt-link loading="lazy" to="/reviews" class="right" prefetch>
         <p>Стаж работы: с 2016 года.<br >Моим рукам доверилось уже больше 800 довольных пациентов.</p>
         <div class="flex items-center justify-between ab">
           <p>800+</p>
           <div>
-            <nuxt-img src="/image/services/800.png" class="qs" />
+            <nuxt-img loading="lazy" src="/image/services/800.png" class="qs" />
           </div>
         </div>
       </nuxt-link>

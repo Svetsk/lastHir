@@ -12,7 +12,7 @@
       <div class="bls bls__one">
         <div class="flex flex-col items-center gap-[160px]">
           <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog">
+          <nuxt-link to="/blog" prefetch>
             читать
           </nuxt-link>
         </div>
@@ -20,7 +20,7 @@
       <div class="bls bls__two">
         <div class="flex flex-col items-center gap-[160px]">
           <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog">
+          <nuxt-link to="/blog" prefetch>
             читать
           </nuxt-link>
         </div>
@@ -28,7 +28,7 @@
       <div class="bls bls__three">
         <div class="flex flex-col items-center gap-[160px]">
           <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog">
+          <nuxt-link to="/blog" prefetch>
             читать
           </nuxt-link>
         </div>
@@ -36,7 +36,7 @@
       <div class="bls bls__four">
         <div class="flex flex-col items-center gap-[160px]">
           <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog">
+          <nuxt-link to="/blog" prefetch>
             читать
           </nuxt-link>
         </div>

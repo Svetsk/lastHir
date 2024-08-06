@@ -89,7 +89,7 @@ const submitForm = async () => {
           </div>
         </form>
         <ui-Notification :show="notificationVisible" :message="notificationMessage" />
-        <nuxt-img src="/image/ui/formImg.png" class="w-[921px] h-auto mig"/>
+        <nuxt-img loading="lazy" src="/image/ui/formImg.png" class="w-[921px] h-auto mig"/>
       </div>
     </div>
   </div>

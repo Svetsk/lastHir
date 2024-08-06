@@ -17,24 +17,24 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/services">Онкология</nuxt-link>
-            <nuxt-link to="/services#variants">Виды рака груди</nuxt-link>
-            <nuxt-link to="/services#myWork">Мои работы</nuxt-link>
-            <nuxt-link to="/services#vid">Как различить вид опухоли?</nuxt-link>
-            <nuxt-link to="/services#caus">Причины развития рака молочной железы?</nuxt-link>
-            <nuxt-link to="/services#conts">Форма обратной связи</nuxt-link>
+            <nuxt-link prefetch to="/services">Онкология</nuxt-link>
+            <nuxt-link prefetch to="/services#variants">Виды рака груди</nuxt-link>
+            <nuxt-link prefetch to="/services#myWork">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/services#vid">Как различить вид опухоли?</nuxt-link>
+            <nuxt-link prefetch to="/services#caus">Причины развития рака молочной железы?</nuxt-link>
+            <nuxt-link prefetch to="/services#conts">Форма обратной связи</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#mySpec">Моя специализация</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#toolss">Инструменты, оборудование, материалы</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#korn">Корниясова Евгения Альбертовна</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#mywrk">Мои работы</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#conts">Форма обратной связи</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#mySpec">Моя специализация</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#toolss">Инструменты, оборудование, материалы</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#korn">Корниясова Евгения Альбертовна</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#mywrk">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#conts">Форма обратной связи</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/services/exam">Обследования и консультации</nuxt-link>
+            <nuxt-link prefetch to="/services/exam">Обследования и консультации</nuxt-link>
             <a href="#whtw">Какие обследования я делаю?</a>
             <a href="#infs">Корниясова Евгения Альбертовна</a>
             <a href="#mywrks">Мои работы</a>
@@ -44,12 +44,12 @@ function closeMenu() {
             <a href="#cont">Контакты</a>
           </li>
           <li class="mobaa">
-            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
-            <nuxt-link to="/about">Обо мне</nuxt-link>
-            <nuxt-link to="/blog">Блог</nuxt-link>
-            <nuxt-link to="/services">Услуги</nuxt-link>
-            <nuxt-link to="/reviews">Отзывы</nuxt-link>
-            <nuxt-link to="/myWork">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/">Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link prefetch to="/about">Обо мне</nuxt-link>
+            <nuxt-link prefetch to="/blog">Блог</nuxt-link>
+            <nuxt-link prefetch to="/services">Услуги</nuxt-link>
+            <nuxt-link prefetch to="/reviews">Отзывы</nuxt-link>
+            <nuxt-link prefetch to="/myWork">Мои работы</nuxt-link>
           </li>
         </div>
       </ul>

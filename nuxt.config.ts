@@ -1,4 +1,13 @@
 export default {
+  build: {
+    terser: true, // Минификация JavaScript
+    extractCSS: true // Извлечение CSS
+  },
+  render: {
+    static: {
+      maxAge: 86400 // Устанавливает кэширование на 24 часа
+    }
+  },
   server: {
     host: '0.0.0.0'
   },
@@ -8,9 +17,6 @@ export default {
   devtools: { enabled: false },
   css: ["~/assets/styles/global.scss"],
   modules: ["@pinia/nuxt", "@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-swiper", "@vite-pwa/nuxt"],
-  pwa: {
-    /* your pwa options */
-  },
   head: {
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }

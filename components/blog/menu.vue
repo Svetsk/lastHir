@@ -9,19 +9,19 @@
   </div>
   <div class="tabs">
     <div class="flex items-center gap-[12px]">
-      <nuxt-link to="/blog">Пациентам</nuxt-link>
+      <nuxt-link to="/blog" prefetch>Пациентам</nuxt-link>
     </div>
     <div class="flex items-center gap-[12px]">
       <div class="ellipse"></div>
-      <nuxt-link to="/blog/texts">Статьи</nuxt-link>
+      <nuxt-link to="/blog/texts" prefetch>Статьи</nuxt-link>
     </div>
     <div class="flex items-center gap-[12px]">
       <div class="ellipse"></div>
-      <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>
+      <nuxt-link to="/blog/qa" prefetch>Вопрос/ответ</nuxt-link>
     </div>
     <div class="flex items-center gap-[12px]">
       <div class="ellipse"></div>
-      <nuxt-link to="/blog/video">Экспертные видео</nuxt-link>
+      <nuxt-link to="/blog/video" prefetch>Экспертные видео</nuxt-link>
     </div>
   </div>
 </template>

@@ -13,7 +13,7 @@
         </div>
         <div class="images">
           <div class="">
-            <nuxt-img src="/image/about/banner.png" width="100%" height="100%" />
+            <nuxt-img loading="lazy" src="/image/about/banner.png" width="100%" height="100%" />
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
           <h1 class="max-w-[860px]">Корниясова Eвгения Альбертовна</h1>
           <div class="images">
             <div class="">
-              <nuxt-img src="/image/about/banner.png" width="100%" height="100%" />
+              <nuxt-img loading="lazy" src="/image/about/banner.png" width="100%" height="100%" />
             </div>
           </div>
           <p class="max-w-[860px] bannerp">Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Моим рукам доверилось уже больше 800 довольных пациентов, совершенно из разных городов<br>и стран: Германии, США, ОАЭ, Израиля, Великобритании и др.</p>

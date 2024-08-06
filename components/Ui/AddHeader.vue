@@ -43,39 +43,41 @@ function toggleMenu() {
         <nav ref="headerRef">
           <ul>
             <li>
-              <nuxt-link to="/">
-                <nuxt-img class="logo" src="/image/ui/logo.svg" />
+              <nuxt-link to="/" prefetch>
+                <nuxt-img loading="lazy" class="logo" src="/image/ui/logo.svg" />
               </nuxt-link>
             </li>
             <li class="info">
-              <nuxt-link to="/about">Обо мне</nuxt-link>
+              <nuxt-link to="/about" prefetch>Обо мне</nuxt-link>
             </li>
             <li class="blog">
-              <nuxt-link to="/blog">Блог</nuxt-link>
+              <nuxt-link to="/blog" prefetch>Блог</nuxt-link>
             </li>
           </ul>
           <ul>
             <li class="hiddenss">
-              <nuxt-link to="/services">Услуги</nuxt-link>
+              <nuxt-link to="/services" prefetch>Услуги</nuxt-link>
             </li>
             <li class="hiddenss">
-              <nuxt-link to="/reviews">Отзывы</nuxt-link>
+              <nuxt-link to="/reviews" prefetch>Отзывы</nuxt-link>
             </li>
             <li class="hiddenss">
-              <nuxt-link to="/myWork">Мои работы</nuxt-link>
+              <nuxt-link to="/myWork" prefetch>Мои работы</nuxt-link>
             </li>
             <li class="hiddenss">
-              <nuxt-link to="/contact">Контакты</nuxt-link>
+              <nuxt-link to="/contact" prefetch>Контакты</nuxt-link>
             </li>
             <li>
               <button class="asdzxc" @click="toggleMenu">
                 <nuxt-img
+                    loading="lazy"
                     v-if="!isMenuOpen"
                     class="burger__menu hiddensss"
                     src="/image/ui/burger.svg"
                     alt="Menu"
                 />
                 <nuxt-img
+                    loading="lazy"
                     v-else
                     class="burger__menu hiddensss w-[28px]"
                     src="/image/ui/closeBurger.svg"

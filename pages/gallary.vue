@@ -4,7 +4,7 @@
     <MenuAbout />
   </AddHeader>
   <div class="container">
-    <nuxt-link to="/about#comun" class="flex items-center gap-[8px] mt-[100px] mb-[100px] text-[25px] font-[500]">
+    <nuxt-link prefetch to="/about#comun" class="flex items-center gap-[8px] mt-[100px] mb-[100px] text-[25px] font-[500]">
       <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
         <circle cx="20.1211" cy="20" r="19.5" transform="rotate(90 20.1211 20)" stroke="white"/>
         <path d="M11.1532 19.2929C10.7627 19.6834 10.7627 20.3166 11.1532 20.7071L17.5172 27.0711C17.9077 27.4616 18.5409 27.4616 18.9314 27.0711C19.3219 26.6805 19.3219 26.0474 18.9314 25.6569L13.2746 20L18.9314 14.3431C19.3219 13.9526 19.3219 13.3195 18.9314 12.9289C18.5409 12.5384 17.9077 12.5384 17.5172 12.9289L11.1532 19.2929ZM27.8604 19L11.8604 19L11.8604 21L27.8604 21L27.8604 19Z" fill="white"/>
@@ -13,13 +13,13 @@
     </nuxt-link>
     <div class="gallery">
       <div v-for="photo in photos" :key="photo.id" class="gallery-item">
-        <img :src="photo.src" :alt="photo.title" @click="openModal(photo)" />
+        <nuxt-img loading="lazy" :src="photo.src" :alt="photo.title" @click="openModal(photo)" />
       </div>
 
       <!-- Modal -->
       <div v-if="currentPhoto" class="modal" @click.self="closeModal">
         <div class="modal-content">
-          <img :src="currentPhoto.src" :alt="currentPhoto.title" class="popup-image" />
+          <nuxt-img loading="lazy" :src="currentPhoto.src" :alt="currentPhoto.title" class="popup-image" />
           <button class="popup-close cls" @click="closeModal">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
               <line x1="2.06029" y1="1.93934" x2="24.0604" y2="23.9394" stroke="white" stroke-width="3"/>

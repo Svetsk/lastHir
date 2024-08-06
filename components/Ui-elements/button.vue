@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <div>
-    <nuxt-link :to="link">
+    <nuxt-link :to="link" prefetch>
       {{ title }}
       <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
         <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="white"/>

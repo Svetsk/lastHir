@@ -24,7 +24,7 @@
             <p>Какие анализы нужно подготовить перед операцией? Ответила на этот вопрос<br>в видео, жмите кнопку ниже</p>
             <div>
               <div class="zxc">
-                <nuxt-link to="/blog">
+                <nuxt-link to="/blog" prefetch>
                   Смотреть
                   <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                     <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="black"/>
@@ -36,8 +36,8 @@
           </div>
         </div>
         <div class="borde">
-          <nuxt-link to="/blog/texts" class="flex flex-col gap-[45px] py-[42px] pl-[50px] qqq">
-            <nuxt-img src="/image/about/blog/blog.png" class="ab"/>
+          <nuxt-link to="/blog/texts" class="flex flex-col gap-[45px] py-[42px] pl-[50px] qqq" prefetch>
+            <nuxt-img loading="lazy" src="/image/about/blog/blog.png" class="ab"/>
           </nuxt-link>
         </div>
       </div>
@@ -47,7 +47,7 @@
           <p>Какие анализы нужно подготовить перед операцией? Ответила на этот вопрос<br>в видео, жмите кнопку ниже</p>
           <div>
             <div class="zxc">
-              <nuxt-link to="/blog/texts">
+              <nuxt-link to="/blog/texts" prefetch>
                 Смотреть
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                   <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="black"/>

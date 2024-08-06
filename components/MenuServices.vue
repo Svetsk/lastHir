@@ -25,13 +25,13 @@ function closeMenu() {
             <a href="#conts">Форма обратной связи</a>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#mySpec">Моя специализация</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#toolss">Инструменты, оборудование, материалы</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#korn">Корниясова Евгения Альбертовна</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#mywrk">Мои работы</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#conts">Форма обратной связи</nuxt-link>
-            <nuxt-link to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#mySpec">Моя специализация</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#toolss">Инструменты, оборудование, материалы</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#korn">Корниясова Евгения Альбертовна</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#mywrk">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#conts">Форма обратной связи</nuxt-link>
+            <nuxt-link prefetch to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
             <nuxt-link to="/services/exam">Обследования и консультации</nuxt-link>

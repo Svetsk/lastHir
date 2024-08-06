@@ -27,12 +27,12 @@ export default {
   <div class="container-fluide">
     <div class="banner flex justify-between dec">
       <div class="banner__left">
-        <nuxt-img class="curcle" src="/image/main/banner/curcle.svg" />
+        <nuxt-img loading="lazy" class="curcle" src="/image/main/banner/curcle.svg" />
         <h1>Пластический хирург / онколог</h1>
         <ui-elements-button title="Узнать подробнее" link="/about" />
         <div class="flex items-end gap-[30px] llee">
           <div class="relative mt-[132px]">
-            <nuxt-img src="/image/main/banner/bg.svg" class="w-[555px] h-[206px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/bg.svg" class="w-[555px] h-[206px]" />
             <div class="bg-[#3E3E3E] rounded-[20px] flex flex-col items-center justify-center w-[53px] absolute top-9 left-4">
               <a href="https://www.instagram.com/dr.korniyasova?igsh=eGNjZmZvM2xiMTR2" class="p-[12px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -45,23 +45,23 @@ export default {
                 </svg>
               </a>
             </div>
-            <nuxt-link to="/about" class="text-[20px] font-[500] absolute top-12 left-[260px]">
+            <nuxt-link to="/about" class="text-[20px] font-[500] absolute top-12 left-[260px]" prefetch>
               Обо мне<br>About me
             </nuxt-link>
-            <nuxt-link to="/services" class="text-[30px] font-[600] absolute bottom-3 left-4 flex items-center gap-[90px]">
+            <nuxt-link prefetch to="/services" class="text-[30px] font-[600] absolute bottom-3 left-4 flex items-center gap-[90px]">
               Список услуг
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="23" viewBox="0 0 41 23" fill="none">
                 <path d="M40.2876 12.0978C40.8734 11.512 40.8734 10.5622 40.2876 9.97645L30.7416 0.430505C30.1559 -0.155282 29.2061 -0.155282 28.6203 0.430505C28.0345 1.01629 28.0345 1.96604 28.6203 2.55183L37.1056 11.0371L28.6203 19.5224C28.0345 20.1082 28.0345 21.0579 28.6203 21.6437C29.2061 22.2295 30.1559 22.2295 30.7416 21.6437L40.2876 12.0978ZM0.183594 12.5371L39.2269 12.5371L39.2269 9.53711L0.183594 9.53711L0.183594 12.5371Z" fill="white"/>
               </svg>
             </nuxt-link>
-            <nuxt-link to="/about" class="absolute top-9 left-[492px]">
+            <nuxt-link prefetch to="/about" class="absolute top-9 left-[492px]">
               <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                 <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="white"/>
                 <path d="M35.9543 22.4793C35.9543 21.927 35.5066 21.4793 34.9543 21.4793L25.9543 21.4793C25.402 21.4793 24.9543 21.927 24.9543 22.4793C24.9543 23.0315 25.402 23.4793 25.9543 23.4793L33.9543 23.4793L33.9543 31.4793C33.9543 32.0315 34.402 32.4793 34.9543 32.4793C35.5066 32.4793 35.9543 32.0315 35.9543 31.4793L35.9543 22.4793ZM24.3477 34.5001L35.6614 23.1864L34.2472 21.7722L22.9335 33.0859L24.3477 34.5001Z" fill="black"/>
               </svg>
             </nuxt-link>
           </div>
-          <nuxt-link to="/reviews" class="w-[169] h-[173] relative">
+          <nuxt-link prefetch class="w-[169] h-[173] relative">
             <svg xmlns="http://www.w3.org/2000/svg" width="169" height="174" viewBox="0 0 169 174" fill="none">
               <g filter="url(#filter0_b_0_68)">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M98.9502 20.2969C98.9502 9.25118 89.9959 0.296875 78.9502 0.296875H20.1484C9.10274 0.296875 0.148438 9.25118 0.148438 20.2969V153.756C0.148438 164.802 9.10276 173.756 20.1485 173.756H148.818C159.864 173.756 168.818 164.802 168.818 153.756V94.1235C168.818 83.0778 159.864 74.1235 148.818 74.1235H118.95C107.904 74.1235 98.9502 65.1692 98.9502 54.1235V20.2969Z" fill="white" fill-opacity="0.2"/>
@@ -75,7 +75,7 @@ export default {
                 </filter>
               </defs>
             </svg>
-            <nuxt-img src="/image/main/banner/bgg.png" class="w-[83px] absolute top-[10px] left-[8px]"/>
+            <nuxt-img prefetch src="/image/main/banner/bgg.png" class="w-[83px] absolute top-[10px] left-[8px]"/>
             <div class="flex flex-col gap-[2px] absolute bottom-[15px] left-[15px]">
               <p class="text-[30px] font-[600]">800+</p>
               <span class="text-[20px] font-[500]">пациентов</span>
@@ -94,29 +94,29 @@ export default {
             class="mySwiper"
         >
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideTwo.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideTwo.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideThree.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideThree.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideFore.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFore.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideFive.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFive.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img src="/image/main/banner/slider/slideSix.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideSix.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
         </swiper>
       </div>
     </div>
     <div class="mob">
       <div class="py-[50px] px-[15px]">
-        <nuxt-img class="" src="/image/main/banner/curcle.svg" />
+        <nuxt-img loading="lazy" class="" src="/image/main/banner/curcle.svg" />
         <h3>Пластический<br>хирург / онколог</h3>
         <div class="max-w-[420px]">
           <swiper
@@ -126,47 +126,47 @@ export default {
           >
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img src="/image/main/banner/slider/slideOne.png" />
+                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideOne.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img src="/image/main/banner/slider/slideTwo.png" />
+                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideTwo.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img src="/image/main/banner/slider/slideThree.png" />
+                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideThree.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img src="/image/main/banner/slider/slideFore.png" />
+                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFore.png" />
               </div>
             </swiper-slide>
           </swiper>
           <ui-elements-button title="Узнать подробнее" class="pt-[40px]" />
           <div class="pt-[45px] relative">
-            <nuxt-img src="/image/main/banner/mob/mobban.png" class="w-[100%] h-[100%]" />
-            <nuxt-img src="/image/main/banner/mob/inst.svg" class="as absolute top-[55px] left-[11px] w-[20px] h-[20px]" />
-            <nuxt-img src="/image/main/banner/mob/what.svg" class="as absolute top-[82px] left-[12px] w-[20px] h-[20px]" />
-            <nuxt-link to="" class="flex gap-[25px] items-center absolute top-[45px] left-[135px] asdad">
+            <nuxt-img loading="lazy" src="/image/main/banner/mob/mobban.png" class="w-[100%] h-[100%]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/mob/inst.svg" class="as absolute top-[55px] left-[11px] w-[20px] h-[20px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/mob/what.svg" class="as absolute top-[82px] left-[12px] w-[20px] h-[20px]" />
+            <nuxt-link to="/about" class="flex gap-[25px] items-center absolute top-[45px] left-[135px] asdad" prefetch>
               <p class="text-[14px]">Обо мне<br>About me</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
                 <circle cx="39.2656" cy="39.2323" r="27.5676" transform="rotate(-135 39.2656 39.2323)" fill="white"/>
                 <path d="M48.6956 31.1798C48.6956 30.4186 48.0785 29.8014 47.3173 29.8014L34.9118 29.8014C34.1506 29.8014 33.5334 30.4186 33.5334 31.1798C33.5334 31.9411 34.1506 32.5582 34.9118 32.5582L45.9389 32.5582L45.9389 43.5852C45.9389 44.3465 46.556 44.9636 47.3172 44.9636C48.0785 44.9636 48.6956 44.3465 48.6956 43.5852L48.6956 31.1798ZM32.6973 47.7491L48.2919 32.1545L46.3426 30.2052L30.748 45.7998L32.6973 47.7491Z" fill="black"/>
               </svg>
             </nuxt-link>
-            <nuxt-link to="/" class="flex items-center gap-[55px] absolute bottom-[12px] left-[11px]">
+            <nuxt-link to="/" class="flex items-center gap-[55px] absolute bottom-[12px] left-[11px]" prefetch>
               <p class="font-[600]">Список услуг</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 30 17" fill="none">
                 <path d="M28.9157 9.51062C29.3357 9.09054 29.3357 8.40946 28.9157 7.98938L22.0701 1.14378C21.65 0.723704 20.9689 0.723704 20.5488 1.14378C20.1287 1.56386 20.1287 2.24495 20.5488 2.66503L26.6338 8.75L20.5488 14.835C20.1287 15.255 20.1287 15.9361 20.5488 16.3562C20.9689 16.7763 21.65 16.7763 22.0701 16.3562L28.9157 9.51062ZM0.15625 9.82568L28.155 9.82568L28.155 7.67432L0.15625 7.67432L0.15625 9.82568Z" fill="white"/>
               </svg>
             </nuxt-link>
           </div>
-          <nuxt-link to="/myWork">
+          <nuxt-link to="/myWork" prefetch>
             <div class="flex gap-[4px] adfssx">
-              <nuxt-img src="/image/main/banner/bgg.png" class="w-[120px] h-[100%] py-[28px]" />
+              <nuxt-img loading="lazy" src="/image/main/banner/bgg.png" class="w-[120px] h-[100%] py-[28px]" />
               <div class="flex flex-col gap-[2px]">
                 <p class="text-[30px] font-[500] leading-0">800+</p>
                 <span class="text-[21px] font-[400] leading-0">пациентов</span>

@@ -9,7 +9,7 @@
       <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px] asdd" />
+          <nuxt-img loading="lazy" src="/image/serv/ones.png" class="w-[664px] h-[712px] asdd" />
           <div class="flex flex-col gap-[40px] blocks">
             <h3 class="max-w-[616px]">
               пластическая хирургия
@@ -20,7 +20,7 @@
         </div>
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/threes.png" class="w-[664px] h-[712px] asdd" />
+          <nuxt-img loading="lazy" src="/image/serv/threes.png" class="w-[664px] h-[712px] asdd" />
           <div class="flex flex-col gap-[40px] blocks">
             <h3 class="max-w-[616px]">
               онкология
@@ -32,7 +32,7 @@
 
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/twoes.png" class="w-[830px] h-[571px] last asdd" />
+          <nuxt-img loading="lazy" src="/image/serv/twoes.png" class="w-[830px] h-[571px] last asdd" />
           <div class="flex flex-col gap-[40px] blockss w-[120%]">
             <h3 class="max-w-[705px]">
               Обследования и консультации
@@ -49,11 +49,6 @@
 </template>
 
 <style scoped lang="scss">
-@media screen and (max-width: 1920px) {
-  .blockss{
-    //width: 160%;
-  }
-}
 @media screen and (min-width: 1600px) {
   .aaa{
     justify-content: space-between;

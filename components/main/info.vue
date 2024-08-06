@@ -9,7 +9,7 @@
         <div class="gel flex items-center gap-[24px]">
           <p class="gelen">г.Геленджик, клиника «Ланцетъ»</p>
           <div class="flex items-center gap-[16px]">
-            <nuxt-link to="/contact" class="contact">
+            <nuxt-link to="/contact" class="contact" prefetch>
               контакты
             </nuxt-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="22" viewBox="0 0 36 22" fill="none">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div>
-        <nuxt-img src="/image/main/photoEvg.png" class="w-[800px] h-auto" />
+        <nuxt-img loading="lazy" src="/image/main/photoEvg.png" class="w-[800px] h-auto" />
       </div>
     </div>
     <div class="ccon mob flex justify-between pt-[145px]">
@@ -35,7 +35,7 @@
         <div class="gel flex items-center gap-[24px]">
           <p class="gelen">г.Геленджик, клиника «Ланцетъ»</p>
           <div class="flex items-center gap-[16px]">
-            <nuxt-link to="/contact" class="contact">
+            <nuxt-link to="/contact" class="contact" prefetch>
               контакты
             </nuxt-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="22" viewBox="0 0 36 22" fill="none">
@@ -47,7 +47,7 @@
         <div>
           <h2>Корниясова <u>Евгения</u> Альбертовна</h2>
           <div class="asdfx">
-            <nuxt-img src="/image/main/photoEvg.png" class="w-[800px] sssss" />
+            <nuxt-img loading="lazy" src="/image/main/photoEvg.png" class="w-[800px] sssss" />
           </div>
           <p class="text-[25px] font-[500] max-w-[860px] pb-[80px] zxc">
             Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.

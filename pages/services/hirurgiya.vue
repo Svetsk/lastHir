@@ -22,9 +22,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
       <ui-footer-slider-swip />
     </div>
     <ui-footer-form class="pt-[300px]"/>
-
-
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -42,7 +39,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Редукция соска (две стороны)" price="57 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -54,7 +50,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Коррекция малых половых губ" price="60 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -65,7 +60,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Липофилинг (1 зона)" price="59 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -79,7 +73,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Пластика грыжи белой линии живота" price="69 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -100,7 +93,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Удаление имплантатов (2 стороны)" price="110 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -111,7 +103,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Коррекция рубца 2 к.с." price="90 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -122,7 +113,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Коррекция гинекомастии — 2 к.с." price="159 000 ₽" />
       </div>
     </div>
-
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
@@ -132,12 +122,6 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
         <ui-elements-price-props title="Коррекция мочек ушей" price="69 000 ₽" />
       </div>
     </div>
-
-
-
-
-
-
     <slider-card-slider />
     <div class="pt-[140px]">
       <ui-footer-contact-footer class="pt-[350px]" />

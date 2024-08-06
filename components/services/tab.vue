@@ -33,8 +33,8 @@ const props = defineProps({
         </div>
       </div>
       <div class="relative">
-        <nuxt-img :src="image" />
-        <nuxt-link to="/myWork" class="mywork" >мои работы</nuxt-link>
+        <nuxt-img loading="lazy" :src="image" />
+        <nuxt-link to="/myWork" class="mywork" prefetch>мои работы</nuxt-link>
       </div>
     </div>
   </div>

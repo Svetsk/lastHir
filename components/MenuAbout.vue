@@ -17,7 +17,7 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/about">Корниясова Евгения альбертовна</nuxt-link>
+            <nuxt-link to="/about" prefetch>Корниясова Евгения альбертовна</nuxt-link>
             <a href="#educ">Образование</a>
             <a href="#comun">Сообщества</a>
             <a href="#myHist">Моя история</a>
@@ -29,23 +29,22 @@ function closeMenu() {
             <a href="#servic">Услуги</a>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/about"></nuxt-link>
+            <nuxt-link to="/about" prefetch></nuxt-link>
             <a href="#formas">Форма обратной связи</a>
             <a href="#conts">Контакты</a>
           </li>
           <li class="mobaa">
-            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
-            <nuxt-link to="/about">Обо мне</nuxt-link>
-            <nuxt-link to="/blog">Блог</nuxt-link>
-            <nuxt-link to="/services">Услуги</nuxt-link>
-            <nuxt-link to="/reviews">Отзывы</nuxt-link>
-            <nuxt-link to="/myWork">Мои работы</nuxt-link>
-            <nuxt-link to="/contact">Контакты</nuxt-link>
+            <nuxt-link to="/" prefetch>Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link to="/about" prefetch>Обо мне</nuxt-link>
+            <nuxt-link to="/blog" prefetch>Блог</nuxt-link>
+            <nuxt-link to="/services" prefetch>Услуги</nuxt-link>
+            <nuxt-link to="/reviews" prefetch>Отзывы</nuxt-link>
+            <nuxt-link to="/myWork" prefetch>Мои работы</nuxt-link>
+            <nuxt-link to="/contact" prefetch>Контакты</nuxt-link>
           </li>
         </div>
       </ul>
     </div>
-
   </div>
 </template>
 

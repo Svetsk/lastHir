@@ -1,7 +1,7 @@
 <template>
   <div>
     <button class="card" @click="openModal">
-      <nuxt-img :src="preview" class="pew" />
+      <nuxt-img loading="lazy" :src="preview" class="pew" />
 
       <div class="flex zzz">
         <p class="num">Пациент {{ num }}</p>
@@ -29,22 +29,22 @@
             class="mySwiper"
         >
           <swiper-slide>
-            <nuxt-img :src="sliderImageOne" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageOne" class="rounded-[40px]" />
           </swiper-slide>
           <swiper-slide v-if="sliderImageTwo">
-            <nuxt-img :src="sliderImageTwo" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageTwo" class="rounded-[40px]" />
           </swiper-slide>
           <swiper-slide v-if="sliderImageThree">
-            <nuxt-img :src="sliderImageThree" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageThree" class="rounded-[40px]" />
           </swiper-slide>
           <swiper-slide v-if="sliderImageFore">
-            <nuxt-img :src="sliderImageFore" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageFore" class="rounded-[40px]" />
           </swiper-slide>
           <swiper-slide v-if="sliderImageFive">
-            <nuxt-img :src="sliderImageFive" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageFive" class="rounded-[40px]" />
           </swiper-slide>
           <swiper-slide v-if="sliderImageSix">
-            <nuxt-img :src="sliderImageSix" class="rounded-[40px]" />
+            <nuxt-img loading="lazy" :src="sliderImageSix" class="rounded-[40px]" />
           </swiper-slide>
 
         </swiper>

@@ -19,8 +19,8 @@
           <ui-elements-button class="btn" title="смотреть видео" link="/blog" />
         </div>
       </div>
-      <nuxt-link to="/blog" class="rig">
-        <nuxt-img src="/image/services/videoEvg.png" class="w-[512px] h-[910px] w-[100%] h-[100%]" />
+      <nuxt-link to="/blog" class="rig" prefetch>
+        <nuxt-img loading="lazy" src="/image/services/videoEvg.png" class="w-[512px] h-[910px] w-[100%] h-[100%]" />
       </nuxt-link>
     </div>
   </div>

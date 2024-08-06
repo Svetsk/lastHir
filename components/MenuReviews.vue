@@ -24,13 +24,13 @@ function closeMenu() {
             <a href="#cnt">Контакты</a>
           </li>
           <li class="mobaa">
-            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
-            <nuxt-link to="/about">Обо мне</nuxt-link>
-            <nuxt-link to="/blog">Блог</nuxt-link>
-            <nuxt-link to="/services">Услуги</nuxt-link>
-            <nuxt-link to="/reviews">Отзывы</nuxt-link>
-            <nuxt-link to="/myWork">Мои работы</nuxt-link>
-            <nuxt-link to="/contact">Контакты</nuxt-link>
+            <nuxt-link prefetch to="/">Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link prefetch to="/about">Обо мне</nuxt-link>
+            <nuxt-link prefetch to="/blog">Блог</nuxt-link>
+            <nuxt-link prefetch to="/services">Услуги</nuxt-link>
+            <nuxt-link prefetch to="/reviews">Отзывы</nuxt-link>
+            <nuxt-link prefetch to="/myWork">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/contact">Контакты</nuxt-link>
           </li>
         </div>
       </ul>

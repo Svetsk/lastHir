@@ -10,8 +10,8 @@
       </div>
 
       <div class="flex flex-col gap-[40px] rrr">
-        <nuxt-link to="/patient/patientOne" class="relative">
-          <nuxt-img src="/image/work/fore.png" class="w-full long" />
+        <nuxt-link prefetch to="/patient/patientOne" class="relative">
+          <nuxt-img loading="lazy" src="/image/work/fore.png" class="w-full long" />
           <button class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-10">
             Пациент 1.
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -21,8 +21,8 @@
           </button>
         </nuxt-link>
         <div class="flex gap-[20px] zxz">
-          <nuxt-link to="/patient/patientTwo" class="relative">
-            <nuxt-img src="/image/work/two.png" class="w-[816px] asa" />
+          <nuxt-link prefetch to="/patient/patientTwo" class="relative">
+            <nuxt-img loading="lazy" src="/image/work/two.png" class="w-[816px] asa" />
             <button class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 2.
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -31,8 +31,8 @@
               </svg>
             </button>
           </nuxt-link>
-          <nuxt-link to="/patient/patientThree" class="relative">
-            <nuxt-img src="/image/work/three.png" class="w-[816px] asa" />
+          <nuxt-link prefetch to="/patient/patientThree" class="relative">
+            <nuxt-img loading="lazy" src="/image/work/three.png" class="w-[816px] asa" />
             <button class="w-[90%] flex justify-between items-center py-[16px] px-[24px] absolute bottom-0 left-[5%] bottom-5">
               Пациент 3.
               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">

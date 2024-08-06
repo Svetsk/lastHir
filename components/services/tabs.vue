@@ -12,7 +12,7 @@
               :class="{ active: activeIndex === 0 }"
               @click="selectTab(0)"
           >
-            <nuxt-img src="/image/services/tabs/tab1.png" class="w-[80px] h-[80px]" />
+            <nuxt-img loading="lazy" src="/image/services/tabs/tab1.png" class="w-[80px] h-[80px]" />
           </button>
           <h3 class="text-center text-[22px] text-[#8F8F8F]">пластика<br>бедер</h3>
         </div>
@@ -22,7 +22,7 @@
               :class="{ active: activeIndex === 1 }"
               @click="selectTab(1)"
           >
-            <nuxt-img src="/image/services/tabs/tab2.png" class="w-[80px] h-[80px]" />
+            <nuxt-img loading="lazy" src="/image/services/tabs/tab2.png" class="w-[80px] h-[80px]" />
           </button>
           <h3 class="text-center text-[22px] text-[#8F8F8F]">Подтяжка<br>груди</h3>
         </div>
@@ -32,7 +32,7 @@
               :class="{ active: activeIndex === 2 }"
               @click="selectTab(2)"
           >
-            <nuxt-img src="/image/services/tabs/tab3.png" class="w-[80px] h-[80px]" />
+            <nuxt-img loading="lazy" src="/image/services/tabs/tab3.png" class="w-[80px] h-[80px]" />
           </button>
           <h3 class="text-center text-[22px] text-[#8F8F8F]">Увеличение<br>груди</h3>
         </div>
@@ -42,7 +42,7 @@
               :class="{ active: activeIndex === 3 }"
               @click="selectTab(3)"
           >
-            <nuxt-img src="/image/services/tabs/tab4.png" class="w-[80px] h-[80px]" />
+            <nuxt-img loading="lazy" src="/image/services/tabs/tab4.png" class="w-[80px] h-[80px]" />
           </button>
           <h3 class="text-center text-[22px] text-[#8F8F8F]">Уменьшение<br>груди</h3>
         </div>
@@ -52,7 +52,7 @@
               :class="{ active: activeIndex === 4 }"
               @click="selectTab(4)"
           >
-            <nuxt-img src="/image/services/tabs/tab5.png" class="w-[80px] h-[80px]" />
+            <nuxt-img loading="lazy" src="/image/services/tabs/tab5.png" class="w-[80px] h-[80px]" />
           </button>
           <h3 class="text-center text-[22px] text-[#8F8F8F]">Пластика живота<br>(Абдоминопластика)</h3>
         </div>

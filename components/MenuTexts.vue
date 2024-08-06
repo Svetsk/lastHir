@@ -17,27 +17,27 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog">Пациентам</nuxt-link>
+            <nuxt-link prefetch to="/blog">Пациентам</nuxt-link>
             <a href="#formas">Форма обратной связи</a>
             <a href="#conts">Контакты</a>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/texts"><u>Статьи</u></nuxt-link>
+            <nuxt-link prefetch to="/blog/texts"><u>Статьи</u></nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>
+            <nuxt-link prefetch to="/blog/qa">Вопрос/ответ</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/video">экспертные видео</nuxt-link>
+            <nuxt-link prefetch to="/blog/video">экспертные видео</nuxt-link>
           </li>
           <li class="mobaa">
-            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
-            <nuxt-link to="/about">Обо мне</nuxt-link>
-            <nuxt-link to="/blog">Блог</nuxt-link>
-            <nuxt-link to="/services">Услуги</nuxt-link>
-            <nuxt-link to="/reviews">Отзывы</nuxt-link>
-            <nuxt-link to="/myWork">Мои работы</nuxt-link>
-            <nuxt-link to="/contact">Контакты</nuxt-link>
+            <nuxt-link prefetch to="/">Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link prefetch to="/about">Обо мне</nuxt-link>
+            <nuxt-link prefetch to="/blog">Блог</nuxt-link>
+            <nuxt-link prefetch to="/services">Услуги</nuxt-link>
+            <nuxt-link prefetch to="/reviews">Отзывы</nuxt-link>
+            <nuxt-link prefetch to="/myWork">Мои работы</nuxt-link>
+            <nuxt-link prefetch to="/contact">Контакты</nuxt-link>
           </li>
         </div>
       </ul>

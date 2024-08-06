@@ -13,31 +13,31 @@
       <div class="flex gap-[32px] flex-wrap sdfsaaa">
         <div class="point">
           <div class="flex gap-[8px] items-center">
-            <nuxt-img src="/image/about/comOne.png" class="w-[48px] h-[48px]" />
+            <nuxt-img loading="lazy" src="/image/about/comOne.png" class="w-[48px] h-[48px]" />
             <p class="text-black ">РОПРЭХ</p>
           </div>
         </div>
         <div class="point">
           <div class="flex gap-[8px] items-center">
-            <nuxt-img src="/image/about/comTwo.png" class="w-[48px] h-[48px]" />
+            <nuxt-img loading="lazy" src="/image/about/comTwo.png" class="w-[48px] h-[48px]" />
             <p class="text-black">РООМ</p>
           </div>
         </div>
       </div>
     </div>
-    <nuxt-link to="/gallary" class="flex sds sdfsdf">
+    <nuxt-link to="/gallary" class="flex sds sdfsdf" prefetch>
       <div class="flex flex-col gap-[40px]">
-        <nuxt-img src="/image/about/imgOne.png" class="images w-[816px]" />
-        <nuxt-img src="/image/about/imgOne.png" class="rou images w-[816px]" />
+        <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="images w-[816px]" />
+        <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="rou images w-[816px]" />
       </div>
       <div>
         <div class="mobile pb-[28px]">
-          <nuxt-img src="/image/about/imgFive.png" />
+          <nuxt-img loading="lazy" src="/image/about/imgFive.png" />
         </div>
         <div class="flex gap-[28px] sdsz">
-          <nuxt-img src="/image/about/imgTwo.png" class="images w-[381px] max-h-[728px]" />
-          <nuxt-img src="/image/about/imgThree.png" class="roun images w-[381px] " />
-          <nuxt-img src="/image/about/imgThree.png" class="rounz images w-[381px]" />
+          <nuxt-img loading="lazy" src="/image/about/imgTwo.png" class="images w-[381px] max-h-[728px]" />
+          <nuxt-img loading="lazy" src="/image/about/imgThree.png" class="roun images w-[381px] " />
+          <nuxt-img loading="lazy" src="/image/about/imgThree.png" class="rounz images w-[381px]" />
         </div>
       </div>
     </nuxt-link>
@@ -96,7 +96,6 @@
   .sdsz{
     & img{
       width: 360px;
-      //max-height: 529px;
       &:nth-child(1){
         width: 360px;
       }

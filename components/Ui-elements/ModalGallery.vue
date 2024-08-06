@@ -7,7 +7,7 @@
         <button class="close-modal-button" @click="closeModal">×</button>
         <div class="gallery">
           <div class="gallery-item" v-for="(image, index) in images" :key="index">
-            <img :src="image" :alt="'Image ' + index" />
+            <nuxt-img loading="lazy" :src="image" :alt="'Image ' + index" />
           </div>
         </div>
       </div>
