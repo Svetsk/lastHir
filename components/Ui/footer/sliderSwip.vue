@@ -45,33 +45,44 @@ export default {
         class="mySwiper"
     >
       <swiper-slide>
-        <nuxt-link to="">
+        <nuxt-link to="/reviews" >
           <nuxt-img src="/image/slider/slideOne.png" class="rounded-[40px]" />
         </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews" >
+          <nuxt-img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideThree.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews">
+          <nuxt-img src="/image/slider/slideThree.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideFore.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews">
+          <nuxt-img src="/image/slider/slideFive.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideFive.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews">
+          <nuxt-img src="/image/slider/slideSix.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideSix.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews">
+          <nuxt-img src="/image/slider/slideSeven.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideSeven.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews" >
+          <nuxt-img src="/image/slider/slideEight.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
-      <swiper-slide >
-        <nuxt-img src="/image/slider/slideEight.png" class="rounded-[40px]" />
-      </swiper-slide >
       <swiper-slide>
-        <nuxt-img src="/image/slider/slideNine.png" class="rounded-[40px]" />
+        <nuxt-link to="/reviews" >
+          <nuxt-img src="/image/slider/slideNine.png" class="rounded-[40px]" />
+        </nuxt-link>
       </swiper-slide>
     </swiper>
     <nuxt-link to="/reviews" class="rounded-[40px] pt-[72px] flex justify-center aaaaa">
@@ -100,7 +111,7 @@ export default {
 .swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .swiper-slide {

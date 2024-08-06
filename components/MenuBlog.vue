@@ -18,8 +18,8 @@ function closeMenu() {
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
             <nuxt-link to="/blog"><u>Пациентам</u></nuxt-link>
-            <a href="#rew">Форма обратной связи</a>
-            <a href="#servic">Контакты</a>
+            <a href="#formas">Форма обратной связи</a>
+            <a href="#conts">Контакты</a>
           </li>
           <li @click="closeMenu" class="decaa">
             <nuxt-link to="/blog/texts">Статьи</nuxt-link>

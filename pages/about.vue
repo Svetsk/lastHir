@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: "Евгения Корниясова - Пластический Хирург и Онколог в Геленджике",
+  ogTitle: "Евгения Корниясова - Пластический Хирург и Онколог в Геленджике | Клиника «Ланцетъ»",
+});
 import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
@@ -8,12 +11,13 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <AddHeader>
       <MenuAbout />
     </AddHeader>
-    <about-banner />
-    <about-educ />
-    <about-communities />
-    <about-history />
-    <about-blog />
-    <ui-elements-services />
+    <about-banner id="info" />
+    <about-educ id="educ" />
+    <about-communities id="comun" />
+    <about-history id="myHist" />
+    <about-blog id="blog" />
+    <slider-card-slider id="rew" />
+    <ui-elements-services id="servic" />
     <ui-footer-form class="pt-[300px]"/>
     <ui-footer-contact-footer class="pt-[350px]" />
   </div>

@@ -9,7 +9,7 @@
       <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px]" />
+          <nuxt-img src="/image/serv/ones.png" class="w-[664px] h-[712px] asdd" />
           <div class="flex flex-col gap-[40px] blocks">
             <h3 class="max-w-[616px]">
               пластическая хирургия
@@ -20,7 +20,7 @@
         </div>
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/threes.png" class="w-[664px] h-[712px]" />
+          <nuxt-img src="/image/serv/threes.png" class="w-[664px] h-[712px] asdd" />
           <div class="flex flex-col gap-[40px] blocks">
             <h3 class="max-w-[616px]">
               онкология
@@ -32,7 +32,7 @@
 
 
         <div class="relative bbb">
-          <nuxt-img src="/image/serv/twoes.png" class="w-[830px] h-[571px] last" />
+          <nuxt-img src="/image/serv/twoes.png" class="w-[830px] h-[571px] last asdd" />
           <div class="flex flex-col gap-[40px] blockss w-[120%]">
             <h3 class="max-w-[705px]">
               Обследования и консультации
@@ -87,7 +87,7 @@
 @media screen and (max-width: 1441px) {
   .aaaa{
     gap: 296px !important;
-    padding-bottom: 450px;
+    padding-bottom: 180px;
   }
 }
 @media screen and (min-width: 1441px) {
@@ -208,10 +208,13 @@ p{
     padding-right: 24px !important;
     padding-bottom: 50px !important;
     top: 200px;
-    max-width: 300px;
+    max-width: 360px;
   }
   .aaaa{
     padding-bottom: 500px;
+  }
+  .asdd{
+    transform: translateX(-5px);
   }
 }
 @media screen and (max-width: 390px) {

@@ -1,11 +1,11 @@
 <!-- components/Card.vue -->
 <template>
   <div class="card">
-    <img :src="image" alt="Card image" />
+    <img :src="image" class="ica" alt="Card image" />
     <div class="card-content">
       <div>
-        <p class="text-[30px] font-[600] pb-[45px] bnb">Ангелина Щ.</p>
-        <p class="text-[20px] w-[438px] pb-[45px] scx">Благодарю Евгению Альбертовну за такую прекрасную грудь. Долго выбирала своего хирурга  и не пожалела, что выбрала именно вас...</p>
+        <p class="text-[30px] font-[600] pb-[45px] bnb">{{ num }}</p>
+        <p class="text-[20px] w-[438px] pb-[45px] scx">{{ text }}</p>
         <div class="flex gap-[42px] items-center cvxc">
           <p class="text-[25px] font-[600] look">смотреть отзыв полностью</p>
           <nuxt-link to="/reviews">
@@ -23,10 +23,15 @@
 <script setup>
 const props = defineProps({
   image: String,
+  text: String,
+  num: String,
 });
 </script>
 
 <style scoped>
+.ica{
+  border-radius: 40px;
+}
 .card {
   overflow: visible !important;
   padding: 32px 400px 32px 27px;
@@ -39,7 +44,8 @@ const props = defineProps({
   width: 1000px !important;
 }
 .card img {
-  width: 202px;
+  width: 262px;
+  height: auto;
 }
 p{
   color: black;

@@ -1,5 +1,9 @@
 <template>
   <div class="container-fluide">
+    <div class="flex items-center gap-[24px] pb-[126px] asd">
+      <div class="line"></div>
+      <ui-elements-title title="Моя специализация:" />
+    </div>
     <div class="tabs-container">
       <div class="tabss" ref="tabsElement">
         <div class="conta flex flex-col gap-[42px] items-center justify-center">

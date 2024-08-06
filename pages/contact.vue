@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: "Контакты Евгении Корниясовой - Пластический Хирург и Онколог в Геленджике",
+  ogTitle: "Свяжитесь с Евгенией Корниясовой - Вашим Надежным Онкологом и Пластическим Хирургом",
+});
 import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 

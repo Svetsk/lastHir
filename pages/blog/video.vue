@@ -1,18 +1,21 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: "Блог Евгении Корниясовой - Полезная Информация для Пациентов | Пластический Хирург и Онколог",
+  ogTitle: "Блог Евгении Корниясовой - Советы и Статьи для Пациентов | Пластический Хирург и Онколог в Геленджике",
+});
 
-import ContactFooter from "~/components/Ui/footer/contactFooter.vue";
 import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
+  <AddHeader>
+    <MenuBlogVideos />
+  </AddHeader>
   <div class="container">
-    <AddHeader>
-      <MenuAbout />
-    </AddHeader>
     <blog-menu />
     <blog-video-card />
     <ui-footer-form />
-    <contact-footer />
+    <ui-footer-contact-footer />
   </div>
 </template>
 

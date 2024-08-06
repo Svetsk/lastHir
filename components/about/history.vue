@@ -15,7 +15,7 @@
           <ui-elements-button title="Читать" class="mt-[32px]" />
         </div>
         <div>
-          <nuxt-link to="" class="relative pads">
+          <nuxt-link to="/blog/texts" class="relative pads">
             <nuxt-img src="/image/about/history/pad.png" class="pad" />
             <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118" fill="none">
               <circle cx="58.876" cy="59.0459" r="58.8037" fill="white"/>
@@ -25,26 +25,26 @@
         </div>
       </div>
       <div class="flex vfvf items-start justify-between">
-        <div>
+        <div id="tools">
           <div class="flex items-center gap-[24px]">
             <div class="line"></div>
-            <ui-elements-title title="Моя история" />
+            <ui-elements-title title="Инструменты" />
           </div>
           <p>В работе я использую инструменты из медицинской<br>стали, титана от <u>самых лучших фирм.</u><br><br>Они абсолютно стерильны, так как наши мед. сестры<br>тщательно их промывают, обрабатывают, упаковывают. <br><br>Из операционной инструменты никуда<br>не выносятся, не перемещаются.</p>
         </div>
         <div class=" flex items-end h-[550px]">
-          <div class="toolss">
+          <nuxt-link to="/blog/texts" class="toolss">
             <nuxt-img src="/image/about/history/tools.png" class="tools" />
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76" fill="none">
               <path d="M29.4409 18.8403L49.3323 39.866L29.4412 57.7225" stroke="white" stroke-width="2"/>
               <path d="M75.5 38C75.5 58.7107 58.7107 75.5 38 75.5C17.2893 75.5 0.5 58.7107 0.5 38C0.5 17.2893 17.2893 0.5 38 0.5C58.7107 0.5 75.5 17.2893 75.5 38Z" stroke="white"/>
             </svg>
-          </div>
+          </nuxt-link>
         </div>
       </div>
       <div class="flex vfvl items-end justify-between">
         <div class="flex flex-col gap-[180px]">
-          <div>
+          <div id="obor">
             <div class="flex items-center gap-[24px]">
               <div class="line"></div>
               <ui-elements-title title="Оборудование" />
@@ -53,7 +53,7 @@
               Только новейшее и самое лучшее оборудование<br>я использую в своей работе. Будьте уверены,<br>что ваше здоровье в надёжных руках.
             </p>
           </div>
-          <div>
+          <div id="materials">
             <div class="flex items-center gap-[24px]">
               <div class="line"></div>
               <ui-elements-title title="Материалы" />

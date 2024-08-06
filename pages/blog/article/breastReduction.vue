@@ -1,13 +1,16 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: "Блог Евгении Корниясовой - Полезная Информация для Пациентов | Пластический Хирург и Онколог",
+  ogTitle: "Блог Евгении Корниясовой - Советы и Статьи для Пациентов | Пластический Хирург и Онколог в Геленджике",
+});
 import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
+  <AddHeader>
+    <MenuTexts />
+  </AddHeader>
   <div class="container">
-    <AddHeader>
-      <MenuHome />
-    </AddHeader>
     <blog-menu />
     <nuxt-link to="/blog/texts" class="flex items-center gap-[8px] pt-[100px] text-[25px] font-[500]">
       <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">

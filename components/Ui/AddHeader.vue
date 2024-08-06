@@ -4,22 +4,34 @@ import MenuButton from '@/components/MenuButton.vue'
 import MenuHome from '@/components/MenuHome.vue'
 
 const isMenuOpen = ref(false)
+const headerRef = ref(null)
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
 
-  if (isMenuOpen.value) {
-    document.body.style.position = 'fixed'
-    document.body.style.top = '0'
-    document.body.style.left = '0'
-    document.body.style.width = '100%'
-    document.body.style.overflowY = 'hidden'
+  if (headerRef.value) {
+    if (isMenuOpen.value) {
+      headerRef.value.style.position = 'fixed'
+      headerRef.value.style.top = '40px'
+      // headerRef.value.style.maxWidth = '1200px'
+      // headerRef.value.style.left = '0'
+      headerRef.value.style.width = '100%'
+      // headerRef.value.style.paddingLeft = '40px'
+      headerRef.value.style.overflowY = 'hidden'
+      // headerRef.value.style.display = 'flex'
+      // headerRef.value.style.justifyContent = 'space-between'
+    } else {
+      headerRef.value.style.position = ''
+      headerRef.value.style.top = ''
+      headerRef.value.style.maxWidth = ''
+      // headerRef.value.style.left = ''
+      headerRef.value.style.width = ''
+      headerRef.value.style.overflowY = ''
+      // headerRef.value.style.display = ''
+      // headerRef.value.style.justifyContent = ''
+    }
   } else {
-    document.body.style.position = ''
-    document.body.style.top = ''
-    document.body.style.left = ''
-    document.body.style.width = ''
-    document.body.style.overflowY = ''
+    console.error('Header reference is not defined.')
   }
 }
 </script>
@@ -28,7 +40,7 @@ function toggleMenu() {
   <header class="container">
     <div class="wrapper">
       <div class="wrapper__menu">
-        <nav>
+        <nav ref="headerRef">
           <ul>
             <li>
               <nuxt-link to="/">
@@ -56,7 +68,7 @@ function toggleMenu() {
               <nuxt-link to="/contact">Контакты</nuxt-link>
             </li>
             <li>
-              <button @click="toggleMenu">
+              <button class="asdzxc" @click="toggleMenu">
                 <nuxt-img
                     v-if="!isMenuOpen"
                     class="burger__menu hiddensss"
@@ -82,6 +94,10 @@ function toggleMenu() {
 </template>
 
 <style lang="scss" scoped>
+
+nav{
+  max-width: 1600px;
+}
 .fixed {
   position: fixed;
   top: 0;
@@ -131,6 +147,13 @@ function toggleMenu() {
 @media screen and (max-width: 870px) {
   .mobile-menu {
     width: 40% !important;
+  }
+}
+@media screen and (max-width: 744px) {
+  .asdzxc{
+    & img{
+      transform: translateX(-50px);
+    }
   }
 }
 @media screen and (max-width: 500px) {

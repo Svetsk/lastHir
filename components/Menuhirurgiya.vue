@@ -18,29 +18,30 @@ function closeMenu() {
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
             <nuxt-link to="/services">Онкология</nuxt-link>
-            <a href="#variants">Виды рака груди</a>
-            <a href="#myWork">Мои работы</a>
-            <a href="#vid">Как различить вид опухоли?</a>
-            <a href="#caus">Причины развития рака молочной железы?</a>
-            <a href="#conts">Форма обратной связи</a>
+            <nuxt-link to="/services#variants">Виды рака груди</nuxt-link>
+            <nuxt-link to="/services#myWork">Мои работы</nuxt-link>
+            <nuxt-link to="/services#vid">Как различить вид опухоли?</nuxt-link>
+            <nuxt-link to="/services#caus">Причины развития рака молочной железы?</nuxt-link>
+            <nuxt-link to="/services#conts">Форма обратной связи</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/texts">Пластическая хирургия</nuxt-link>
-            <a href="#conts">Моя специализация</a>
-            <a href="#conts">Инструменты, оборудование, материалы</a>
-            <a href="#conts">Корниясова Евгения Альбертовна</a>
-            <a href="#conts">Мои работы</a>
+            <nuxt-link to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
+            <a href="#mySpec">Моя специализация</a>
+            <a href="#toolss">Инструменты, оборудование, материалы</a>
+            <a href="#korn">Корниясова Евгения Альбертовна</a>
+            <a href="#mywrk">Мои работы</a>
             <a href="#conts">Форма обратной связи</a>
-            <a href="#conts">Цены</a>
+            <a href="#pricehirrurgiya">Цены</a>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/qa">Обследования и консультации</nuxt-link>
-            <a href="#conts">Какие обследования я делаю?</a>
-            <a href="#conts">Корниясова Евгения Альбертовна</a>
-            <a href="#conts">Мои работы</a>
-            <a href="#conts">Форма обратной связи</a>
-            <a href="#conts">Цены</a>
-            <a href="#conts">Отзывы</a>
+            <nuxt-link to="/services/exam">Обследования и консультации</nuxt-link>
+            <nuxt-link to="/services/exam#whtw">Какие обследования я делаю?</nuxt-link>
+            <nuxt-link to="/services/exam#infs">Корниясова Евгения Альбертовна</nuxt-link>
+            <nuxt-link to="/services/exam#mywrks">Мои работы</nuxt-link>
+            <nuxt-link to="/services/exam#conts">Форма обратной связи</nuxt-link>
+            <nuxt-link to="/services/exam#prs">Цены</nuxt-link>
+            <nuxt-link to="/services/exam#otz">Отзывы</nuxt-link>
+            <nuxt-link to="/services/exam#cont">Контакты</nuxt-link>
           </li>
           <li class="mobaa">
             <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
@@ -64,26 +65,26 @@ i {
   height: 1px;
   background: #ffffff;
   position: absolute;
-  left: 30.5%;
+  left: 50.5%;
 }
 @media screen and (max-width: 1920px) {
   i{
-    left: 27.4%;
+    left: 55.8%;
   }
 }
 @media screen and (max-width: 1600px) {
   i{
-    left: 27.4%;
+    left: 55.9%;
   }
 }
 @media screen and (max-width: 1440px) {
   i{
-    left: 30.5%;
+    left: 50.9%;
   }
 }
 @media screen and (max-width: 1200px) {
   i{
-    left: 37%;
+    left: 44%;
   }
 }
 .ld {

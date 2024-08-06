@@ -42,18 +42,15 @@ import { ref } from 'vue'
 import AddHeader from "~/components/Ui/AddHeader.vue";
 
 const photos = [
-  { id: 1, src: '/image/work/patientOne/1.png', title: 'Photo 1' },
-  { id: 2, src: '/image/work/patientOne/2.png', title: 'Photo 2' },
-  { id: 3, src: '/image/work/patientOne/3.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/4.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/5.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/6.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/7.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/8.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/9.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/10.png', title: 'Photo 10' },
-  { id: 3, src: '/image/work/patientOne/11.png', title: 'Photo 3' },
-  { id: 3, src: '/image/work/patientOne/13.png', title: 'Photo 3' },
+  { id: 1, src: '/image/work/patientTwo/1.png', title: 'Photo 1' },
+  { id: 2, src: '/image/work/patientTwo/2.png', title: 'Photo 2' },
+  { id: 3, src: '/image/work/patientTwo/3.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/4.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/5.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/6.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/7.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/8.png', title: 'Photo 3' },
+  { id: 3, src: '/image/work/patientTwo/9.png', title: 'Photo 3' },
 ]
 
 const currentPhoto = ref(null)

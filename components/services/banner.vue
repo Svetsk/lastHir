@@ -12,7 +12,7 @@ defineProps({
       <div class="wrapper">
         <h1>{{ title }}</h1>
         <h2>{{ subtitle }}</h2>
-        <ui-elements-button class="a" title="Узнать подробнее" />
+        <ui-elements-button class="a" title="Узнать подробнее" link="/blog" />
       </div>
     </div>
   </div>

@@ -23,7 +23,7 @@
           <p class="text-[25px] font-[500] max-w-[860px] pb-[80px]">
             Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
           </p>
-          <ui-elements-button title="Подробнее обо мне" link="/about" />
+          <ui-elements-button title="Подробнее" link="/about" />
         </div>
       </div>
       <div>
@@ -55,7 +55,7 @@
           <p class="text-[25px] font-[500] max-w-[860px] pb-[80px] zxct">
             Онколог, пластический<br>и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
           </p>
-          <ui-elements-button title="Подробнее обо мне" />
+          <ui-elements-button title="Подробнее" />
         </div>
       </div>
     </div>
@@ -118,12 +118,14 @@ svg{
 @media screen and (max-width: 550px) {
   h2{
     font-size: 34px;
+    padding-top: 24px;
   }
   .contact{
     font-size: 22px;
   }
   img{
     padding-top: 40px;
+    max-width: 85%;
   }
   .gelen{
     font-size: 22px;

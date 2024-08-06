@@ -53,10 +53,10 @@ const submitForm = async () => {
 
 <template>
   <div class="container-fluide">
-    <div class="pb-[240px] ffaa">
+    <div class="pb-[240px] ffaa" >
       <ui-elements-title title="заполните форму" class="pb-[65px] pt-[85px]" />
       <div class="form bg-white rounded-[100px] flex justify-between">
-        <form action="" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px] asd" @submit.prevent="submitForm">
+        <form action="" id="formas" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px] asd" @submit.prevent="submitForm">
           <label class="flex flex-col text-black text-[30px] font-[500]">
             Имя
             <input type="text" placeholder="Анастасия Калашникова" size="30" class="w-[760px] border-none inpt" v-model="fio" required>

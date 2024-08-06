@@ -11,7 +11,7 @@
           <ui-elements-title title="Оборудование" />
         </div>
         <p class="max-w-[744px]">Только новейшее и самое лучшее оборудование я использую в своей работе. Будьте уверены,  что ваше здоровье в надёжных руках.</p>
-        <ui-elements-button title="Читать" class="pt-[25px]" />
+        <ui-elements-button title="Читать" class="pt-[25px]" link="/blog" />
       </div>
       <div class="flex flex-col gap-[45px]">
         <div class="flex items-center gap-[24px] pb-[16px] asd">
@@ -19,7 +19,7 @@
           <ui-elements-title title="Материалы" />
         </div>
         <p class="max-w-[744px]">В работе с пластикой груди, я использую самые стабильные, лучшие импланты. Эти импланты прошли множество исследований, они не опасны для здоровья, состоят из силикона.</p>
-        <ui-elements-button title="Читать" class="pt-[25px]" />
+        <ui-elements-button title="Читать" class="pt-[25px]" link="/blog" />
       </div>
     </div>
   </div>

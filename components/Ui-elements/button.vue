@@ -36,13 +36,13 @@ div{
 }
 @media screen and (max-width: 1440px){
   a{
-    font-size: 16px !important;
+    font-size: 18px !important;
     padding: 16px 36px !important;
   }
 }
 @media screen and (max-width: 900px){
   a{
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 }
 

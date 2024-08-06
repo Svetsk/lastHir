@@ -17,14 +17,11 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
-            <a href="#inf">Обо мне</a>
-            <a href="#ser">Услуги</a>
-            <a href="#sl">Отзывы</a>
-            <a href="#sw">Мои работы</a>
-            <a href="#ac">Вопрос/Ответ</a>
-            <a href="#fr">Форма обратной связи</a>
-            <a href="#fot">Контакты</a>
+            <nuxt-link to="/reviews">Пациенты</nuxt-link>
+            <a href="#zxc">Мои работы</a>
+            <a href="#servsa">Услуги</a>
+            <a href="#foorm">Форма обратной связи</a>
+            <a href="#cnt">Контакты</a>
           </li>
           <li class="mobaa">
             <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
@@ -44,9 +41,31 @@ function closeMenu() {
 
 <style scoped>
 i {
-  width: 250px;
+  width: 80px;
   height: 1px;
   background: #ffffff;
+  position: absolute;
+  left: 30.5%;
+}
+@media screen and (max-width: 1920px) {
+  i{
+    left: 64.9%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  i{
+    left: 64.9%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  i{
+    left: 61%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  i{
+    left: 55.5%;
+  }
 }
 .ld {
   width: 100%;

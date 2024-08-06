@@ -20,7 +20,7 @@ const props = defineProps({
           <p class="max-w-[737px] text-[25px] font-[500]">
             {{ tabTitle }}
           </p>
-          <ui-elements-button title="Читать подробнее" class="pt-[85px]" />
+          <ui-elements-button title="Читать подробнее" class="pt-[85px]" link="/blog" />
         </div>
         <div>
           <div class="flex items-center gap-[24px] pb-[16px] pt-[56px] asd">

@@ -21,7 +21,7 @@
         <p>— Избыточный вес в пременопаузе. </p>
         <p>— Алкоголизм. </p>
         <p>— Ранняя менструация, поздняя менопауза и др. </p>
-        <ui-elements-button class="btn" title="Читать" />
+        <ui-elements-button class="btn" title="Читать" link="/blog" />
       </div>
     </div>
   </div>

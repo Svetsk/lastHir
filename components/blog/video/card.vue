@@ -24,6 +24,7 @@ const openModal = (url: string) => {
           text="Можно ли подтянуть грудь через ареолу?"
           imge="/image/blog/video/prewTwo.png"
           src="/image/blog/video/new/breast_reduction.mp4"
+          big="bbis"
       />
 
       <video-card
@@ -45,6 +46,7 @@ const openModal = (url: string) => {
           text="Когда можно делать маммопластику после родов? И можно ли?"
           imge="/image/blog/video/prewFive.png"
           src="/image/blog/video/new/typesoflifts.mp4"
+          big="bis"
       />
 
       <video-card

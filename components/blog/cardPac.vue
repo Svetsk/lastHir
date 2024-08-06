@@ -7,6 +7,7 @@ const props = defineProps<{
   subTitle: string;
   bottomTitle: string;
   image: string;
+  src: string;
 }>();
 
 </script>
@@ -22,7 +23,7 @@ const props = defineProps<{
           <h3>{{ props.title }}</h3>
           <p class="st">{{ props.subTitle }}</p>
           <div>
-            <nuxt-link class="learn" to="">читать</nuxt-link>
+            <nuxt-link class="learn" :to="src">читать</nuxt-link>
           </div>
         </div>
         <p class="bottom__title">{{ props.bottomTitle }}</p>

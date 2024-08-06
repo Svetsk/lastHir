@@ -7,7 +7,7 @@
     <div class="flex justify-between gap-[60px] pt-[60px] pb-[180px] as">
       <div class="left">
         <nuxt-img src="/image/services/evg.png" class="kor" />
-        <div>
+        <nuxt-link to="/about">
           <div class="flex justify-between items-center aaa">
             <p>Онколог, пластический<br>и реконструктивный хирург</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="108" height="109" viewBox="0 0 108 109" fill="none">
@@ -16,9 +16,9 @@
             </svg>
           </div>
           <h3>Корниясова Евгения<br>Альбертовна</h3>
-        </div>
+        </nuxt-link>
       </div>
-      <div class="right">
+      <nuxt-link to="/reviews" class="right">
         <p>Стаж работы: с 2016 года.<br >Моим рукам доверилось уже больше 800 довольных пациентов.</p>
         <div class="flex items-center justify-between ab">
           <p>800+</p>
@@ -26,7 +26,7 @@
             <nuxt-img src="/image/services/800.png" class="qs" />
           </div>
         </div>
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -97,10 +97,20 @@ h3{
       font-size: 18px;
     }
   }
+  .ab{
+    & p{
+      font-size: 48px;
+    }
+  }
 }
 @media screen and (max-width: 1400px) {
   .left{
     padding-left: 40px;
+  }
+  .ab{
+    & p{
+      font-size: 32px;
+    }
   }
 }
 @media screen and (max-width: 1300px) {

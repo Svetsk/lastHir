@@ -17,7 +17,7 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog"><u>Пациентам</u></nuxt-link>
+            <nuxt-link to="/blog">Пациентам</nuxt-link>
             <a href="#formas">Форма обратной связи</a>
             <a href="#conts">Контакты</a>
           </li>
@@ -28,7 +28,7 @@ function closeMenu() {
             <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/video">экспертные видео</nuxt-link>
+            <nuxt-link to="/blog/video"><u>Экспертные видео</u></nuxt-link>
           </li>
           <li class="mobaa">
             <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>

@@ -14,7 +14,7 @@
             </div>
             <p class="text-[25px] max-w-[774px]">Фото и видео с операционной, а также мои экспертные ролики с ответами на самые частые вопросы пациентов, вы можете посмотреть, нажав на кнопку ниже.</p>
             <div class="pb-[42px]">
-              <ui-elements-button title="Смотреть" class="blocka" />
+              <ui-elements-button title="Смотреть" class="blocka" link="/blog" />
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <p>Какие анализы нужно подготовить перед операцией? Ответила на этот вопрос<br>в видео, жмите кнопку ниже</p>
             <div>
               <div class="zxc">
-                <nuxt-link to="">
+                <nuxt-link to="/blog">
                   Смотреть
                   <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                     <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="black"/>
@@ -36,9 +36,9 @@
           </div>
         </div>
         <div class="borde">
-          <div class="flex flex-col gap-[45px] py-[42px] pl-[50px] qqq">
+          <nuxt-link to="/blog/texts" class="flex flex-col gap-[45px] py-[42px] pl-[50px] qqq">
             <nuxt-img src="/image/about/blog/blog.png" class="ab"/>
-          </div>
+          </nuxt-link>
         </div>
       </div>
       <div class="de">
@@ -47,7 +47,7 @@
           <p>Какие анализы нужно подготовить перед операцией? Ответила на этот вопрос<br>в видео, жмите кнопку ниже</p>
           <div>
             <div class="zxc">
-              <nuxt-link to="">
+              <nuxt-link to="/blog/texts">
                 Смотреть
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                   <circle cx="29.1133" cy="28.3212" r="20" transform="rotate(-135 29.1133 28.3212)" fill="black"/>

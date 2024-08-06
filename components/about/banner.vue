@@ -9,7 +9,7 @@
         <div class="block">
           <h1 class="max-w-[860px]">Корниясова Eвгения Альбертовна</h1>
           <p class="max-w-[860px] bannerp">Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Моим рукам доверилось уже больше 800 довольных пациентов, совершенно из разных городов<br>и стран: Германии, США, ОАЭ, Израиля, Великобритании и др.</p>
-          <ui-elements-button class="bd" title="Записаться" />
+          <ui-elements-button class="bd" title="Записаться" link="/contact" />
         </div>
         <div class="images">
           <div class="">

@@ -17,12 +17,12 @@ function closeMenu() {
         <div class="ld relative">
           <i class="absolute"></i>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog"><u>Пациентам</u></nuxt-link>
-            <a href="#rew">Форма обратной связи</a>
-            <a href="#servic">Контакты</a>
+            <nuxt-link to="/blog">Пациентам</nuxt-link>
+            <a href="#formas">Форма обратной связи</a>
+            <a href="#conts">Контакты</a>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/texts">Статьи</nuxt-link>
+            <nuxt-link to="/blog/texts"><u>Статьи</u></nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
             <nuxt-link to="/blog/qa">Вопрос/ответ</nuxt-link>

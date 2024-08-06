@@ -8,9 +8,9 @@
       <div class="line"></div>
       <ui-elements-title title="сообщества" />
     </div>
-    <div class="flex justify-between items-end pt-[44px]">
-      <p class="">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи<br>в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
-      <div class="flex gap-[32px] flex-wrap">
+    <div class="flex justify-between items-end pt-[44px] sdfsdfs">
+      <p class="asdcx">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи<br>в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
+      <div class="flex gap-[32px] flex-wrap sdfsaaa">
         <div class="point">
           <div class="flex gap-[8px] items-center">
             <nuxt-img src="/image/about/comOne.png" class="w-[48px] h-[48px]" />
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="flex sds sdfsdf">
+    <nuxt-link to="/gallary" class="flex sds sdfsdf">
       <div class="flex flex-col gap-[40px]">
         <nuxt-img src="/image/about/imgOne.png" class="images w-[816px]" />
         <nuxt-img src="/image/about/imgOne.png" class="rou images w-[816px]" />
@@ -40,7 +40,7 @@
           <nuxt-img src="/image/about/imgThree.png" class="rounz images w-[381px]" />
         </div>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -141,6 +141,10 @@
       }
     }
   }
+  .sdfsdfs{
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 @media screen and (max-width: 425px) {
   .sdsz{
@@ -153,6 +157,18 @@
       }
     }
   }
+  .sdfsaaa{
+    flex-wrap: nowrap;
+    padding: 0;
+    gap: 8px;
+  }
+  .asdcx{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  .point{
+    width: 180px !important;
+  }
   .roun{
     display: none;
   }
@@ -164,6 +180,9 @@
   }
 }
 @media screen and (max-width: 390px) {
+  .point{
+    width: 170px !important;
+  }
   .sdsz{
     justify-content: space-between;
     & img{

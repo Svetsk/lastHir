@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="pt-[40px] sdfsdf">
+  <div class="pb-[40px] sdfsdf">
   <div class="container">
     <div class="wrap">
       <div class="flex flex-wrap cs">
@@ -34,9 +34,9 @@
   padding: 20px 0 20px 30px;
   gap: 28px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   .cs{
-    padding: 12px;
+    padding: 12px !important;
   }
 }
 </style>

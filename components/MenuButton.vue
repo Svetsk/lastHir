@@ -6,11 +6,6 @@ const isMenuOpen = ref(false)
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
-
-  // Проверка наличия document и document.body
-  if (typeof document !== 'undefined' && document.body) {
-    document.body.style.overflowY = isMenuOpen.value ? 'hidden' : 'auto'
-  }
 }
 </script>
 

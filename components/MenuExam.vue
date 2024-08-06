@@ -25,22 +25,23 @@ function closeMenu() {
             <nuxt-link to="/services#conts">Форма обратной связи</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/texts">Пластическая хирургия</nuxt-link>
-            <a href="#mySpec">Моя специализация</a>
-            <a href="#toolss">Инструменты, оборудование, материалы</a>
-            <a href="#korn">Корниясова Евгения Альбертовна</a>
-            <a href="#mywrk">Мои работы</a>
-            <a href="#conts">Форма обратной связи</a>
-            <a href="#pricehirrurgiya">Цены</a>
+            <nuxt-link to="/services/hirurgiya">Пластическая хирургия</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#mySpec">Моя специализация</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#toolss">Инструменты, оборудование, материалы</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#korn">Корниясова Евгения Альбертовна</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#mywrk">Мои работы</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#conts">Форма обратной связи</nuxt-link>
+            <nuxt-link to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/blog/qa">Обследования и консультации</nuxt-link>
-            <a href="#conts">Какие обследования я делаю?</a>
-            <a href="#conts">Корниясова Евгения Альбертовна</a>
-            <a href="#conts">Мои работы</a>
+            <nuxt-link to="/services/exam">Обследования и консультации</nuxt-link>
+            <a href="#whtw">Какие обследования я делаю?</a>
+            <a href="#infs">Корниясова Евгения Альбертовна</a>
+            <a href="#mywrks">Мои работы</a>
             <a href="#conts">Форма обратной связи</a>
-            <a href="#conts">Цены</a>
-            <a href="#conts">Отзывы</a>
+            <a href="#prs">Цены</a>
+            <a href="#otz">Отзывы</a>
+            <a href="#cont">Контакты</a>
           </li>
           <li class="mobaa">
             <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
@@ -49,7 +50,6 @@ function closeMenu() {
             <nuxt-link to="/services">Услуги</nuxt-link>
             <nuxt-link to="/reviews">Отзывы</nuxt-link>
             <nuxt-link to="/myWork">Мои работы</nuxt-link>
-            <nuxt-link to="/contact">Контакты</nuxt-link>
           </li>
         </div>
       </ul>
@@ -64,26 +64,26 @@ i {
   height: 1px;
   background: #ffffff;
   position: absolute;
-  left: 30.5%;
+  left: 50.5%;
 }
 @media screen and (max-width: 1920px) {
   i{
-    left: 27.4%;
+    left: 55.8%;
   }
 }
 @media screen and (max-width: 1600px) {
   i{
-    left: 27.4%;
+    left: 55.9%;
   }
 }
 @media screen and (max-width: 1440px) {
   i{
-    left: 30.5%;
+    left: 50.9%;
   }
 }
 @media screen and (max-width: 1200px) {
   i{
-    left: 37%;
+    left: 44%;
   }
 }
 .ld {

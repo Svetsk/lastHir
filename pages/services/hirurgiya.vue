@@ -1,21 +1,26 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: "Услуги Евгении Корниясовой - Пластическая Хирургия, Онкология и Консультации | Геленджик",
+  ogTitle: "Пластическая Хирургия и Онкология в Геленджике - Услуги Евгении Корниясовой | Клиника «Ланцетъ»",
+});
 import AddHeader from "~/components/Ui/AddHeader.vue";
 </script>
 
 <template>
   <div>
     <AddHeader>
-      <MenuAbout />
+      <Menuhirurgiya />
     </AddHeader>
     <services-menu />
     <services-banner title="Приобрети желанную форму и объём груди, почувствуй уверенность" styles="background: url('/image/services/banhir.png') no-repeat center;" />
     <services-regalii />
-    <services-tabs />
-    <services-tools />
+    <services-tabs id="mySpec"/>
+    <services-tools id="toolss" />
     <services-material />
-    <main-info />
-    <ui-footer-slider-swip class="pt-[240px]"/>
+    <main-info id="korn" />
+    <div class="pt-[140px]" id="mywrk">
+      <ui-footer-slider-swip />
+    </div>
     <ui-footer-form class="pt-[300px]"/>
 
 
@@ -23,7 +28,7 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
-          <div class="line"></div>
+          <div class="line" id="pricehirrurgiya"></div>
           <ui-elements-title title="цены (пластика груди)" />
         </div>
         <ui-elements-price-props title="Эндопротезирование молочных желез любой доступ  (две стороны) без стоимости имплантатов" price="304 000 ₽" />
