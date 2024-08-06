@@ -16,7 +16,7 @@ function closeMenu() {
       <ul>
         <div class="ld relative">
           <i class="absolute"></i>
-          <li @click="closeMenu">
+          <li @click="closeMenu" class="decaa">
             <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
             <a href="#inf">Обо мне</a>
             <a href="#ser">Услуги</a>
@@ -26,9 +26,19 @@ function closeMenu() {
             <a href="#fr">Форма обратной связи</a>
             <a href="#fot">Контакты</a>
           </li>
+          <li class="mobaa">
+            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link to="/about">Обо мне</nuxt-link>
+            <nuxt-link to="/blog">Блог</nuxt-link>
+            <nuxt-link to="/services">Услуги</nuxt-link>
+            <nuxt-link to="/reviews">Отзывы</nuxt-link>
+            <nuxt-link to="/myWork">Мои работы</nuxt-link>
+            <nuxt-link to="/contact">Контакты</nuxt-link>
+          </li>
         </div>
       </ul>
     </div>
+
   </div>
 </template>
 
@@ -84,17 +94,24 @@ ul {
     }
   }
 }
+.mobaa{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobaa{
+    display: flex;
+  }
+  .decaa{
+    display: none;
+  }
+}
 @media screen and (max-width: 411px) {
   li a:nth-child(1) {
-    font-size: 16px;
+    font-size: 14px;
   }
   li{
     font-size: 14px;
   }
-}
-/* Если вам нужно добавить стили для фиксированного меню */
-.mobile-menu {
-  overflow: hidden !important; /* Если меню не должно скроллиться */
 }
 
 </style>

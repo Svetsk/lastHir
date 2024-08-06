@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Евгения Корниясова - Пластический Хирург и Онколог в Геленджике",
+  ogTitle: "Евгения Корниясова - Пластический Хирург и Онколог в Геленджике | Клиника «Ланцетъ»",
+});
+import AddHeader from "~/components/Ui/AddHeader.vue";
+</script>
+
 <template>
   <div>
     <AddHeader>
@@ -15,19 +23,6 @@
   </div>
 </template>
 
-<script lang="ts">
+<style scoped lang="scss">
 
-import {defineComponent} from "vue";
-import AddHeader from "~/components/Ui/AddHeader.vue";
-
-export default defineComponent({
-  components: {AddHeader}
-})
-</script>
-
-<style scoped>
-#sl{
-  padding-top: 0;
-  padding-bottom: 140px;
-}
 </style>

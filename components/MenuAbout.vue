@@ -16,39 +16,72 @@ function closeMenu() {
       <ul>
         <div class="ld relative">
           <i class="absolute"></i>
-          <li @click="closeMenu">
-            <nuxt-link to="/">Корниясова Евгения альбертовна</nuxt-link>
-            <a href="#inf">Образование</a>
-            <a href="#ser">Сообщества</a>
-            <a href="#sl">Моя история</a>
-            <a href="#sw">Инструменты</a>
-            <a href="#ac">Оборудование</a>
-            <a href="#fr">Материалы</a>
-            <a href="#fot">Мой блог</a>
-            <a href="#fot">Отзывы</a>
-            <a href="#fot">Услуги</a>
+          <li @click="closeMenu" class="decaa">
+            <nuxt-link to="/about">Корниясова Евгения альбертовна</nuxt-link>
+            <a href="#educ">Образование</a>
+            <a href="#comun">Сообщества</a>
+            <a href="#myHist">Моя история</a>
+            <a href="#tools">Инструменты</a>
+            <a href="#obor">Оборудование</a>
+            <a href="#materials">Материалы</a>
+            <a href="#blog">Мой блог</a>
+            <a href="#rew">Отзывы</a>
+            <a href="#servic">Услуги</a>
           </li>
-          <li>
-            <a href="">Форма обратной связи</a>
-            <a href="">Контакты</a>
+          <li @click="closeMenu" class="decaa">
+            <nuxt-link to="/about"></nuxt-link>
+            <a href="#formas">Форма обратной связи</a>
+            <a href="#conts">Контакты</a>
+          </li>
+          <li class="mobaa">
+            <nuxt-link to="/">Пластический хирург / Онколог</nuxt-link>
+            <nuxt-link to="/about">Обо мне</nuxt-link>
+            <nuxt-link to="/blog">Блог</nuxt-link>
+            <nuxt-link to="/services">Услуги</nuxt-link>
+            <nuxt-link to="/reviews">Отзывы</nuxt-link>
+            <nuxt-link to="/myWork">Мои работы</nuxt-link>
+            <nuxt-link to="/contact">Контакты</nuxt-link>
           </li>
         </div>
       </ul>
     </div>
+
   </div>
 </template>
 
 <style scoped>
 i {
-  width: 250px;
+  width: 120px;
   height: 1px;
   background: #ffffff;
+  position: absolute;
+  left: 20.5%;
+}
+@media screen and (max-width: 1600px) {
+  i{
+    left: 18%;
+  }
+}
+@media screen and (max-width: 1920px) {
+  i{
+    left: 18%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  i{
+    left: 20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  i{
+    left: 24%;
+  }
 }
 .ld {
   width: 100%;
   border-top: 1px solid rgba(136, 136, 136, 0.29);
   display: flex;
-  justify-content: space-between;
+  gap: 85px;
 }
 li {
   display: flex;
@@ -79,7 +112,7 @@ ul {
   background: rgba(24, 24, 24, 0.64);
   backdrop-filter: blur(11.65px);
   width: 100%;
-  height: 90%;
+  height: 95%;
   & ul {
     padding-top: 120px;
     & li {
@@ -90,17 +123,24 @@ ul {
     }
   }
 }
+.mobaa{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobaa{
+    display: flex;
+  }
+  .decaa{
+    display: none;
+  }
+}
 @media screen and (max-width: 411px) {
   li a:nth-child(1) {
-    font-size: 16px;
+    font-size: 14px;
   }
   li{
     font-size: 14px;
   }
-}
-/* Если вам нужно добавить стили для фиксированного меню */
-.mobile-menu {
-  overflow: hidden !important; /* Если меню не должно скроллиться */
 }
 
 </style>
