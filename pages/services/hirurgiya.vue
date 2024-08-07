@@ -134,6 +134,9 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
 .sdfsdfsdf{
   transform: translateY(-50px);
 }
+.mbsl{
+  display: none;
+}
 @media screen and (max-width: 500px) {
   .dkst{
     display: none;

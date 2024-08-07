@@ -10,7 +10,7 @@
           <div class="line"></div>
           <ui-elements-title title="Оборудование" />
         </div>
-        <p class="max-w-[744px]">Только новейшее и самое лучшее оборудование я использую в своей работе. Будьте уверены,  что ваше здоровье в надёжных руках.</p>
+        <p class="max-w-[744px] text-[25px]">Только новейшее и самое лучшее оборудование я использую в своей работе. Будьте уверены,  что ваше здоровье в надёжных руках.</p>
         <ui-elements-button title="Читать" class="pt-[25px]" link="/blog" />
       </div>
       <div class="flex flex-col gap-[45px]">
@@ -18,7 +18,7 @@
           <div class="line"></div>
           <ui-elements-title title="Материалы" />
         </div>
-        <p class="max-w-[744px]">В работе с пластикой груди, я использую самые стабильные, лучшие импланты. Эти импланты прошли множество исследований, они не опасны для здоровья, состоят из силикона.</p>
+        <p class="max-w-[744px] text-[25px]">В работе с пластикой груди, я использую самые стабильные, лучшие импланты. Эти импланты прошли множество исследований, они не опасны для здоровья, состоят из силикона.</p>
         <ui-elements-button title="Читать" class="pt-[25px]" link="/blog" />
       </div>
     </div>
@@ -34,7 +34,7 @@
 }
 .container{
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 600px){
   .container{

@@ -111,7 +111,7 @@ import MenuReviews from "~/components/MenuReviews.vue";
       />
     </div>
     <ui-footer-slider-swip class="qwe" id="zxc" />
-    <ui-elements-services id="servsa" />
+<!--    <ui-elements-services id="servsa" />-->
   </div>
   <div class="container-fluide" id="foorm">
     <ui-footer-form class="pt-[300px]" />

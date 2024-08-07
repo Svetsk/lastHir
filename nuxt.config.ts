@@ -1,4 +1,5 @@
 export default {
+  ssr: true,
   build: {
     terser: true, // Минификация JavaScript
     extractCSS: true // Извлечение CSS

@@ -6,7 +6,7 @@
     <div class="container">
       <div class="flex items-center gap-[24px] pt-[160px] pb-[112px] asd">
         <div class="line"></div>
-        <ui-elements-title title="мои работы (онкология)" />
+        <ui-elements-title title="мои работы" />
       </div>
 
       <div class="flex flex-col gap-[40px] rrr">
@@ -45,7 +45,7 @@
         <!-- Повторение блоков для пациентов -->
       </div>
     </div>
-    <ui-elements-services />
+    <ui-elements-services class="pt-[100px]" />
     <ui-footer-form class="pt-[276px]" />
     <ui-footer-contact-footer class="pt-[241px]" />
   </div>
@@ -91,6 +91,7 @@ button {
   border-radius: 20px;
   background: rgba(72, 72, 72, 0.20);
   backdrop-filter: blur(35px);
+  font-size: 25px;
 }
 @media screen and (max-width: 1200px) {
   .asd {

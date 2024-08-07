@@ -43,7 +43,7 @@ export default {
     }"
           :pagination="false"
           :modules="modules"
-          :initialSlide="3"
+          :initialSlide="4"
           class="mySwiper"
       >
         <swiper-slide>
