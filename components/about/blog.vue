@@ -165,9 +165,18 @@
     font-size: 28px;
   }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 393px){
   h3{
     font-size: 24px;
+  }
+  .zxc{
+    justify-content: flex-start;
+    & a{
+      padding: 4px 35px;
+    }
+  }
+  .jhj{
+    padding-bottom: 160px;
   }
 }
 </style>

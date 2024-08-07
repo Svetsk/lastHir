@@ -178,7 +178,7 @@
     display: block;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
   .point{
     width: 170px !important;
   }

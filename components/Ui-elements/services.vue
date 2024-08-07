@@ -5,7 +5,7 @@
 <template>
   <div class="sdfsc">
     <div class="container">
-      <ui-elements-title title="услуги" class="pt-[200px] pb-[65px]" />
+      <ui-elements-title title="услуги" class="pt-[100px] pb-[65px]" />
       <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
 
         <div class="relative bbb">

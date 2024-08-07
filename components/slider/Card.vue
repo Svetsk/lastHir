@@ -84,7 +84,7 @@ p{
   }
   .bnb{
     padding: 16px 0 16px 0;
-    font-size: 14px;
+    font-size: 16px;
   }
   svg{
     width: 56px;
@@ -93,7 +93,7 @@ p{
   .scx{
     padding-bottom: 12px;
     max-width: 163px;
-    font-size: 9px;
+    font-size: 12px;
   }
   .card{
     padding: 12px 190px 12px 12px;
@@ -111,7 +111,7 @@ p{
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
   .card{
     gap: 12px;
   }

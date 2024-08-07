@@ -10,6 +10,28 @@ const props = defineProps<{
   src: string;
 }>();
 
+
+// Состояние для сердечка
+const isRed = ref(false);
+
+// Состояние для добавления в заметки
+const isAdded = ref(false);
+
+// Вычисляемый цвет заполнения для сердечка
+const fillColor = computed(() => (isRed.value ? '#980000' : 'none'));
+
+// Вычисляемый цвет заливки для иконки добавления
+const fillColorAdded = computed(() => (isAdded.value ? 'red' : 'none'));
+
+// Функция переключения цвета и состояния сердечка
+const toggleColor = () => {
+  isRed.value = !isRed.value;
+};
+
+// Функция переключения состояния добавления
+const toggleAdded = () => {
+  isAdded.value = !isAdded.value;
+};
 </script>
 
 <template>
@@ -31,7 +53,15 @@ const props = defineProps<{
     </div>
     <div class="flex items-center justify-between p-[14px]">
       <div class="flex gap-[21px]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="26"
+            viewBox="0 0 31 26"
+            :fill="fillColor"
+            :class="{ like: isRed }"
+            @click="toggleColor"
+        >
           <path d="M9.20009 0.619143C4.82295 0.619143 1.27441 4.16768 1.27441 8.54481C1.27441 16.4705 10.6411 23.6756 15.6847 25.3516C20.7283 23.6756 30.095 16.4705 30.095 8.54481C30.095 4.16768 26.5465 0.619143 22.1694 0.619143C19.489 0.619143 17.1186 1.94993 15.6847 3.98683C14.9539 2.94584 13.983 2.09626 12.8542 1.51005C11.7254 0.923837 10.472 0.618243 9.20009 0.619143Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
@@ -41,7 +71,15 @@ const props = defineProps<{
           <path d="M25.558 0.619141L16.9019 25.351L11.9555 14.2217M25.558 0.619141L0.826172 9.27529L11.9555 14.2217M25.558 0.619141L11.9555 14.2217" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="28"
+          viewBox="0 0 23 28"
+          :class="{ added: isAdded }"
+          @click="toggleAdded"
+          :fill="fillColorAdded"
+      >
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.956177 4.58513C0.956177 3.53328 1.37402 2.52452 2.11779 1.78075C2.86155 1.03698 3.87032 0.619141 4.92216 0.619141H18.1421C19.194 0.619141 20.2027 1.03698 20.9465 1.78075C21.6903 2.52452 22.1081 3.53328 22.1081 4.58513V25.7741C22.1081 27.3869 20.2838 28.3255 18.9723 27.3882L11.5321 22.0738L4.09195 27.3882C2.77921 28.3269 0.956177 27.3882 0.956177 25.7754V4.58513ZM4.92216 3.26313C4.57155 3.26313 4.23529 3.40241 3.98737 3.65034C3.73945 3.89826 3.60017 4.23451 3.60017 4.58513V24.4904L10.3794 19.6479C10.7157 19.4076 11.1188 19.2784 11.5321 19.2784C11.9455 19.2784 12.3486 19.4076 12.6849 19.6479L19.4641 24.4904V4.58513C19.4641 4.23451 19.3248 3.89826 19.0769 3.65034C18.829 3.40241 18.4927 3.26313 18.1421 3.26313H4.92216Z" fill="white"/>
       </svg>
     </div>
@@ -49,6 +87,46 @@ const props = defineProps<{
 </template>
 
 <style scoped lang="scss">
+.like {
+  animation: pulse 0.8s ease;
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.added {
+  animation: addAnimation 0.6s ease-out;
+  color: white; /* Цвет заполнения для добавленного состояния */
+}
+
+/* Анимация добавления */
+@keyframes addAnimation {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
 .podtitle{
   font-size: 20px;
   font-weight: 500;
@@ -80,7 +158,7 @@ h3{
     max-width: 380px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .jkjk{
     max-width: 340px;
   }

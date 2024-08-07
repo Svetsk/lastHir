@@ -208,7 +208,7 @@ input{
     font-size: 20px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .form{
     margin: 0 auto;
     max-width: 390px;
@@ -219,7 +219,7 @@ input{
     padding-left: 20px !important;
     padding-right: 20px !important;
     & .inpt{
-      width: 300px;
+      width: 250px;
       margin: 0 auto;
     }
     & label{

@@ -154,7 +154,7 @@ nav{
 @media screen and (max-width: 744px) {
   .asdzxc{
     & img{
-      transform: translateX(-50px);
+      transform: translateX(-20px);
     }
   }
 }
@@ -163,7 +163,6 @@ nav{
     width: 50% !important;
   }
 }
-
 .blog {
   padding-right: 24px;
 }
@@ -182,7 +181,6 @@ nav{
     }
   }
 }
-
 nav {
   & li:nth-child(1) {
     position: relative !important;
@@ -236,7 +234,6 @@ nav {
             font-size: 20px;
           }
         }
-
         & .burger__menu {
           width: 87px;
           height: 45px;

@@ -299,4 +299,10 @@ h3{
     }
   }
 }
+@media screen and (max-width: 407px){
+  .asdad{
+    left: 140px !important;
+    top: 50px;
+  }
+}
 </style>

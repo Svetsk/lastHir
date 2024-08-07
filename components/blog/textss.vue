@@ -60,7 +60,7 @@ p{
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .block{
     width: 370px;
     height: 582px;

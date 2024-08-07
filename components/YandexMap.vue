@@ -101,7 +101,7 @@ background-color: #2c2c2c; /* Темный фон для контейнера к
     height: 380px !important;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .map {
     width: 340px !important;
     height: 340px !important;

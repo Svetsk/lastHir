@@ -24,5 +24,11 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
 </template>
 
 <style scoped lang="scss">
-
+@media screen and (max-width: 420px) {
+  #servic{
+    & .xxx{
+      padding-top: 60px !important;
+    }
+  }
+}
 </style>

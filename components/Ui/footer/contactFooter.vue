@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="c">
 
     <div class="cart flex justify-between items-center gap-y-[62px]">
       <div class="flex flex-col gap-[45px]" id="conts">
