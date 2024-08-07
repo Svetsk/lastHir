@@ -27,6 +27,12 @@ div{
     font-weight: 500;
     font-size: 30px;
     display: inline;
+    &:hover{
+      background: #282828;
+    }
+    &:active{
+      background: #575757;
+    }
   }
   & svg{
     position: absolute;
@@ -36,8 +42,11 @@ div{
 }
 @media screen and (max-width: 1440px){
   a{
-    font-size: 18px !important;
+    font-size: 21px !important;
     padding: 16px 36px !important;
+  }
+  svg{
+    transform: translate(-5px, 2px);
   }
 }
 @media screen and (max-width: 900px){

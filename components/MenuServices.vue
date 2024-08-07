@@ -34,7 +34,7 @@ function closeMenu() {
             <nuxt-link prefetch to="/services/hirurgiya#pricehirrurgiya">Цены</nuxt-link>
           </li>
           <li @click="closeMenu" class="decaa">
-            <nuxt-link to="/services/exam">Обследования и консультации</nuxt-link>
+            <nuxt-link to="/services/exam">Обследования<br>и консультации</nuxt-link>
             <nuxt-link to="/services/exam#whtw">Какие обследования я делаю?</nuxt-link>
             <nuxt-link to="/services/exam#infs">Корниясова Евгения Альбертовна</nuxt-link>
             <nuxt-link to="/services/exam#mywrks">Мои работы</nuxt-link>

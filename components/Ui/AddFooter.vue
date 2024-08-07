@@ -42,7 +42,7 @@ p, a{
   font-size: 20px;
 }
 .fooff{
-  padding-top: 135px;
+  padding-top: 80px;
 }
 @media screen and (max-width: 900px){
   p, a{
@@ -69,6 +69,9 @@ p, a{
 @media screen and (max-width: 420px) {
   li a{
     font-size: 20px;
+  }
+  footer{
+    padding-bottom: 20px;
   }
 }
 

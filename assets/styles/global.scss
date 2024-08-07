@@ -29,7 +29,7 @@ img{
     margin: 0 auto;
     max-width: 1600px;
     padding: 0 20px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .container-fluide{
     margin: 0 auto;
@@ -62,8 +62,8 @@ p{
 
 @media screen and (max-width: 425px) {
     .line{
-        display: none;
-        padding-bottom: 12px;
+        transform: translateY(-10px);
+        width: 40px;
     }
 }
 

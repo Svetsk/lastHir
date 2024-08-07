@@ -127,7 +127,6 @@ nav{
     display: none;
   }
   nav {
-    padding-left: 20px;
     & ul:nth-child(2) {
       justify-content: flex-end !important;
     }
@@ -183,6 +182,10 @@ nav{
       display: flex;
       flex-direction: column;
     }
+  }
+  nav{
+    gap: 40px;
+    padding-left: 0 !important;
   }
 }
 nav {

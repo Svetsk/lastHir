@@ -5,7 +5,7 @@
 <template>
   <div class="container">
     <div class="flex items-center gap-[24px] pt-[160px] pb-[60px] asd">
-      <div class="line"></div>
+      <div class="line sdfsdfsdf"></div>
       <ui-elements-title title="Симптомы рака молочной железы" />
     </div>
     <div>
@@ -28,6 +28,13 @@
 </template>
 
 <style scoped lang="scss">
+.sdfsdfsdf{
+  transform: translateY(-50px);
+}
+.container{
+  overflow: hidden;
+  padding-bottom: 20px;
+}
 .ttl{
   font-size: 25px;
   font-style: normal;

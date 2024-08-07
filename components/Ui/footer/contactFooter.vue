@@ -1,8 +1,8 @@
 <template>
-  <div class="c">
+  <div class="container">
 
     <div class="cart flex justify-between items-center gap-y-[62px]">
-      <div class="flex flex-col gap-[45px] container" id="conts">
+      <div class="flex flex-col gap-[45px]" id="conts">
         <ui-elements-title title="контакты" class="pb-[20px]" />
         <a href="/">INSTAGRAM: @dr.korniyasova</a>
         <a href="/">+7 918 647-45-93 (Мой ассистент — Елизавета)</a>
@@ -87,6 +87,9 @@ a{
 @media screen and (max-width: 600px) {
   iframe{
     max-width: 500px;
+  }
+  #conts{
+    padding-left: 20px;
   }
   svg{
     width: 42px;

@@ -13,7 +13,7 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     </AddHeader>
     <div class="container">
       <blog-menu />
-      <div class="flex justify-between flex-wrap gap-y-[100px] pt-[170px]">
+      <div class="flex justify-between flex-wrap gap-y-[100px] pt-[100px]">
         <blog-card-pac src="/blog/article/breastReduction" pod-title="Важная информация для тех" title="кто сделал абдоминопластику" bottom-title="Реабилитационный период по дням/месяцам"  image="/image/blog/fireOne.png"/>
         <blog-card-pac src="/blog/article/breastReduction" title="к чему готовиться?" sub-title="Пациентам, кто хочет увеличение груди" image="/image/blog/fireThree.png" />
         <blog-card-pac src="/blog/article/breastReduction" title="от 1 смс до операции" sub-title="Гайд-инструкция, где описан весь путь пациента" image="/image/blog/fireFore.png" />

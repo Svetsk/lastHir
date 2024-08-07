@@ -127,7 +127,7 @@ p{
     background: black;
     border-radius: 100px;
     position: absolute;
-    right: -18px;
+    right: 10px;
     top: 42%;
     z-index: 3;
   }
@@ -138,7 +138,7 @@ p{
   @media screen and (min-width: 1440px) {
     .toolss{
       & svg{
-        right: -32px;
+        right: -10px;
       }
     }
   }

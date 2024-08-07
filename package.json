@@ -36,6 +36,7 @@
     "nuxt-swiper": "^1.2.2",
     "ohmyfetch": "^0.4.21",
     "pinia": "^2.1.7",
+    "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^11.1.9",
     "vue-yandex-maps": "^1.1.0",
     "yandex-maps": "^0.0.1"

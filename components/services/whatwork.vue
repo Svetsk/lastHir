@@ -1,5 +1,10 @@
-<script setup lang="ts">
-
+<script setup>
+const scrollTo = (selector) => {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>
 
 <template>
@@ -12,31 +17,31 @@
       <div class="bls bls__one">
         <div class="flex flex-col items-center gap-[160px]">
           <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog" prefetch>
+          <nuxt-link @click.prevent="scrollTo('#tonk')">
             читать
           </nuxt-link>
         </div>
       </div>
       <div class="bls bls__two">
         <div class="flex flex-col items-center gap-[160px]">
-          <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog" prefetch>
+          <h3>Трепан биопсия<br>(пистолетом)</h3>
+          <nuxt-link @click.prevent="scrollTo('#pistolb')">
             читать
           </nuxt-link>
         </div>
       </div>
       <div class="bls bls__three">
         <div class="flex flex-col items-center gap-[160px]">
-          <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog" prefetch>
+          <h3>Хирургическая<br>биопсия</h3>
+          <nuxt-link @click.prevent="scrollTo('#hirurgiyab')">
             читать
           </nuxt-link>
         </div>
       </div>
       <div class="bls bls__four">
-        <div class="flex flex-col items-center gap-[160px]">
-          <h3>Тонкоигольная<br>биопсия (шприцом)</h3>
-          <nuxt-link to="/blog" prefetch>
+        <div class="flex flex-col items-center gap-[120px]">
+          <h3>Биопсия<br>сигнального<br>лимфоузла</h3>
+          <nuxt-link @click.prevent="scrollTo('#signal')">
             читать
           </nuxt-link>
         </div>

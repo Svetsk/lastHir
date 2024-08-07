@@ -71,7 +71,7 @@ h2{
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   h1{
     font-size: 24px;
     padding-top: 200px;

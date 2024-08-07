@@ -25,7 +25,7 @@ const showModal = () => {
             <div class="flex gap-[40px] tex">
               <div>
                 <div>
-                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <h3 class="text-[25px] font-[500] capitalize">Диплом</h3>
                   <p class="text-[15px] font-[500] text-[#BBBBBB]">2006-2010</p>
                 </div>
                 <p class="max-w-[456px] text-[20px] font-[500]">
@@ -34,31 +34,31 @@ const showModal = () => {
               </div>
               <div>
                 <div>
-                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <h3 class="text-[25px] font-[500] capitalize">Диплом</h3>
                   <p class="text-[15px] font-[500] text-[#BBBBBB]">2016-2018</p>
                 </div>
                 <p class="max-w-[456px] text-[20px] font-[500]">
-                  Кубанский государственный медицинский университет,<br>г. Краснодар, ординатура по онкологии<br>с курсом торакальной хирургии.
+                  Кубанский государственный медицинский университет,<br>г. Краснодар, ординатура<br>по онкологии с курсом<br>торакальной хирургии.
                 </p>
               </div>
             </div>
             <div class="flex gap-[40px] tex">
               <div>
                 <div>
-                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <h3 class="text-[25px] font-[500] capitalize">Диплом</h3>
                   <p class="text-[15px] font-[500] text-[#BBBBBB]">2010-2016</p>
                 </div>
                 <p class="max-w-[456px] text-[20px] font-[500]">
-                  Кубанский государственный медицинский университет, г. Краснодар,<br>Лечебный факультет, специальность «Лечебное дело».
+                  Кубанский государственный медицинский университет,<br>г. Краснодар, Лечебный факультет, специальность «Лечебное дело».
                 </p>
               </div>
               <div>
                 <div>
-                  <h3 class="text-[25px] font-[500]">Диплом</h3>
+                  <h3 class="text-[25px] font-[500] capitalize">Диплом</h3>
                   <p class="text-[15px] font-[500] text-[#BBBBBB]">2019-2021</p>
                 </div>
                 <p class="max-w-[456px] text-[20px] font-[500]">
-                  Военно-медицинская академия имени<br>С. М. Кирова в городе Санкт-Петербург, ординатура по пластической хирургии.
+                  Военно-медицинская академия имени С. М. Кирова в городе<br>Санкт-Петербург, ординатура<br>по пластической хирургии.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const showModal = () => {
       </div>
       <div class="wrp">
         <div class="wrrp">
-          <div class="flex items-center">
+          <div class="flex items-center gap-[12px]">
             <p class="text-[70px] font-[600] textx">30+</p>
             <p class="text-[20px] font-[500] textxx w-[305px]">стажировок, конгрессов, конференций, симпозиумов</p>
           </div>
@@ -97,6 +97,9 @@ const showModal = () => {
 .educ{
   width: 500px;
   height: 360px;
+}
+.ttex{
+  padding-top: 48px;
 }
 @media screen and (max-width: 1440px) {
   .tex{

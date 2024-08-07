@@ -12,13 +12,14 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
       <Menuhirurgiya />
     </AddHeader>
     <services-menu />
-    <services-banner title="Приобрети желанную форму и объём груди, почувствуй уверенность" styles="background: url('/image/services/banhir.png') no-repeat center;" />
+    <services-banner class="dkst" title="Приобрети желанную форму и объём груди, почувствуй уверенность" styles="background: url('/image/services/banhir.png') no-repeat center;" />
+    <services-banner class="mbsl" title="Приобрети желанную форму    и объём груди, почувствуй уверенность" styles="background: url('/image/services/onkbanss.png') no-repeat center;" />
     <services-regalii />
     <services-tabs id="mySpec"/>
     <services-tools id="toolss" />
     <services-material />
     <main-info id="korn" />
-    <div class="pt-[140px]" id="mywrk">
+    <div class="pt-[140px] pb-[100px]" id="mywrk">
       <ui-footer-slider-swip />
     </div>
     <ui-footer-form class="pt-[300px]"/>
@@ -53,8 +54,8 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
-          <div class="line"></div>
-          <ui-elements-title title="цены (Липоаспирация и липофилинг)" />
+          <div class="line sdfsdfsdf"></div>
+          <ui-elements-title class="max-w-[1000px]" title="цены (Липоаспирация и липофилинг)" />
         </div>
         <ui-elements-price-props title="Липоаспирация (1 зона)" price="36 000 ₽" />
         <ui-elements-price-props title="Липофилинг (1 зона)" price="59 000 ₽" />
@@ -106,8 +107,8 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <div class="pb-[125px]">
       <div class="container">
         <div class="flex items-center gap-[24px]">
-          <div class="line"></div>
-          <ui-elements-title title="цены (Коррекция гинекомастии у мужчин)" />
+          <div class="line sdfsdfsdf"></div>
+          <ui-elements-title class="max-w-[1200px]" title="цены (Коррекция гинекомастии у мужчин)" />
         </div>
         <ui-elements-price-props title="Коррекция гинекомастии — 1 к.с." price="80 000 ₽" />
         <ui-elements-price-props title="Коррекция гинекомастии — 2 к.с." price="159 000 ₽" />
@@ -130,5 +131,16 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
 </template>
 
 <style scoped lang="scss">
+.sdfsdfsdf{
+  transform: translateY(-50px);
+}
+@media screen and (max-width: 500px) {
+  .dkst{
+    display: none;
+  }
+  .mbsl{
+    display: flex;
+  }
+}
 
 </style>

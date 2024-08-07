@@ -47,42 +47,47 @@ export default {
           class="mySwiper"
       >
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideOne.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideThree.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
+            <nuxt-img src="/image/slider/slideFore.png" class="rounded-[40px]" />
+          </nuxt-link>
+        </swiper-slide>
+        <swiper-slide>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideFive.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideSix.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideSeven.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideEight.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
-          <nuxt-link to="/reviews" prefetch>
+          <nuxt-link to="/reviews" class="qqq h-[100%]" prefetch>
             <nuxt-img src="/image/slider/slideNine.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
@@ -98,6 +103,11 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.qqq{
+  & img{
+    object-fit: cover;
+  }
+}
 @media screen and (max-width: 790px) {
   .aaaaa{
     padding-top: 20px !important;
@@ -120,7 +130,7 @@ export default {
     height: 290px !important;
   }
   .mySwiper{
-    padding-bottom: 220px !important;
+    padding-bottom: 40px !important;
   }
 }
 .swiper {

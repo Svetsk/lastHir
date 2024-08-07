@@ -14,7 +14,7 @@ import MenuTexts from "~/components/MenuTexts.vue";
     </AddHeader>
     <div class="container">
       <blog-menu />
-      <div class="pt-[170px] flex justify-between gap-y-[48px] flex-wrap asda">
+      <div class="pt-[80px] flex justify-between gap-y-[48px] flex-wrap asda">
         <blog-textss title="Увеличение груди" text="Что такое маммопластика? Кому нужна данная операция? Процесс реабилитации." />
         <blog-textss title="Увеличение груди" text="Что такое маммопластика? Кому нужна данная операция? Процесс реабилитации." />
         <blog-textss title="пластика живота" text="Что такое абдоминопластика?Кому нужна данная операция? Процесс реабилитации." />
@@ -29,7 +29,10 @@ import MenuTexts from "~/components/MenuTexts.vue";
 </template>
 
 <style scoped lang="scss">
-
+.container{
+  overflow: hidden;
+  padding-bottom: 80px;
+}
 .router-link-active{
   font-weight: 700;
   text-decoration-line: underline;

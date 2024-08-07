@@ -13,7 +13,7 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     </AddHeader>
     <div class="container">
       <blog-menu />
-      <div class="pt-[170px]">
+      <div class="pt-[85px]">
         <ui-accardeon
             title="Есть ли онлайн-консультация?"
             span-one="Да, такие консультации есть."

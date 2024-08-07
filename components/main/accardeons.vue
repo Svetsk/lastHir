@@ -3,8 +3,10 @@
 </script>
 
 <template>
-  <div class="container">
-    <ui-elements-title title="вопрос/ответ" class="pt-[140px]" />
+  <div>
+    <div class="container">
+      <ui-elements-title title="вопрос/ответ" class="pt-[140px]" />
+    </div>
     <div class="mt-[65px]">
       <ui-accardeon
           title="Есть ли онлайн консультации?"
@@ -37,7 +39,7 @@
           ptext="Если пациент не поправится на 20 кг после операции, то ничего нигде не вырастет. А если пациент будет набирать вес, то это будет происходить равномерно. Так что да, то, что жир может вырасти в новых местах после операции - это миф. Жир растет там, где он есть, а он есть во всём теле. Также наоборот, если пациент будет худеть, то он также будет сбрасывать вес равномерно."
       />
       <ui-accardeon
-          class="lasst"
+          zxc="lal"
           title="Когда можно заняться спортом после операции?"
           subt="При разных пластических операциях, разное ограничение."
           ol-one="1. При увеличении груди или абдоминопластике — ограничение 3 месяца."
@@ -46,15 +48,14 @@
           text-two="Везде, где мы не работаем с мышцами — ограничение 1 месяц, там где мы затрагиваем мышечную ткань — ограничение 3 месяца."
       />
     </div>
-    <ui-elements-button title="Другие вопросы" class="buttons pb-[100px]" link="/blog/qa" />
+    <div class="container">
+      <ui-elements-button title="Другие вопросы" class="buttons pb-[100px]" link="/blog/qa" />
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.lasst{
-  border-bottom: 2px solid white;
-}
 .buttons{
-  margin-top: 65px;
+  margin-top: 90px;
 }
 </style>

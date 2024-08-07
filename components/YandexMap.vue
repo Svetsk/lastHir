@@ -79,7 +79,7 @@ background-color: #2c2c2c; /* Темный фон для контейнера к
 }
 
 .map {
-  width: 100%;
+  width: 712px;
   height: 600px;
   border-radius: 40px;
 }

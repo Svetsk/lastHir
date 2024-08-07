@@ -12,7 +12,7 @@ export default {
     host: '0.0.0.0'
   },
   plugins: [
-    '~/plugins/js/index.js',
+    '~/plugins/js/index.js', '~/plugins/smoothscroll.client.js'
   ],
   devtools: { enabled: false },
   css: ["~/assets/styles/global.scss"],

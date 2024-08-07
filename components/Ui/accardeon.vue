@@ -16,6 +16,7 @@ const props = defineProps({
   olThree: String,
   ptext: String,
   textt: String,
+  zxc: String,
 });
 
 const show = ref(false);
@@ -24,7 +25,7 @@ const show = ref(false);
 
 <template>
   <div class="container">
-    <button @click="show = !show" class="items">
+    <button @click="show = !show" class="items" :class="zxc">
       <h3>{{ title }}</h3>
       <svg :class="{ 'rotate-90': show }" xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
         <circle cx="28.1421" cy="28.2095" r="27.8579" fill="white"/>
@@ -67,6 +68,9 @@ ul{
     //list-style: square;
     color: white;
   }
+}
+.lal{
+  border-bottom: 2px solid white !important;
 }
 
 p{

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="pb-[40px] sdfsdf">
+  <div class="pb-[40px] pt-[40px] sdfsdf">
   <div class="container">
     <div class="wrap">
       <div class="flex flex-wrap cs">
@@ -37,6 +37,7 @@
 @media screen and (max-width: 425px) {
   .cs{
     padding: 12px !important;
+    margin-bottom: 40px;
   }
 }
 </style>

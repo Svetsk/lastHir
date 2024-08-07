@@ -149,4 +149,9 @@ h3{
     flex-direction: column;
   }
 }
+@media screen and (max-width: 600px) {
+  .as{
+    padding-bottom: 0;
+  }
+}
 </style>

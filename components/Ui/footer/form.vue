@@ -54,7 +54,9 @@ const submitForm = async () => {
 <template>
   <div class="container-fluide">
     <div class="pb-[240px] ffaa" >
-      <ui-elements-title title="заполните форму" class="pb-[65px] pt-[85px]" />
+      <div class="container">
+        <ui-elements-title title="заполните форму" class="pb-[65px] pt-[85px]" />
+      </div>
       <div class="form bg-white rounded-[100px] flex justify-between">
         <form action="" id="formas" method="post" class="py-[82px] pl-[62px] flex flex-col gap-[45px] asd" @submit.prevent="submitForm">
           <label class="flex flex-col text-black text-[30px] font-[500]">
@@ -80,11 +82,11 @@ const submitForm = async () => {
           </button>
 
           <div class="flex gap-[30px] items-center">
-            <input type="checkbox" class="w-[48px] h-[48px]" v-model="privacyPolicyAccepted">
-            <label class="max-w-[646px]">
-              <a href="" class="text-black text-[25px] foof">
-                Я соглашаюсь с политикой конфиденциальности и правилами обработки персональных данных
-              </a>
+            <input type="checkbox" class="w-[48px] h-[48px] custom-checkbox" v-model="privacyPolicyAccepted" required>
+            <label class="max-w-[746px] bhg">
+              <nuxt-link to="/privacy" class="text-black text-[25px] offo">
+                <u>Я соглашаюсь с политикой конфиденциальности и правилами обработки персональных данных</u>
+              </nuxt-link>
             </label>
           </div>
         </form>
@@ -97,6 +99,26 @@ const submitForm = async () => {
 
 
 <style scoped lang="scss">
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  //appearance: none;
+  width: 48px !important;
+  height: 40px !important;
+  border: 2px solid #000; /* черная рамка */
+  background-color: #fff; /* белый фон */
+}
+
+.custom-checkbox:checked {
+  background-color: #000; /* черный фон при отметке */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' width='24px' height='24px'%3E%3Cpath d='M10 17l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E"); /* белая галочка */
+  //background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.offo{
+  width: 600px;
+}
 input{
   border-bottom: black 2px solid;
   padding: 18px 18px 18px 0;
@@ -133,14 +155,23 @@ input{
 }
 @media screen and (max-width: 1440px) {
   .inpt{
-    width: 500px;
+    width: 550px;
+  }
+  img{
+    width: 900px;
+    height: auto;
   }
   .asd{
-    gap: 14px;
-    padding-top: 42px;
+    gap: 28px;
+    padding-top: 56px;
     padding-bottom: 42px;
     & button{
       max-width: 264px;
+    }
+  }
+  .bhg{
+    & a{
+      font-size: 18px;
     }
   }
 }

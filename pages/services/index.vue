@@ -13,7 +13,8 @@ import MenuServices from "~/components/MenuServices.vue";
       <MenuServices />
     </AddHeader>
     <services-menu />
-    <services-banner title="доброкачественные и злокачественные опухоли молочной железы" styles="background: url('/image/services/onkban.png') no-repeat center;" />
+    <services-banner class="deskt" title="доброкачественные и злокачественные опухоли молочной железы" styles="background: url('/image/services/onkban.png') no-repeat center;" />
+    <services-banner class="mobiles" title="доброкачественные и злокачественные опухоли молочной железы" styles="background: url('/image/services/onkbans.png') no-repeat center;" />
     <services-regalii />
     <services-variants id="variants" />
     <ui-footer-slider-swip id="myWork" />
@@ -28,5 +29,15 @@ import MenuServices from "~/components/MenuServices.vue";
 </template>
 
 <style scoped lang="scss">
-
+.mobiles{
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .mobiles{
+    display: flex;
+  }
+  .deskt{
+    display: none;
+  }
+}
 </style>

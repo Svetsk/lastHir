@@ -13,13 +13,13 @@ import MenuExam from "~/components/MenuExam.vue";
       <MenuExam />
     </AddHeader>
     <services-menu />
-    <services-banner title="Современные технологии =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; альтернатива лечения заграницей" styles="background: url('/image/services/neban.png') no-repeat center;" />
+    <services-banner title="Современные технологии =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; альтернатива лечения заграницей" styles="background: url('/image/services/neban.png') no-repeat center;" />
     <services-regalii />
     <services-whatwork id="whtw" />
-    <services-biopsia />
-    <services-ton-biop />
-    <services-xir-biops />
-    <services-pistol />
+    <services-biopsia id="signal" />
+    <services-ton-biop id="tonk" />
+    <services-xir-biops id="hirurgiyab" />
+    <services-pistol id="pistolb" />
     <div id="infs">
       <main-info />
     </div>

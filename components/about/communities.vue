@@ -17,11 +17,12 @@ function closeModal() {
       <ui-elements-title title="сообщества" />
     </div>
     <div class="flex justify-between items-end pt-[44px] sdfsdfs">
-      <p class="asdcx max-w-[700px]">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
+      <p class="asdcx max-w-[1000px] text-[25px] dcdt">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи<br>в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
+      <p class="asdcx max-w-[1000px] text-[25px] msbs">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
       <div class="flex gap-[32px] flex-wrap sdfsaaa">
         <div class="point">
           <div class="flex gap-[8px] items-center">
-            <nuxt-img loading="lazy" src="/image/about/comOne.png" class="w-[48px] h-[48px]" />
+            <nuxt-img loading="lazy" src="/image/about/comOne.jpg" class="w-[48px] h-[48px] sdfsdfsvv" />
             <p class="text-black ">РОПРЭХ</p>
           </div>
         </div>
@@ -36,25 +37,20 @@ function closeModal() {
     <nuxt-link @click="openModal" class="flex sds sdfsdf" >
       <div class="flex flex-col gap-[40px]">
         <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="images w-[816px]" />
-        <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="rou images w-[816px]" />
+        <nuxt-img loading="lazy" src="/image/about/imgThree.png" class="rou images w-[816px]" />
       </div>
       <div>
         <div class="mobile pb-[28px]">
-          <nuxt-img loading="lazy" src="/image/about/imgFive.png" />
+          <nuxt-img loading="lazy" class="rnds" src="/image/about/imgons.png" />
         </div>
         <div class="flex gap-[28px] sdsz">
           <nuxt-img loading="lazy" src="/image/about/imgTwo.png" class="images w-[381px] max-h-[728px]" />
-          <nuxt-img loading="lazy" src="/image/about/imgThree.png" class="roun images w-[381px] " />
-          <nuxt-img loading="lazy" src="/image/about/imgThree.png" class="rounz images w-[381px]" />
+          <nuxt-img loading="lazy" src="/image/about/imgFive.png" class="roun images w-[381px] " />
+          <nuxt-img loading="lazy" src="/image/about/imgtws.png" class="rounz images w-[381px]" />
         </div>
       </div>
     </nuxt-link>
   </div>
-
-
-
-
-
   <div>
     <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
       <div class="modal-content" @click.stop>
@@ -123,15 +119,16 @@ function closeModal() {
       </div>
     </div>
   </div>
-
-
-
-
-
-
 </template>
 
 <style scoped lang="scss">
+.rnds{
+  //height: 300px;
+  object-fit: contain;
+}
+.sdfsdfsvv{
+  border-radius: 100px !important;
+}
 .sdfsdf{
   justify-content: space-between;
   padding-top: 70px;
@@ -332,6 +329,15 @@ function closeModal() {
     }
   }
 }
-
-
+.msbs{
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .dcdt{
+    display: none;
+  }
+  .msbs{
+    display: flex;
+  }
+}
 </style>

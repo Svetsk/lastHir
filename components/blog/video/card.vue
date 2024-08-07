@@ -17,11 +17,12 @@ const openModal = (url: string) => {
           text="Какие анализы нужно подготовить перед абдоминопластикой?"
           imge="/image/blog/video/prewOne.png"
           src="/image/blog/video/new/breast_lift.mp4"
+          big="first"
       />
 
       <video-card
           title="Подтяжка груди"
-          text="Можно ли подтянуть грудь через ареолу?"
+          text="Можно ли &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; подтянуть грудь &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; через ареолу?"
           imge="/image/blog/video/prewTwo.png"
           src="/image/blog/video/new/breast_reduction.mp4"
           big="bbis"
@@ -32,13 +33,15 @@ const openModal = (url: string) => {
           text="Есть ли бесплатные консультации? Есть ли онлайн консультации?"
           imge="/image/blog/video/prewThree.png"
           src="/image/blog/video/new/Abdominoplasty4hernias.mp4"
+          big="biss"
       />
 
       <video-card
           title="заживление шва"
-          text="Через сколько заживают швы после абдоминопластики?"
+          text="Через какое время заживают швы на теле после абдоминопластики?"
           imge="/image/blog/video/prewFore.png"
           src="/image/blog/video/new/scarring.mp4"
+          big="qwecc"
       />
 
       <video-card
@@ -54,6 +57,7 @@ const openModal = (url: string) => {
           text="Чем опасна абдоминопластика? Какие могут быть осложнения?"
           imge="/image/blog/video/prewSix.png"
           src="/image/blog/video/new/Anesthesiologistanswer.mp4"
+          big="njhld"
       />
 
 

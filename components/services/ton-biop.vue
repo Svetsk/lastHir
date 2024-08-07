@@ -5,7 +5,7 @@
 <template>
   <div class="container">
     <div class="flex items-center gap-[24px] pt-[160px] pb-[60px] asd">
-      <div class="line"></div>
+      <div class="line sdfsdfsdf"></div>
       <ui-elements-title title="Тонкоигольная биопсия (шприцом)" />
     </div>
     <p>
@@ -16,6 +16,9 @@
 </template>
 
 <style scoped lang="scss">
+.sdfsdfsdf{
+  transform: translateY(-50px);
+}
 p{
   font-size: 25px;
   font-weight: 500;
@@ -26,5 +29,10 @@ p{
 .btn{
   padding-top: 60px;
   margin-bottom: 150px;
+}
+@media screen and (max-width: 500px) {
+  p{
+    font-size: 18px;
+  }
 }
 </style>

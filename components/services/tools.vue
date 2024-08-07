@@ -69,4 +69,9 @@ p{
     }
   }
 }
+@media screen and (max-width: 450px){
+  p{
+    font-size: 18px !important;
+  }
+}
 </style>

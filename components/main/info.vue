@@ -1,5 +1,10 @@
-<script setup lang="ts">
-
+<script setup>
+const scrollTo = (selector) => {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>
 
 <template>
@@ -9,9 +14,9 @@
         <div class="gel flex items-center gap-[24px]">
           <p class="gelen">г.Геленджик, клиника «Ланцетъ»</p>
           <div class="flex items-center gap-[16px]">
-            <nuxt-link to="/contact" class="contact" prefetch>
+            <a href="/#fot" @click.prevent="scrollTo('#fot')" class="contact">
               контакты
-            </nuxt-link>
+            </a>
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="22" viewBox="0 0 36 22" fill="none">
               <line x1="0.663086" y1="1" x2="27.9036" y2="1" stroke="white" stroke-width="2"/>
               <path d="M27.1962 21.5977C27.5867 21.9883 28.2199 21.9883 28.6104 21.5977L34.9744 15.2338C35.3649 14.8432 35.3649 14.2101 34.9744 13.8196C34.5839 13.429 33.9507 13.429 33.5602 13.8196L27.9033 19.4764L22.2465 13.8196C21.8559 13.429 21.2228 13.429 20.8323 13.8196C20.4417 14.2101 20.4417 14.8432 20.8323 15.2338L27.1962 21.5977ZM26.9033 0.185547L26.9033 20.8906L28.9033 20.8906L28.9033 0.185547L26.9033 0.185547Z" fill="white"/>
@@ -19,8 +24,10 @@
           </div>
         </div>
         <div>
-          <h2>Корниясова <u>Евгения</u> Альбертовна</h2>
-          <p class="text-[25px] font-[500] max-w-[860px] pb-[80px]">
+          <h2>
+            Корниясова <span>Евгения<i></i></span> Альбертовна
+          </h2>
+          <p class="text-[25px] font-[500] max-w-[860px] pb-[70px]">
             Онколог, пластический и реконструктивный хирург.<br><br>Стаж работы: с 2016 года. Почитать про мой путь, образование, сообщества, подход к работе, вы можете, нажав кнопку ниже.
           </p>
           <ui-elements-button title="Подробнее" link="/about" />
@@ -45,7 +52,7 @@
           </div>
         </div>
         <div>
-          <h2>Корниясова <u>Евгения</u> Альбертовна</h2>
+          <h2>Корниясова <span>Евгения<i></i></span> Альбертовна</h2>
           <div class="asdfx">
             <nuxt-img loading="lazy" src="/image/main/photoEvg.png" class="w-[800px] sssss" />
           </div>
@@ -65,6 +72,17 @@
 </template>
 
 <style scoped lang="scss">
+.container{
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+i{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 3px solid #ffffff;
+}
 .mob{
   display: none;
 }
@@ -72,7 +90,10 @@ h2{
   font-size: 70px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 45px 0 45px;
+  padding: 45px 0 30px;
+  & span{
+    position: relative;
+  }
 }
 .gelen{
   color: rgba(255, 255, 255, 0.80);

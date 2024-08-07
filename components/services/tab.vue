@@ -5,6 +5,7 @@ const props = defineProps({
   tabSub: String,
   tabTextSub: String,
   image: String,
+  cls: String,
 })
 </script>
 
@@ -14,7 +15,7 @@ const props = defineProps({
       <div>
         <div class="flex flex-col">
           <div class="flex items-center gap-[24px] pb-[16px] asd">
-            <div class="line"></div>
+            <div class="line" :class="cls"></div>
             <ui-elements-title :title="title" />
           </div>
           <p class="max-w-[737px] text-[25px] font-[500]">
@@ -41,6 +42,9 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
+.sdfsdfsdf{
+  transform: translateY(-50px);
+}
 .mywork{
   position: absolute;
   bottom: 30px;

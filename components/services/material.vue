@@ -32,4 +32,18 @@
     gap: 62px;
   }
 }
+.container{
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 600px){
+  .container{
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 450px){
+  p{
+    font-size: 18px !important;
+  }
+}
 </style>

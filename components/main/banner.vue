@@ -62,7 +62,7 @@ export default {
               </svg>
             </nuxt-link>
           </div>
-          <nuxt-link prefetch class="w-[169] h-[173] relative">
+          <nuxt-link to="/reviews" prefetch class="w-[169] h-[173] relative">
             <svg xmlns="http://www.w3.org/2000/svg" width="169" height="174" viewBox="0 0 169 174" fill="none">
               <g filter="url(#filter0_b_0_68)">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M98.9502 20.2969C98.9502 9.25118 89.9959 0.296875 78.9502 0.296875H20.1484C9.10274 0.296875 0.148438 9.25118 0.148438 20.2969V153.756C0.148438 164.802 9.10276 173.756 20.1485 173.756H148.818C159.864 173.756 168.818 164.802 168.818 153.756V94.1235C168.818 83.0778 159.864 74.1235 148.818 74.1235H118.95C107.904 74.1235 98.9502 65.1692 98.9502 54.1235V20.2969Z" fill="white" fill-opacity="0.2"/>
@@ -130,7 +130,7 @@ export default {
     </div>
     <div class="mob">
       <div class="py-[50px] px-[15px]">
-        <nuxt-img loading="lazy" class="" src="/image/main/banner/curcle.svg" />
+        <nuxt-img loading="lazy" class="krugl" src="/image/main/banner/curcle.svg" />
         <h3>Пластический<br>хирург / онколог</h3>
         <div class="max-w-[420px]">
           <swiper
@@ -190,7 +190,7 @@ export default {
               </div>
             </swiper-slide>
           </swiper>
-          <ui-elements-button title="Узнать подробнее" class="pt-[40px]" link="/about" />
+<!--          <ui-elements-button title="Подробнее" class="pt-[40px] vfv" link="/about" />-->
           <div class="pt-[45px] relative">
             <nuxt-img loading="lazy" src="/image/main/banner/mob/mobban.png" class="w-[100%] h-[100%]" />
             <nuxt-img loading="lazy" src="/image/main/banner/mob/inst.svg" class="as absolute top-[55px] left-[11px] w-[20px] h-[20px]" />
@@ -231,6 +231,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.krugl{
+  width: 40%;
+}
 img{
   object-fit: cover;
 }
@@ -346,11 +349,21 @@ h3{
       top: 85px;
     }
   }
+  .vfv{
+    a{
+      font-size: 24px !important;
+    }
+  }
 }
 @media screen and (max-width: 407px){
   .asdad{
     left: 140px !important;
     top: 50px;
+  }
+  .vfv{
+    a{
+      font-size: 24px !important;
+    }
   }
 }
 @media screen and (max-width: 400px){
@@ -361,6 +374,11 @@ h3{
     }
     &:nth-child(3){
       top: 85px;
+    }
+  }
+  .vfv{
+    a{
+      font-size: 24px !important;
     }
   }
   .pxz{
@@ -378,6 +396,11 @@ h3{
     }
     &:nth-child(3){
       top: 85px;
+    }
+  }
+  .vfv{
+    a{
+      font-size: 24px !important;
     }
   }
 }

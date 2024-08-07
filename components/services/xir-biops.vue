@@ -27,4 +27,9 @@ p{
   padding-top: 60px;
   margin-bottom: 150px;
 }
+@media screen and (max-width: 500px) {
+  p{
+    font-size: 18px;
+  }
+}
 </style>

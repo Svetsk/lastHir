@@ -48,11 +48,12 @@ h1{
   font-size: 70px;
   font-weight: 400;
   text-transform: uppercase;
+  line-height: 90px;
 }
 .bannerp{
   font-size: 25px;
   font-weight: 500;
-  padding-top: 45px;
+  padding-top: 25px;
 }
 .images{
   width: 40%;
@@ -69,7 +70,7 @@ h1{
   display: none;
 }
 .bd{
-  padding-top: 82px;
+  padding-top: 52px;
 }
 @media screen and (max-width: 1600px) {
   .block{

@@ -10,7 +10,7 @@
           <div class="flex flex-col gap-[36px] pt-[42px] pl-[50px] pb-[42px] qqq qqqq">
             <div class="flex items-center gap-[24px]">
               <div class="line"></div>
-              <ui-elements-title title="Моя история" />
+              <ui-elements-title title="Мой блог" />
             </div>
             <p class="text-[25px] max-w-[774px]">Фото и видео с операционной, а также мои экспертные ролики с ответами на самые частые вопросы пациентов, вы можете посмотреть, нажав на кнопку ниже.</p>
             <div class="pb-[42px]">

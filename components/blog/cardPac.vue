@@ -39,8 +39,8 @@ const toggleAdded = () => {
     <div class="border-[3px] border-[#fff] w-[436px] h-[440px] rounded-[40px] relative jkjk">
       <!-- Проверка на наличие изображения -->
       <nuxt-img loading="lazy" v-if="props.image" :src="props.image" class="absolute bottom-0 w-[432px] h-[100%] z-[-1]" />
-      <div class="pt-[40px] pl-[21px] flex flex-col justify-between">
-        <div class="flex flex-col gap-[21px]">
+      <div class="pt-[40px] pl-[21px] flex flex-col justify-between vbvvv">
+        <div class="flex flex-col gap-[21px] sdf">
           <p class="podtitle">{{ props.podTitle }}</p>
           <h3>{{ props.title }}</h3>
           <p class="st">{{ props.subTitle }}</p>
@@ -156,6 +156,12 @@ h3{
 @media screen and (max-width: 425px) {
   .jkjk{
     max-width: 380px;
+  }
+  .vbvvv{
+    padding-top: 25px;
+  }
+  .learn{
+    padding-top: 4px;
   }
 }
 @media screen and (max-width: 400px) {

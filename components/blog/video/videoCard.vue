@@ -24,14 +24,17 @@ const openModal = (url: string) => {
     </svg>
     <nuxt-img loading="lazy" class="absolute z-0 cover" :src="imge" :class="big" />
     <div class="relative z-1 pb-[50px] px-[30px] sfs">
-      <h3 class="uppercase text-[35px] font-[700]">{{ title }}</h3>
-      <p class="text-[25] font-[500] max-w-[330px]">{{ text }}</p>
+      <h3 class="uppercase text-[30px] font-[700] bvbbb">{{ title }}</h3>
+      <p class="text-[25] font-[500] max-w-[270px] bvbbb">{{ text }}</p>
     </div>
   </button>
   <VideoModal :isOpen="isModalOpen" :videoUrl="videoUrl" @update:isOpen="isModalOpen = $event" />
 </template>
 
 <style scoped lang="scss">
+.bvbbb{
+  text-align: start !important;
+}
 svg{
   position: absolute;
   top: 30px;
@@ -40,10 +43,11 @@ svg{
 .sf{
   border: 3px solid #fff;
   border-radius: 40px;
+  //overflow: hidden;
   background: url('/image/blog/video/bg.png') no-repeat center;
 }
 .cover{
-  width: 360px;
+  width: 300px;
   height: auto;
 }
 .sfs{
@@ -51,11 +55,27 @@ svg{
 }
 .bbis{
   left: -50px;
-  width: 500px;
+  width: 400px;
 }
 .bis{
   left: -60px;
-  width: 800px;
+  width: 380px;
+}
+.qwecc{
+  width: 335px;
+  left: 5%;
+}
+.njhld{
+  width: 260px;
+  left: 20%;
+}
+.biss{
+  left: 7%;
+  width: 340px;
+}
+.first{
+  left: 60px;
+  width: 295px;
 }
 @media screen and (max-width: 425px) {
   .sf{
