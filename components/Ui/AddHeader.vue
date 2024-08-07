@@ -105,7 +105,7 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1001;
+  z-index: 8000;
 }
 @media screen and (max-width: 1042px) {
   .mobile-menu {
@@ -210,7 +210,7 @@ nav {
 .wrapper {
   padding: 56px 0;
   position: relative;
-  z-index: 1001;
+  z-index: 8001;
   & .wrapper__menu {
     & nav {
       display: flex;
