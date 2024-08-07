@@ -37,7 +37,7 @@ function toggleMenu() {
 </script>
 
 <template>
-  <header class="container">
+  <header class="container_header">
     <div class="wrapper">
       <div class="wrapper__menu">
         <nav ref="headerRef">
@@ -96,7 +96,11 @@ function toggleMenu() {
 </template>
 
 <style lang="scss" scoped>
-
+.container_header{
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 20px;
+}
 nav{
   max-width: 1600px;
 }
