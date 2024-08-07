@@ -1,5 +1,13 @@
 <script setup lang="ts">
-
+import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+const isModalOpen = ref(false);
+function openModal() {
+  isModalOpen.value = true;
+}
+function closeModal() {
+  isModalOpen.value = false;
+}
 </script>
 
 <template>
@@ -9,7 +17,7 @@
       <ui-elements-title title="сообщества" />
     </div>
     <div class="flex justify-between items-end pt-[44px] sdfsdfs">
-      <p class="asdcx">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи<br>в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
+      <p class="asdcx max-w-[700px]">В которых я состою.<br><br>Сообщества — это серьёзные организации, где собираются лучшие врачи в своей сфере, обмениваются опытом, а также ищут новые методы лечения.</p>
       <div class="flex gap-[32px] flex-wrap sdfsaaa">
         <div class="point">
           <div class="flex gap-[8px] items-center">
@@ -25,7 +33,7 @@
         </div>
       </div>
     </div>
-    <nuxt-link to="/gallary" class="flex sds sdfsdf" prefetch>
+    <nuxt-link @click="openModal" class="flex sds sdfsdf" >
       <div class="flex flex-col gap-[40px]">
         <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="images w-[816px]" />
         <nuxt-img loading="lazy" src="/image/about/imgOne.png" class="rou images w-[816px]" />
@@ -42,6 +50,85 @@
       </div>
     </nuxt-link>
   </div>
+
+
+
+
+
+  <div>
+    <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <swiper
+            :effect="'coverflow'"
+            :grabCursor="true"
+            :centeredSlides="true"
+            :slidesPerView="'auto'"
+            :coverflowEffect="{
+        rotate: 35,
+        stretch: 5,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    }"
+            :pagination="false"
+            :modules="modules"
+            class="mySwiper"
+        >
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/1.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/2.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/3.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/4.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/5.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/6.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/7.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/8.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/9.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/10.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/11.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/12.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/13.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/14.png" class="rounded-[40px]" />
+          </swiper-slide>
+          <swiper-slide>
+            <nuxt-img loading="lazy" src="/image/community/15.png" class="rounded-[40px]" />
+          </swiper-slide>
+        </swiper>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 </template>
 
 <style scoped lang="scss">
@@ -145,6 +232,13 @@
     gap: 40px;
   }
 }
+@media screen and (max-width: 500px) {
+  .point{
+    & p{
+      font-size: 16px !important;
+    }
+  }
+}
 @media screen and (max-width: 425px) {
   .sdsz{
     justify-content: space-between;
@@ -193,4 +287,51 @@
     }
   }
 }
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  border-radius: 47px;
+  border: 1px solid #FFF;
+  background: rgba(24, 24, 24, 0.64);
+  backdrop-filter: blur(11.65px);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+@media screen and (max-width: 1440px) {
+  .modal-overlay {
+    & img {
+      width: 420px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal-overlay {
+    & img {
+      width: 320px;
+    }
+  }
+}
+
+
 </style>

@@ -32,7 +32,7 @@ export default {
       admin: '@/layouts/admin-layout.vue'
     },
     serverMiddleware: [
-      { path: '/api/sendMessage', handler: '~/server/api/sendMessage.js' }
+      { path: '/api/sendMessage', handler: '~/server/middleware/sendMessage.js' }
     ],
     buildModules: [
       '@nuxt/typescript-build',

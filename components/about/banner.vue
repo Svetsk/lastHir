@@ -126,7 +126,7 @@ h1{
     transform: translate(20%, -20%);
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .block{
     padding: 36px 24px 24px;
   }

@@ -19,7 +19,7 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <slider-card-slider id="rew" />
     <ui-elements-services id="servic" />
     <ui-footer-form class="pt-[300px]"/>
-    <ui-footer-contact-footer class="pt-[350px]" />
+    <ui-footer-contact-footer class="pt-[150px]" />
   </div>
 </template>
 

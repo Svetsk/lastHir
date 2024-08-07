@@ -178,5 +178,11 @@
   .jhj{
     padding-bottom: 160px;
   }
+  .qqq{
+    border-radius: 40px;
+    & img{
+      transform: translateX(30px);
+    }
+  }
 }
 </style>

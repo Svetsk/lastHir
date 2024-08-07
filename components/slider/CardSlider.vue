@@ -64,7 +64,7 @@ const cards = [
 .slider-container {
   overflow-x: auto; /* Горизонтальный скролл */
   overflow-y: hidden; /* Без вертикального скролла */
-  padding: 40px 0 90px 0;
+  padding: 120px 0 120px 0;
   scrollbar-width: thin; /* Firefox */
   scrollbar-color: #E8E8E8 #E8E8E8; /* Firefox */
 }

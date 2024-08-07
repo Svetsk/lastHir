@@ -32,7 +32,7 @@
           </div>
           <p>В работе я использую инструменты из медицинской<br>стали, титана от <u>самых лучших фирм.</u><br><br>Они абсолютно стерильны, так как наши мед. сестры<br>тщательно их промывают, обрабатывают, упаковывают. <br><br>Из операционной инструменты никуда<br>не выносятся, не перемещаются.</p>
         </div>
-        <div class=" flex items-end h-[550px]">
+        <div class=" flex items-end h-[550px] fsdfs">
           <nuxt-link to="/blog/texts" class="toolss" prefetch>
             <nuxt-img loading="lazy" src="/image/about/history/tools.png" class="tools" />
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76" fill="none">
@@ -177,6 +177,26 @@ p{
       left: 40%;
       width: 72px;
     }
+  }
+}
+@media screen and (max-width: 550px) {
+  .fsdfs{
+    height: 350px;
+  }
+  .asdasd {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .fsdfs{
+    height: 290px;
+  }
+  .asdasd {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
   }
 }
 </style>

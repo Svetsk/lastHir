@@ -1,5 +1,16 @@
 <script setup>
+import Modal from '~/components/about/mdls.vue';
 
+const isModalVisible = ref(false);
+
+const hideModal = () => {
+  isModalVisible.value = false;
+};
+// Создаем событие для открытия модального окна
+const showModal = () => {
+  const event = new CustomEvent('open-modal');
+  window.dispatchEvent(event);
+};
 </script>
 
 <template>
@@ -59,12 +70,13 @@
             <p class="text-[70px] font-[600] textx">30+</p>
             <p class="text-[20px] font-[500] textxx w-[305px]">стажировок, конгрессов, конференций, симпозиумов</p>
           </div>
-          <div class="educ">
+          <button class="educ" @click="showModal">
             <nuxt-img loading="lazy" src="/image/about/educ.png" />
-          </div>
+          </button>
         </div>
       </div>
     </div>
+    <about-mdls :isVisible="isModalVisible" @close="hideModal" />
   </div>
 </template>
 
@@ -115,7 +127,7 @@
 @media screen and (max-width: 425px) {
   .wrrp{
     gap: 28px;
-    padding: 25px 20px;
+    padding: 20px 10px;
     align-items: center;
   }
   .textx{

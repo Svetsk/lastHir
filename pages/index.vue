@@ -18,7 +18,7 @@ import AddHeader from "~/components/Ui/AddHeader.vue";
     <ui-footer-slider-swip id="sw" class="pt-[240px]"/>
     <main-accardeons id="ac" />
     <ui-footer-form id="fr" class="pt-[300px]"/>
-    <ui-footer-contact-footer id="fot" class="pt-[350px]" />
+    <ui-footer-contact-footer id="fot" class="pt-[150px]" />
     <UiDevelop />
   </div>
 </template>

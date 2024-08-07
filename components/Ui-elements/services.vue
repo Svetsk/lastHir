@@ -5,8 +5,8 @@
 <template>
   <div class="sdfsc">
     <div class="container">
-      <ui-elements-title title="услуги" class="pt-[100px] pb-[65px]" />
-      <div class="flex flex-wrap gap-[96px] pb-[200px] aaaa">
+      <ui-elements-title title="услуги" class="pt-[50px] pb-[45px]" />
+      <div class="flex flex-wrap gap-[96px] pb-[150px] aaaa">
 
         <div class="relative bbb">
           <nuxt-img loading="lazy" src="/image/serv/ones.png" class="w-[664px] h-[712px] asdd" />
@@ -25,7 +25,7 @@
             <h3 class="max-w-[616px]">
               онкология
             </h3>
-            <p class="max-w-[616px] font-medium">Я работаю с доброкачественными и злокачественными опухолями молочной железы.</p>
+            <p class="max-w-[616px] font-medium">Я работаю с доброкачественными<br>и злокачественными опухолями молочной железы.</p>
             <ui-elements-button title="Узнать подробнее" link="/services" class="pt-[20px] buts" />
           </div>
         </div>
@@ -37,7 +37,8 @@
             <h3 class="max-w-[705px]">
               Обследования и консультации
             </h3>
-            <p class="max-w-[855px] font-medium">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
+            <p class="max-w-[855px] font-medium thr__one">Консультирую по эстетической и реконструктивной хирургии тела, по интимной пластике, по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
+            <p class="max-w-[855px] font-medium thr__two">Консультирую по эстетической<br>и реконструктивной хирургии тела, по интимной пластике,<br>по здоровью молочных желёз и др. Обследования, которые я провожу: тонкоигольная биопсия<br>под контролем УЗИ, трепан-биопсия под контролем УЗИ и др.</p>
             <ui-elements-button title="Узнать подробнее" link="/services/exam" class="pt-[20px] buts" />
           </div>
         </div>
@@ -104,10 +105,10 @@
     height: auto;
   }
   h3{
-    font-size: 30px !important;
+    font-size: 22px !important;
   }
   p{
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .bbb{
     margin: 0 auto;
@@ -185,6 +186,12 @@ p{
       padding-bottom: 82px !important ;
     }
   }
+  .thr__one{
+    display: none !important;
+  }
+  .thr__two{
+    display: flex !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .blocks{
@@ -194,7 +201,7 @@ p{
   .blockss{
     padding-left: 24px !important;
     padding-right: 24px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 43px !important;
     top: 200px;
     max-width: 360px;
   }
@@ -220,5 +227,8 @@ p{
     top: 200px;
     max-width: 350px;
   }
+}
+.thr__two{
+  display: none;
 }
 </style>

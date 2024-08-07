@@ -48,42 +48,42 @@ export default {
       >
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideOne.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideOne.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideTwo.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideTwo.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideThree.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideThree.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideFive.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideFive.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideSix.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideSix.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideSeven.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideSeven.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideEight.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideEight.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
         <swiper-slide>
           <nuxt-link to="/reviews" prefetch>
-            <nuxt-img loading="lazy" src="/image/slider/slideNine.png" class="rounded-[40px]" />
+            <nuxt-img src="/image/slider/slideNine.png" class="rounded-[40px]" />
           </nuxt-link>
         </swiper-slide>
       </swiper>

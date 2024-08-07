@@ -1,15 +1,15 @@
 <script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
 
 // Import Swiper styles
 import 'swiper/css';
 
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/vue";
 
 export default {
   components: {
@@ -17,8 +17,9 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const modules = [Autoplay, Navigation];
     return {
-      modules: [Navigation],
+      modules,
     };
   },
 };
@@ -91,25 +92,38 @@ export default {
         <swiper
             :navigation="true"
             :modules="modules"
+            :autoplay="{ delay: 3000, disableOnInteraction: false }"
             class="mySwiper"
         >
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideOne.png" class="w-[692px] h-[826px]" />
+            <nuxt-img loading="lazy" src="/image/main/banner/slider/1.png" class="w-[692px] h-[826px] on" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideTwo.png" class="w-[692px] h-[826px]" />
+            <nuxt-img src="/image/main/banner/slider/2.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideThree.png" class="w-[692px] h-[826px]" />
+            <nuxt-img src="/image/main/banner/slider/3.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFore.png" class="w-[692px] h-[826px]" />
+            <nuxt-img src="/image/main/banner/slider/4.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFive.png" class="w-[692px] h-[826px]" />
+            <nuxt-img src="/image/main/banner/slider/5.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
           <swiper-slide class="slidess">
-            <nuxt-img loading="lazy" src="/image/main/banner/slider/slideSix.png" class="w-[692px] h-[826px]" />
+            <nuxt-img src="/image/main/banner/slider/6.png" class="w-[692px] h-[826px]" />
+          </swiper-slide>
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/7.png" class="w-[692px] h-[826px]" />
+          </swiper-slide>
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/8.png" class="w-[692px] h-[826px]" />
+          </swiper-slide>
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/9.png" class="w-[692px] h-[826px]" />
+          </swiper-slide>
+          <swiper-slide class="slidess">
+            <nuxt-img src="/image/main/banner/slider/10.png" class="w-[692px] h-[826px]" />
           </swiper-slide>
         </swiper>
       </div>
@@ -122,30 +136,61 @@ export default {
           <swiper
               :navigation="true"
               :modules="modules"
+              :autoplay="{ delay: 3000, disableOnInteraction: false }"
               class="mySwiper myss"
           >
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideOne.png" />
+                <nuxt-img src="/image/main/banner/slider/1.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideTwo.png" />
+                <nuxt-img src="/image/main/banner/slider/2.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideThree.png" />
+                <nuxt-img src="/image/main/banner/slider/3.png" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="w-[350px] h-[400px]">
-                <nuxt-img loading="lazy" src="/image/main/banner/slider/slideFore.png" />
+                <nuxt-img src="/image/main/banner/slider/4.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/5.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/6.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/7.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/8.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/9.png" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="w-[350px] h-[400px]">
+                <nuxt-img src="/image/main/banner/slider/10.png" />
               </div>
             </swiper-slide>
           </swiper>
-          <ui-elements-button title="Узнать подробнее" class="pt-[40px]" />
+          <ui-elements-button title="Узнать подробнее" class="pt-[40px]" link="/about" />
           <div class="pt-[45px] relative">
             <nuxt-img loading="lazy" src="/image/main/banner/mob/mobban.png" class="w-[100%] h-[100%]" />
             <nuxt-img loading="lazy" src="/image/main/banner/mob/inst.svg" class="as absolute top-[55px] left-[11px] w-[20px] h-[20px]" />
@@ -167,7 +212,7 @@ export default {
           <nuxt-link to="/myWork" prefetch>
             <div class="flex gap-[4px] adfssx">
               <nuxt-img loading="lazy" src="/image/main/banner/bgg.png" class="w-[120px] h-[100%] py-[28px]" />
-              <div class="flex flex-col gap-[2px]">
+              <div class="flex flex-col gap-[2px] pxz">
                 <p class="text-[30px] font-[500] leading-0">800+</p>
                 <span class="text-[21px] font-[400] leading-0">пациентов</span>
               </div>
@@ -186,6 +231,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+img{
+  object-fit: cover;
+}
 .adfssx{
   background: #3E3E3E;
   border-radius: 40px;
@@ -303,6 +351,34 @@ h3{
   .asdad{
     left: 140px !important;
     top: 50px;
+  }
+}
+@media screen and (max-width: 400px){
+  .as{
+    left: 13px;
+    &:nth-child(2){
+      top: 55px;
+    }
+    &:nth-child(3){
+      top: 85px;
+    }
+  }
+  .pxz{
+    transform: translate(9px, 5px);
+    & span{
+      transform: translateY(-15px);
+    }
+  }
+}
+@media screen and (max-width: 393px){
+  .as{
+    left: 12px;
+    &:nth-child(2){
+      top: 55px;
+    }
+    &:nth-child(3){
+      top: 85px;
+    }
   }
 }
 </style>

@@ -117,7 +117,7 @@ import MenuReviews from "~/components/MenuReviews.vue";
     <ui-footer-form class="pt-[300px]" />
   </div>
   <div class="container" id="cnt">
-    <ui-footer-contact-footer class="pt-[350px]" />
+    <ui-footer-contact-footer class="pt-[150px]" />
   </div>
 </template>
 

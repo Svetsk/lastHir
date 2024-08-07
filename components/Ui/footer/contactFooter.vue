@@ -2,7 +2,7 @@
   <div class="c">
 
     <div class="cart flex justify-between items-center gap-y-[62px]">
-      <div class="flex flex-col gap-[45px]" id="conts">
+      <div class="flex flex-col gap-[45px] container" id="conts">
         <ui-elements-title title="контакты" class="pb-[20px]" />
         <a href="/">INSTAGRAM: @dr.korniyasova</a>
         <a href="/">+7 918 647-45-93 (Мой ассистент — Елизавета)</a>
